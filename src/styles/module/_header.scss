@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+@use '../lib/global' as g;
+
+.header {
+  // 削除してください
+  background: #00282E;
+  // 削除してください
+  color: #FEFFF7;
+  position: relative;
+  z-index: 999;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+  }
+
+  &__logo {
+    width: 10rem;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+
+    a {
+      display: inline-block;
+      padding: 1.5rem;
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+  }
+  &__hmbbtn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+  }
+}
+.header--clone {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: translateY(0%);
+  transition: 0.25s;
+  &.hidden {
+    transform: translateY(-100%);
+  }
+  &.is-top {
+    transform: translateY(-100%) !important;
+  }
+}

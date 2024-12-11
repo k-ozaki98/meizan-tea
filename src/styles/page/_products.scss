@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+@use '../lib/global' as g;
+
+/*----------------------------------------------------
+
+	各ページの独自モジュールスタイルのCSS。
+
+	【記述ルール】
+	{ ページ名(top, about等) }○○○○
+
+	階層はルートクラスより、三階層までが基本
+	【例】
+	.top-sec .top-sec__ttl span {		
+	}
+	※CSSに展開した場合
+
+----------------------------------------------------*/
+
+.contents.contents--products {
+
+	.products {
+		position: relative;
+	
+		&::before {
+			position: absolute;
+			content: "";
+			background: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221200%22%20height%3D%22192%22%20viewBox%3D%220%200%201200%20192%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M0%2077.1762C63.2007%2045.3382%20256.962%20-5.47062%20534.2%2045.998C811.438%2097.4666%201091.31%2039.0696%201196.59%203.4375%22%20stroke%3D%22%23E5E8D3%22%20stroke-width%3D%224%22%2F%3E%3Cpath%20d%3D%22M3.41211%20191C66.6128%20159.162%20459.237%20-42.0924%20736.475%209.37616C1013.71%2060.8448%201094.72%20152.893%201200%20117.261%22%20stroke%3D%22%23E5E8D3%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E')no-repeat;
+			background-size: 100%;
+			width: 100%;
+			height: 30rem;
+			top: 0;
+			left: 0;
+			z-index: 0;
+		}
+
+		&__intro {
+			font-size: 1.6rem;
+			text-align: center;
+			margin-bottom: 6.4rem;
+		}
+
+		&__list {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			flex-wrap: wrap;
+			gap: 6.5rem;
+		}
+
+	}
+
+	.product-item {
+		display: flex;
+		flex-direction: column;
+		gap: 2.4rem;
+		align-items: center;
+		justify-content: space-between;
+		font-size: 1.6rem;
+	}
+
+	.product-list {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2.4rem;
+
+		&__item {
+			padding: 4rem;
+			background: #fff;
+			border: 1px solid #F2F4E3;
+			border-radius: 3.2rem;
+		}
+		&__top {
+			display: flex;
+			align-items: center;
+			gap: 2.4rem;
+			margin-bottom: 1.6rem;
+		}
+		&__icon {
+			width: 8rem;
+			height: 8rem;
+		}
+		&__name-ja {
+			font-size: 3.2rem;
+			font-weight: 500;
+			line-height: 1.2;
+		}
+		&__name-en {
+			font-size: 1.6rem;
+			line-height: 1.2;
+		}
+		&__origin {
+			color: #4D6569;
+			font-size: 1.6rem;
+			margin-bottom: 1.6rem;
+		}
+		&__detail {
+			font-size: 1.6rem;
+		}
+	}
+
+	.child-category-list {
+		display: grid;
+		gap: 2.4rem;
+		grid-template-columns: 1fr 1fr;
+
+		&__item {
+			background: #fff;
+			padding: 4rem;
+
+		}
+
+		&__icon {
+			width: 8rem;
+			height: 8rem;
+		}
+
+		&__head {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: 1.5rem;
+		}
+
+		&__ttl {
+			font-size: 3.2rem;
+			position: relative;
+			padding-left: 4.5rem;
+			font-weight: normal;
+
+			&::after {
+				content: "";
+				width: 3rem;
+				height: 3rem;
+				position: absolute;
+				top: 50%;
+				left: 0;
+				transform: translateY(-50%);
+				background: url(../images/products/category01.png) no-repeat center center;
+				background-size: contain;
+
+			}
+		}
+
+		&__other {
+			.child-category-list__ttl {
+				&::after {
+					background: url(../images/products/category02.png) no-repeat center center;
+					background-size: contain;
+				}
+			}
+		}
+
+		&__body {
+			font-size: 1.6rem;
+		}
+	}
+}

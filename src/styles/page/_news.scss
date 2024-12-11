@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+@use '../lib/global' as g;
+
+/*----------------------------------------------------
+
+	各ページの独自モジュールスタイルのCSS。
+
+	【記述ルール】
+	{ ページ名(top, about等) }○○○○
+
+	階層はルートクラスより、三階層までが基本
+	【例】
+	.top-sec .top-sec__ttl span {		
+	}
+	※CSSに展開した場合
+
+----------------------------------------------------*/
+
+.contents.contents--news {
+	.news {
+
+	}
+
+	.news-list {
+		display: flex;
+		flex-direction: column;
+		&__item {
+			
+			border-bottom: 1px dotted #D8E3E5;
+			font-size: 1.6rem;
+
+			&:first-of-type {
+				border-top: 1px dotted #D8E3E5;
+			}
+
+			a {
+				display: block;
+				padding: 2.4rem;
+				padding-left: 0;
+			}
+		}
+
+		&__top {
+			display: flex;
+			align-items: center;
+			gap: 1.6rem;
+			margin-bottom: 0.8rem;
+			
+		}
+
+		
+	}
+}
+
+.contents.contents--news-single {
+	.news-header {
+		
+		padding-bottom: 6.4rem;
+	}
+	.news-meta {
+		display: flex;
+		align-items: center;
+		gap: 1.6rem;
+		margin-bottom: 2.4rem;
+		font-size: 1.6rem;
+	}
+
+	.news-date {
+		display: block;
+	}
+
+	.news-title {
+		line-height: 1.2;
+		font-size: 3.2rem;
+	}
+	.news-content {
+		padding: 2.4rem 0;
+		border-top: 1px dotted #D8E3E5;
+		border-bottom: 1px dotted #D8E3E5;
+		margin-bottom: 6.4rem;
+
+		p,
+		figure {
+			margin: 1.6rem 0;
+		}
+		figure {
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.news-category {
+	color: #FEFFF7;
+	background: #4D6569;
+	padding: 0 1.6rem;
+	border-radius: 8px 0 8px 0;
+
+	&--event {
+		background: #A6A926;
+
+	}
+}
