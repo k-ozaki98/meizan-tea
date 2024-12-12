@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@use '../lib/global' as g;
+@use '../lib/global'as g;
 
 
 .heading-A {
@@ -9,6 +9,10 @@
   gap: .5rem;
   font-size: 4.8rem;
   text-align: center;
+
+  @include g.max-screen(g.$bp-sp) {
+    font-size: 3.6rem;
+  }
 
   span {
     font-family: "Advent Pro", sans-serif;

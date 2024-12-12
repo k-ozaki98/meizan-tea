@@ -2,7 +2,19 @@
 
 <main class="contents contents--top">
   <div class="mv">
-    <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/mv.png" alt="">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/mv.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/mv.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/mv.png" alt="">
+        </div>
+      </div>
+    </div>
     <div class="mv__wrap">
       <div class="mv__logo">
         <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/logo.svg" alt="">
@@ -16,7 +28,7 @@
       <h2 class="heading-A"><span>ABOUT US</span>人と心と時間を満たす</h2>
       <p class="about__txt">時に癒やし、時に賑わいの中心となり、人と人、心や時間までもが<br>満ちるお茶のある毎日のために。</p>
       <div class="btn-A">
-        <a href="">VIEW MORE</a>
+        <a href=""><span>VIEW MORE</span></a>
       </div>
       <div class="about__img">
         <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/about-img.png" alt="">
@@ -33,7 +45,7 @@
                 数百種の茶葉を取り扱っております。
               </p>
               <div class="btn-A btn-A--white">
-                <a href="">VIEW MORE</a>
+                <a href=""><span>VIEW MORE</span></a>
               </div>
             </div>
             <div class="strength__img-area">
@@ -47,7 +59,7 @@
               <p class="strength__txt">明山茶業にはお茶のスペシャリスト、中国政府公認の高級評茶員が在籍しております。
               </p>
               <div class="btn-A btn-A--white">
-                <a href="">VIEW MORE</a>
+                <a href=""><span>VIEW MORE</span></a>
               </div>
             </div>
             <div class="strength__img-area">
@@ -62,7 +74,7 @@
                 ＜OEM＞様々なご要望に応えるオリジナルティーをご提案します。
               </p>
               <div class="btn-A btn-A--white">
-                <a href="">VIEW MORE</a>
+                <a href=""><span>VIEW MORE</span></a>
               </div>
             </div>
             <div class="strength__img-area">
@@ -129,7 +141,7 @@
         </li>
       </ul>
       <div class="btn-A">
-        <a href="">VIEW MORE</a>
+        <a href=""><span>VIEW MORE</span></a>
       </div>
     </div>
   </section>
@@ -139,11 +151,11 @@
       <div class="news__ttl-area">
         <h2 class="heading-A"><span>NEWS</span>新着情報</h2>
         <div class="btn-A">
-          <a href="/news/">VIEW MORE</a>
+          <a href=""><span>VIEW MORE</span></a>
         </div>
       </div>
       <ul class="news__list">
-            <?php
+        <?php
             $args = array(
                 'post_type' => 'post',
                 'posts_per_page' => 3,
@@ -159,25 +171,25 @@
                     $categories = get_the_category();
                     $category = $categories ? $categories[0]->name : '';
             ?>
-                <li>
-                    <div class="news__date-area">
-                        <p class="news__cate"><?php echo esc_html($category); ?></p>
-                        <p class="news__date"><?php echo get_the_date('Y.m.d'); ?></p>
-                    </div>
-                    <a href="<?php echo home_url('/news/' . get_the_ID() . '/'); ?>" class="news__ttl">
-                        <?php the_title(); ?>
-                    </a>
-                </li>
-            <?php
+        <li>
+          <div class="news__date-area">
+            <p class="news__cate"><?php echo esc_html($category); ?></p>
+            <p class="news__date"><?php echo get_the_date('Y.m.d'); ?></p>
+          </div>
+          <a href="<?php echo home_url('/news/' . get_the_ID() . '/'); ?>" class="news__ttl">
+            <?php the_title(); ?>
+          </a>
+        </li>
+        <?php
                 endwhile;
                 wp_reset_postdata();
             else :
             ?>
-                <li>
-                    <p>新着情報はありません。</p>
-                </li>
-            <?php endif; ?>
-        </ul>
+        <li>
+          <p>新着情報はありません。</p>
+        </li>
+        <?php endif; ?>
+      </ul>
     </div>
   </section>
   <div id="js-pagetop" class="pagetop">
