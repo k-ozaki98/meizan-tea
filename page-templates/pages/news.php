@@ -16,24 +16,24 @@
             AND post_status = 'publish' 
             ORDER BY post_date DESC"
         );
-
-        // var_dump($years);
+        
         ?>
 
-        <form method="get" class="news-filter-form">
-            <label for="filter-year">公開年で絞り込み:</label>
-            <select id="filter-year" name="year" onchange="this.form.submit();">
-                <option value="">すべての年</option>
-                <?php 
-                $selected_year = isset($_GET['year']) ? (int)$_GET['year'] : '';
-                foreach ($years as $year) : 
-                ?>
-                    <option value="<?php echo esc_attr($year); ?>" 
-                            <?php selected($selected_year, (int)$year); ?>>
-                        <?php echo esc_html($year); ?>年
-                    </option>
-                <?php endforeach; ?>
-            </select>
+        <form method="get" class="news-filter-form" action="<?php echo esc_url(get_permalink()); ?>">
+            <div class="select-wrapper">
+                <select id="filter-year" name="year" onchange="this.form.submit();">
+                    <option value="">すべての年</option>
+                    <?php 
+                    $selected_year = isset($_GET['year']) ? (int)$_GET['year'] : '';
+                    foreach ($years as $year) : 
+                    ?>
+                        <option value="<?php echo esc_attr($year); ?>" 
+                                <?php selected($selected_year, (int)$year); ?>>
+                            <?php echo esc_html($year); ?>年
+                        </option>
+                    <?php endforeach; ?>
+                </select>
+            </div>
         </form>
 
         <?php
@@ -44,24 +44,29 @@
             'paged' => $paged,
             'orderby' => 'date',
             'order' => 'DESC',
-            'post_status' => 'publish'
+            'post_status' => 'publish',
+            'suppress_filters' => false
         );
 
         if (!empty($_GET['year'])) {
             $args['date_query'] = array(
                 array(
-                    'year' => intval($_GET['year'])
+                    'year' => intval($_GET['year']),
+                    'compare' => '=',
+                    'inclusive' => true
                 )
             );
         }
         
         $news_query = new WP_Query($args);
 
+        
+
         if ($news_query->have_posts()) : ?>
             <ul class="news-list">
                 <?php while ($news_query->have_posts()) : $news_query->the_post(); ?>
                 <li class="news-list__item">
-                    <a href="<?php echo home_url('/news/' . get_the_ID() . '/'); ?>">
+                    <a href="<?php the_permalink(); ?>">
                         <div class="news-list__top">
                         <?php 
                         $categories = get_the_category();
@@ -95,9 +100,9 @@
 
             <?php
             // ページネーション
-            $big = 999999999;
+            $current_url = home_url(add_query_arg(array(), $wp->request));
             echo paginate_links(array(
-                'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
+                'base' => add_query_arg('paged', '%#%', $current_url),
                 'format' => '?paged=%#%',
                 'current' => max(1, get_query_var('paged')),
                 'total' => $news_query->max_num_pages,

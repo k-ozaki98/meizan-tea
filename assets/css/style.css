@@ -3532,6 +3532,43 @@ sup {
 	※CSSに展開した場合
 
 ----------------------------------------------------*/
+.contents.contents--news .news form {
+  text-align: center;
+}
+.contents.contents--news .news .select-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 33rem;
+  height: 6rem;
+  background-color: #fff;
+  border: 1px solid #D8E3E5;
+  font-size: 1.6rem;
+  margin: 0 auto 4rem;
+}
+.contents.contents--news .news .select-wrapper select {
+  width: 100%;
+  height: 100%;
+  padding: 0 2rem;
+  border: none;
+  background: transparent;
+  font-family: "Noto Serif JP", Arial, "Hiragino Kaku Gothic ProN";
+  font-size: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.contents.contents--news .news .select-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-right: 0.2rem solid #333;
+  border-bottom: 0.2rem solid #333;
+  transform: translateY(-50%) rotate(45deg);
+  pointer-events: none;
+}
 .contents.contents--news .news-list {
   display: flex;
   flex-direction: column;
