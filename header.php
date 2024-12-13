@@ -1,3 +1,7 @@
+<?php
+$pageId = esc_attr(isset($pageId) ? $pageId : '');
+?>
+
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 
@@ -12,10 +16,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <?php wp_head(); ?>
 </head>
-
-<body <?php body_class(); ?>>
-  <?php wp_body_open(); ?>
-  <header class="header">
+<body <?php body_class(); ?>  data-pageid="<?php echo isset($args['pageId']) ? esc_attr($args['pageId']) : ''; ?>">
+<?php wp_body_open(); ?>
+<header class="header">
     <div class="header__inner l-inner">
       <h1 class="header__logo">
         <a href="/"><img src="<?php echo get_template_directory_uri() ?>/assets/images/common/logo.svg" alt=""></a>

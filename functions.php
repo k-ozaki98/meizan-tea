@@ -10,11 +10,37 @@ require_once THEME_DIR . '/inc/custom-post-types.php';
 require_once THEME_DIR . '/inc/enqueue-scripts.php';
 require_once THEME_DIR . '/inc/theme-support.php';
 
+function custom_page_rules() {
+    global $wp_rewrite;
+    $wp_rewrite->page_structure = $wp_rewrite->root . '%pagename%';
+}
+add_action('init', 'custom_page_rules');
+
+// フラッシュルールを追加
+function custom_flush_rules(){
+    global $wp_rewrite;
+    $wp_rewrite->flush_rules();
+}
+add_action('init', 'custom_flush_rules');
+
+function add_query_vars_filter($vars) {
+    $vars[] = 'year';
+    $vars[] = 'news_post_id'; // 既存のnews_post_idと一緒に追加
+    return $vars;
+}
+add_filter('query_vars', 'add_query_vars_filter');
+
 // ニュース用のリライトルール
 function add_news_rewrite_rules() {
     add_rewrite_rule(
         'news/([0-9]+)/?$',
         'index.php?news_post_id=$matches[1]',
+        'top'
+    );
+    // 年でのフィルタリングにも対応するルール
+    add_rewrite_rule(
+        'news\?year=([0-9]{4})',
+        'index.php?pagename=news&year=$matches[1]',
         'top'
     );
 }
@@ -46,4 +72,8 @@ function save_category_meta($term_id) {
 add_action('created_product_category', 'save_category_meta');
 add_action('edited_product_category', 'save_category_meta');
 
+
+function get_page_id($pageId = '') {
+    return $pageId;
+}
 

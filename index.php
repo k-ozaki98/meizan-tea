@@ -1,10 +1,12 @@
 <?php
-
+// yearパラメータがある場合のニュースページの処理
+if (is_page('news') || (!empty($_GET['year']) && get_query_var('pagename') === 'news')) {
+    get_template_part('page-templates/pages/news');
+}
 // 通常の分岐
 if (is_front_page() || is_home()) {
     get_template_part('page-templates/tops/front');
 } elseif (is_tax('product_category')) {
-    echo 'This is taxonomy page!';  // この行を追加して、ここに来るか確認
     get_template_part('page-templates/taxonomies/product-category');
 } elseif (is_post_type_archive('product')) {
     get_template_part('page-templates/pages/products');
@@ -14,5 +16,7 @@ if (is_front_page() || is_home()) {
     get_template_part('page-templates/pages/' . $slug);
 }
 ?>
+
+aaa
 
 
