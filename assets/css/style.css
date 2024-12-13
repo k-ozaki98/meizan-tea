@@ -3762,6 +3762,72 @@ sup {
   font-size: 1.6rem;
 }
 
+/*----------------------------------------------------
+
+	各ページの独自モジュールスタイルのCSS。
+
+	【記述ルール】
+	{ ページ名(top, about等) }○○○○
+
+	階層はルートクラスより、三階層までが基本
+	【例】
+	.top-sec .top-sec__ttl span {		
+	}
+	※CSSに展開した場合
+
+----------------------------------------------------*/
+.contents.contents--contact .contact {
+  padding: 60px 0;
+}
+.contents.contents--contact .contact .form-group {
+  margin-bottom: 30px;
+}
+.contents.contents--contact .contact .form-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.contents.contents--contact .contact .form-group .required {
+  color: #ff0000;
+  font-size: 12px;
+  margin-left: 8px;
+}
+.contents.contents--contact .contact .form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.contents.contents--contact .contact textarea.form-control {
+  height: 200px;
+}
+.contents.contents--contact .contact .submit-btn {
+  text-align: center;
+  margin-top: 40px;
+}
+.contents.contents--contact .contact .submit-btn .btn {
+  background: #000;
+  color: #fff;
+  padding: 15px 60px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+.contents.contents--contact .contact .submit-btn .btn:hover {
+  opacity: 0.8;
+}
+.contents.contents--contact .contact .wpcf7-not-valid-tip {
+  color: #ff0000;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.contents.contents--contact .contact .wpcf7-response-output {
+  margin: 30px 0;
+  padding: 15px;
+  border-radius: 4px;
+}
+
 /*--------------------------
 	animation
 --------------------------*/

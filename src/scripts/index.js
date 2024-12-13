@@ -1,3 +1,4 @@
+import { initContact } from './pages/contact';
 import { initTop } from './pages/top'
 import { renderReactApp } from './react';
 import TopApp from "./react/TopApp";
@@ -12,5 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
   if (isTop) {
     initTop() // トップページ用スクリプト
     // renderReactApp('js-react-app', TopApp)
+  }
+
+  const isContact = pageId === 'contact';
+  if (isContact) {
+    initContact();
   }
 })
