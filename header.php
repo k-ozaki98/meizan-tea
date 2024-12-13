@@ -1,3 +1,7 @@
+<?php
+$pageId = esc_attr(isset($pageId) ? $pageId : '');
+?>
+
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -5,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?>  data-pageid="<?php echo isset($args['pageId']) ? esc_attr($args['pageId']) : ''; ?>">
 <?php wp_body_open(); ?>
 <header class="header">
     <div class="header__inner l-inner">

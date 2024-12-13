@@ -73,3 +73,7 @@ add_action('created_product_category', 'save_category_meta');
 add_action('edited_product_category', 'save_category_meta');
 
 
+function get_page_id($pageId = '') {
+    return $pageId;
+}
+

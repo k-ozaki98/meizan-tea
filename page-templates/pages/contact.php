@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('', ['pageId' => 'contact']); ?>
 <main class="contact">
     <div class="container">
         <h2>お問い合わせ</h2>
