@@ -19,4 +19,15 @@ document.addEventListener('DOMContentLoaded', () => {
   if (isContact) {
     initContact();
   }
+
+  const navItems = document.querySelectorAll('.header__nav-item');
+  
+  if (!pageId || !navItems.length) return;
+
+  navItems.forEach(item => {
+    const navId = item.getAttribute('data-nav-id');
+    if (navId === pageId) {
+      item.classList.add('is-active');
+    }
+  })
 })

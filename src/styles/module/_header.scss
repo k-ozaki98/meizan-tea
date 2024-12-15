@@ -32,6 +32,19 @@
       font-weight: bold;
     }
   }
+
+  &__nav-item {
+    color: #FEFFF7;
+    transition: 0.2s;
+
+    &:hover {
+      color: #D5D933;
+    }
+    &.is-active {
+      color: #D5D933;
+
+    }
+  }
   &__hmbbtn {
     position: absolute;
     top: 50%;
