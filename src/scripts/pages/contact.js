@@ -1,4 +1,4 @@
 
 export const initContact = () => {
-  alert('aa');
+  // alert('aa');
 }

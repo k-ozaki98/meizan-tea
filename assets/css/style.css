@@ -3433,24 +3433,23 @@ sup {
 	※CSSに展開した場合
 
 ----------------------------------------------------*/
-.about {
+.contents.contents--top .about {
   padding: 6rem 0;
 }
-.about__txt {
+.contents.contents--top .about__txt {
   color: #00282E;
   font-size: 1.6rem;
   text-align: center;
 }
-.about .btn-A {
+.contents.contents--top .about .btn-A {
   text-align: center;
   margin-top: 2.5rem;
 }
-.about__img {
+.contents.contents--top .about__img {
   text-align: center;
   padding: 2.4rem 0 4rem;
 }
-
-.strength__card li {
+.contents.contents--top .strength__card li {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -3461,22 +3460,22 @@ sup {
   margin-top: 2.4rem;
 }
 @media screen and (max-width: 767px) {
-  .strength__card li {
+  .contents.contents--top .strength__card li {
     display: block;
     padding: 4rem 2.4rem;
   }
 }
-.strength__txt-area {
+.contents.contents--top .strength__txt-area {
   color: #fff;
   width: 50%;
   flex-shrink: 0;
 }
 @media screen and (max-width: 767px) {
-  .strength__txt-area {
+  .contents.contents--top .strength__txt-area {
     width: 100%;
   }
 }
-.strength__num {
+.contents.contents--top .strength__num {
   display: inline-block;
   font-family: "Advent Pro", sans-serif;
   font-size: 1.6rem;
@@ -3486,29 +3485,28 @@ sup {
   border-radius: 5rem;
   padding: 0 1.5rem;
 }
-.strength__ttl {
+.contents.contents--top .strength__ttl {
   font-size: 4rem;
   margin: 1rem 0;
 }
 @media screen and (max-width: 767px) {
-  .strength__ttl {
+  .contents.contents--top .strength__ttl {
     font-size: 3.2rem;
   }
 }
-.strength__txt {
+.contents.contents--top .strength__txt {
   font-size: 1.6rem;
 }
-.strength .btn-A {
+.contents.contents--top .strength .btn-A {
   text-align: left;
   margin-top: 4.3rem;
 }
-
-.tea {
+.contents.contents--top .tea {
   position: relative;
   background: linear-gradient(180deg, rgb(255, 255, 247) 0%, rgb(255, 255, 255) 100%);
   padding-bottom: 1rem;
 }
-.tea::before {
+.contents.contents--top .tea::before {
   position: absolute;
   content: "";
   background: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221200%22%20height%3D%22192%22%20viewBox%3D%220%200%201200%20192%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M0%2077.1762C63.2007%2045.3382%20256.962%20-5.47062%20534.2%2045.998C811.438%2097.4666%201091.31%2039.0696%201196.59%203.4375%22%20stroke%3D%22%23E5E8D3%22%20stroke-width%3D%224%22%2F%3E%3Cpath%20d%3D%22M3.41211%20191C66.6128%20159.162%20459.237%20-42.0924%20736.475%209.37616C1013.71%2060.8448%201094.72%20152.893%201200%20117.261%22%20stroke%3D%22%23E5E8D3%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E") no-repeat;
@@ -3519,7 +3517,7 @@ sup {
   left: 0;
   z-index: 0;
 }
-.tea::after {
+.contents.contents--top .tea::after {
   position: absolute;
   content: "";
   background-color: #FFFFFF;
@@ -3529,42 +3527,42 @@ sup {
   bottom: -6.4rem;
   left: 0;
 }
-.tea .heading-A {
+.contents.contents--top .tea .heading-A {
   position: relative;
   z-index: 1;
 }
-.tea__txt {
+.contents.contents--top .tea__txt {
   font-size: 1.6rem;
   text-align: center;
   padding-top: 2.4rem;
 }
-.tea__list {
+.contents.contents--top .tea__list {
   display: flex;
   flex-wrap: wrap;
   gap: 4rem;
   margin: 4rem 0;
 }
 @media screen and (max-width: 767px) {
-  .tea__list {
+  .contents.contents--top .tea__list {
     gap: 2.4rem;
     justify-content: center;
   }
 }
 @media screen and (max-width: 767px) {
-  .tea__list li {
+  .contents.contents--top .tea__list li {
     width: calc(50% - 24px);
   }
 }
-.tea__list a {
+.contents.contents--top .tea__list a {
   position: relative;
 }
-.tea__ttl-wrap {
+.contents.contents--top .tea__ttl-wrap {
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
 }
-.tea__ttl {
+.contents.contents--top .tea__ttl {
   color: #fff;
   font-size: 2.8rem;
   -ms-writing-mode: tb-rl;
@@ -3575,21 +3573,20 @@ sup {
   text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
 }
 @media screen and (max-width: 767px) {
-  .tea__ttl {
+  .contents.contents--top .tea__ttl {
     font-size: 2.4rem;
   }
 }
-.tea .btn-A {
+.contents.contents--top .tea .btn-A {
   text-align: center;
 }
-
-.news {
+.contents.contents--top .news {
   background: url("../images/top/news-bg.jpg") no-repeat;
   background-size: cover;
   background-position: 50%;
   padding: 12.4rem 0 6.4rem;
 }
-.news__container {
+.contents.contents--top .news__container {
   display: flex;
   background-color: #FFFFFF;
   border-radius: 5rem 0 0 5rem;
@@ -3598,66 +3595,66 @@ sup {
   margin: 0 0 0 auto;
 }
 @media screen and (max-width: 767px) {
-  .news__container {
+  .contents.contents--top .news__container {
     display: block;
     padding: 4rem 2.4rem;
   }
 }
-.news__list {
+.contents.contents--top .news__list {
   width: 60%;
 }
 @media screen and (max-width: 767px) {
-  .news__list {
+  .contents.contents--top .news__list {
     width: 100%;
   }
 }
-.news__list li {
+.contents.contents--top .news__list li {
   padding: 2.4rem 0;
   border-bottom: 1px dashed #D8E3E5;
 }
-.news__list li:first-of-type {
+.contents.contents--top .news__list li:first-of-type {
   border-top: 1px dashed #D8E3E5;
 }
-.news__list li a {
+.contents.contents--top .news__list li a {
   display: block;
 }
-.news__ttl-area {
+.contents.contents--top .news__ttl-area {
   width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 @media screen and (max-width: 767px) {
-  .news__ttl-area {
+  .contents.contents--top .news__ttl-area {
     width: 100%;
   }
 }
-.news .heading-A {
+.contents.contents--top .news .heading-A {
   text-align: left;
 }
 @media screen and (max-width: 767px) {
-  .news .heading-A {
+  .contents.contents--top .news .heading-A {
     text-align: center;
   }
 }
-.news__date-area {
+.contents.contents--top .news__date-area {
   display: flex;
   align-items: center;
   gap: 1.6rem;
   font-size: 1.6rem;
   padding-bottom: 1rem;
 }
-.news__cate {
+.contents.contents--top .news__cate {
   color: #fff;
   background-color: #4D6569;
   border-radius: 1.6rem 0 1.6rem 0;
   padding: 0 1.5rem;
 }
-.news__ttl {
+.contents.contents--top .news__ttl {
   font-size: 1.6rem;
   transition: 0.25s all;
 }
-.news__ttl:hover {
+.contents.contents--top .news__ttl:hover {
   color: #D5D933;
 }
 
@@ -3919,56 +3916,142 @@ sup {
 	※CSSに展開した場合
 
 ----------------------------------------------------*/
+.contents.contents--contact .contact-inner {
+  width: 80rem;
+}
 .contents.contents--contact .contact {
-  padding: 60px 0;
+  padding: 6rem 0 6.4rem;
+  /* 郵便番号入力部分をグループ化 */
+  /* レスポンシブ対応 */
 }
-.contents.contents--contact .contact .form-group {
-  margin-bottom: 30px;
+.contents.contents--contact .contact .form-list {
+  max-width: 1000px;
+  margin: 0 auto;
 }
-.contents.contents--contact .contact .form-group label {
-  display: block;
-  margin-bottom: 10px;
+.contents.contents--contact .contact .form-item {
+  display: flex;
+  gap: 4rem;
+  justify-content: space-between;
+  padding: 2.4rem 0;
+  border-top: 1px dotted #ccc;
+}
+.contents.contents--contact .contact .form-item:last-child {
+  border-bottom: 1px dotted #ccc;
+}
+.contents.contents--contact .contact .form-label {
+  width: 30%;
   font-weight: bold;
+  position: relative;
+  display: block;
+  font-size: 1.6rem;
+  font-weight: normal;
 }
-.contents.contents--contact .contact .form-group .required {
-  color: #ff0000;
-  font-size: 12px;
-  margin-left: 8px;
+.contents.contents--contact .contact .form-field {
+  flex: 1;
+  width: 65%;
+}
+.contents.contents--contact .contact .required,
+.contents.contents--contact .contact .optional {
+  font-size: 1.2rem;
+  position: absolute;
+  color: #fff;
+  display: inline-block;
+  top: 0;
+  transform: translateY(30%);
+  right: 0;
+  padding: 0 0.8rem;
+  border-radius: 8px 0 8px 0;
+}
+.contents.contents--contact .contact .required {
+  background: #DC5151;
+}
+.contents.contents--contact .contact .optional {
+  background: #4F88A8;
 }
 .contents.contents--contact .contact .form-control {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
+  padding: 1rem 2.3rem;
+  border: 1px solid #D8E3E5;
   border-radius: 4px;
 }
-.contents.contents--contact .contact textarea.form-control {
-  height: 200px;
+.contents.contents--contact .contact .zip-code-group {
+  display: flex;
+  align-items: center;
+  gap: 4rem; /* 要素間の隙間 */
+  flex-wrap: wrap; /* スマホ表示時の折り返し用 */
+}
+.contents.contents--contact .contact .zip-input-group {
+  display: flex;
+  align-items: center;
+}
+.contents.contents--contact .contact .form-control-zip1 {
+  width: 80px;
+  padding: 1rem 2.3rem;
+  border: 1px solid #D8E3E5;
+  border-radius: 4px;
+}
+.contents.contents--contact .contact .form-control-zip2 {
+  width: 100px;
+  padding: 1rem 2.3rem;
+  border: 1px solid #D8E3E5;
+  border-radius: 4px;
+}
+.contents.contents--contact .contact .address-search-btn {
+  white-space: nowrap;
+  font-size: 1.2rem;
+  background: #4D6569;
+  color: #FEFFF7;
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 1rem 2.4rem;
+  border: none;
 }
 .contents.contents--contact .contact .submit-btn {
   text-align: center;
   margin-top: 40px;
 }
 .contents.contents--contact .contact .submit-btn .btn {
-  background: #000;
-  color: #fff;
-  padding: 15px 60px;
+  width: 38rem;
+  padding: 1.5rem;
+  background: #D5D933;
+  color: #00282E;
   border: none;
   border-radius: 4px;
+  border: none;
   cursor: pointer;
-  transition: opacity 0.3s;
+  font-size: 1.6rem;
+  border-radius: 60px;
+  transition: 0.2s;
+  font-family: "Noto Serif JP", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 .contents.contents--contact .contact .submit-btn .btn:hover {
   opacity: 0.8;
 }
 .contents.contents--contact .contact .wpcf7-not-valid-tip {
-  color: #ff0000;
-  font-size: 12px;
-  margin-top: 5px;
+  font-size: 1.6rem;
+  padding-left: 3rem;
+  position: relative;
+  font-weight: normal;
 }
-.contents.contents--contact .contact .wpcf7-response-output {
-  margin: 30px 0;
-  padding: 15px;
-  border-radius: 4px;
+.contents.contents--contact .contact .wpcf7-not-valid-tip::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 2rem;
+  height: 2rem;
+  background: url(../images/common/error.svg) no-repeat center center;
+  background-size: contain;
+}
+@media screen and (max-width: 768px) {
+  .contents.contents--contact .contact .form-item {
+    flex-direction: column;
+  }
+  .contents.contents--contact .contact .form-label {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
 
 /*--------------------------
