@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('', ['pageId' => 'top']); ?>
 
 <main class="contents contents--top">
   <div class="mv">
