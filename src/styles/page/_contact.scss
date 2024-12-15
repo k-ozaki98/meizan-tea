@@ -22,6 +22,10 @@
         width: 80rem;
     }
 
+    .contact-img {
+        margin-bottom: 4rem;
+    }
+
 	.contact {
     padding: 6rem 0 6.4rem;
 
@@ -177,4 +181,43 @@
         }
     }
 }
+
+    .complete {
+        padding: 4rem 0;
+        border-top: 1px solid dotted;
+        border-bottom: 1px solid dotted;
+        margin-bottom: 4rem;
+
+        &__ttl {
+            font-size: 3.2rem;
+            font-weight: normal;
+            margin-bottom: 3.2rem;
+        }
+
+        &__text {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+        }
+
+        &__tex {
+            font-size: 1.6rem;
+        }
+    }
+
+    .back-btn {
+        width: 38.4rem;
+        margin: 0 auto;
+
+        a {
+            background: #fff;
+            border-radius: 60px;
+            font-size: 1.6rem;
+            color: #00282E;
+            text-align: center;
+            border: 1px solid #D8E3E5;
+            padding: 1.5rem;
+            display: inline-block;
+            width: 100%;
+        }
+    }
 }

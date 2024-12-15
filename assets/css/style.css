@@ -3925,6 +3925,9 @@ sup {
 .contents.contents--contact .contact-inner {
   width: 80rem;
 }
+.contents.contents--contact .contact-img {
+  margin-bottom: 4rem;
+}
 .contents.contents--contact .contact {
   padding: 6rem 0 6.4rem;
   /* 郵便番号入力部分をグループ化 */
@@ -4058,6 +4061,39 @@ sup {
     width: 100%;
     margin-bottom: 10px;
   }
+}
+.contents.contents--contact .complete {
+  padding: 4rem 0;
+  border-top: 1px solid dotted;
+  border-bottom: 1px solid dotted;
+  margin-bottom: 4rem;
+}
+.contents.contents--contact .complete__ttl {
+  font-size: 3.2rem;
+  font-weight: normal;
+  margin-bottom: 3.2rem;
+}
+.contents.contents--contact .complete__text {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+.contents.contents--contact .complete__tex {
+  font-size: 1.6rem;
+}
+.contents.contents--contact .back-btn {
+  width: 38.4rem;
+  margin: 0 auto;
+}
+.contents.contents--contact .back-btn a {
+  background: #fff;
+  border-radius: 60px;
+  font-size: 1.6rem;
+  color: #00282E;
+  text-align: center;
+  border: 1px solid #D8E3E5;
+  padding: 1.5rem;
+  display: inline-block;
+  width: 100%;
 }
 
 /*--------------------------
