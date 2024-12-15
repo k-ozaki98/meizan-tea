@@ -80,6 +80,8 @@ function get_page_id($pageId = '') {
 
 // AjaxZip3を読み込む
 function add_ajaxzip3() {
-    wp_enqueue_script('ajaxzip3', 'https://ajaxzip3.github.io/ajaxzip3.js', array(), null, true);
+    wp_enqueue_script('jquery');
+    wp_enqueue_script('ajaxzip3', 'https://ajaxzip3.github.io/ajaxzip3.js', array('jquery'), null, true);
 }
 add_action('wp_enqueue_scripts', 'add_ajaxzip3');
+
