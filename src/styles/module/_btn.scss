@@ -262,3 +262,48 @@
     /* フェードイン */
   }
 }
+
+.fix-btn {
+  position: fixed;
+  z-index: 999;
+  width: 12rem;
+  height: 12rem;
+  bottom: 4rem;
+  right: 4rem;
+
+  a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+
+    &:hover .wave {
+      top: 0%;
+    }
+  }
+
+  .wave {
+    background-color: $main-color;
+    position: absolute;
+    top: 110%;
+    height: 200%;
+    width: 200%;
+    border-radius: 38%;
+    left: -50%;
+    transform: rotate(360deg);
+    transition: all 5s ease;
+    animation: wave 30s linear infinite;
+  }
+
+  @keyframes wave {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(3600deg);
+    }
+  }
+}

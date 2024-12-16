@@ -1,6 +1,6 @@
 <footer class="footer">
   <div id="js-pagetop" class="pagetop">
-    <a href="/">PAGE TOP</a>
+    <a href="">PAGE TOP</a>
   </div>
   <div class="footer-top">
     <div class="l-inner footer-top__wrap">
@@ -10,12 +10,6 @@
       <div class="footer-top__container">
         <p class="footer-top__heading">おいしい・高品質・安全・安心なお茶を提供しています</p>
         <p class="footer-top__text">弊社では、輸出国での厳重農薬検査のほか、輸入時にも国内検査機関において残農薬検査を行っております。</p>
-      </div>
-      <div class="footer-top__btn">
-        <a href="">
-          <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/footer-btn.svg" alt="">
-
-        </a>
       </div>
     </div>
   </div>

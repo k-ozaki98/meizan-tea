@@ -16,9 +16,10 @@ $pageId = esc_attr(isset($pageId) ? $pageId : '');
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>  data-pageid="<?php echo isset($args['pageId']) ? esc_attr($args['pageId']) : ''; ?>">
-<?php wp_body_open(); ?>
-<header class="header">
+
+<body <?php body_class(); ?> data-pageid="<?php echo isset($args['pageId']) ? esc_attr($args['pageId']) : ''; ?>">
+  <?php wp_body_open(); ?>
+  <header class="header">
     <div class="header__inner l-inner">
       <h1 class="header__logo">
         <a href="/"><img src="<?php echo get_template_directory_uri() ?>/assets/images/common/logo.svg" alt=""></a>
@@ -45,6 +46,14 @@ $pageId = esc_attr(isset($pageId) ? $pageId : '');
         </div>
         </div>
     </div> -->
+
+
+    <div class="fix-btn">
+      <a href="">
+        <div class="wave"></div>
+        <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/footer-btn.svg" alt="">
+      </a>
+    </div>
   </header>
 
   <body>
