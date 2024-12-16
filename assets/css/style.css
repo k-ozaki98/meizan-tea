@@ -3092,6 +3092,7 @@ sup {
 }
 .pagetop a {
   position: relative;
+  color: #00282E;
   font-family: "Advent Pro", sans-serif;
   font-size: 1.6rem;
   font-weight: 600;
@@ -3969,6 +3970,112 @@ sup {
   margin: 30px 0;
   padding: 15px;
   border-radius: 4px;
+}
+
+.contents--about .heading-A {
+  margin: 6.4rem 0;
+}
+.contents--about .about-mv {
+  background: #EAB698;
+  border-radius: 3rem;
+  padding: 4rem 0;
+}
+.contents--about .about-mv__img {
+  text-align: center;
+}
+.contents--about .about-mv__txt {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2.4rem;
+}
+.contents--about .about {
+  padding-top: 6.4rem;
+}
+.contents--about .about__ttl {
+  font-size: 3.2rem;
+  text-align: center;
+}
+.contents--about .about__list {
+  margin-top: 4rem;
+  display: flex;
+  gap: 2.4rem;
+}
+.contents--about .about__list li {
+  background: white;
+  border: 1px solid #F2F4E3;
+  border-radius: 1rem;
+  padding: 4rem;
+}
+.contents--about .about__list-top {
+  text-align: center;
+}
+.contents--about .about__list-ttl {
+  font-size: 2.4rem;
+  padding-top: 0.8rem;
+}
+.contents--about .about__list-body {
+  font-size: 1.6rem;
+  padding-top: 1.6rem;
+}
+.contents--about .about-story__wrap {
+  margin-top: 4rem;
+  display: flex;
+}
+.contents--about .about-story__wrap li {
+  position: relative;
+  width: 33.3333333333%;
+}
+.contents--about .about-story__wrap li img {
+  width: 100%;
+}
+.contents--about .about-story__txt-area {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.contents--about .about-story__ttl {
+  color: #fff;
+  font-size: 2.4rem;
+  text-align: center;
+  padding-bottom: 2.4rem;
+}
+.contents--about .about-story .btn-A {
+  text-align: center;
+}
+.contents--about .chinese {
+  padding: 6.4rem 0;
+}
+.contents--about .chinese__wrap {
+  background: #fff;
+  border: 1px solid #F2F4E3;
+  border-radius: 1rem;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.contents--about .chinese__ttl {
+  display: grid;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #6F4627;
+  font-size: 2.4rem;
+  text-align: center;
+}
+.contents--about .chinese__ttl span {
+  font-size: 1.6rem;
+}
+.contents--about .chinese__txt {
+  font-family: "Noto Sans JP", sans-serif;
+}
+.contents--about .chinese__address {
+  font-family: "Noto Sans JP", sans-serif;
+}
+.contents--about .chinese__address a {
+  text-decoration: underline;
 }
 
 /*--------------------------

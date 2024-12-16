@@ -1,4 +1,7 @@
 <footer class="footer">
+  <div id="js-pagetop" class="pagetop">
+    <a href="/">PAGE TOP</a>
+  </div>
   <div class="footer-top">
     <div class="l-inner footer-top__wrap">
       <div class="footer-top__icon">

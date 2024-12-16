@@ -192,8 +192,5 @@
       </ul>
     </div>
   </section>
-  <div id="js-pagetop" class="pagetop">
-    <a href="/">PAGE TOP</a>
-  </div>
 </main>
 <?php get_footer(); ?>

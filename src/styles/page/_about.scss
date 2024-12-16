@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+@use '../lib/global'as g;
+@use '../lib/vars'as *;
+
+.contents--about {
+
+  .heading-A {
+    margin: 6.4rem 0;
+  }
+
+  .about-mv {
+    background: #EAB698;
+    border-radius: 3rem;
+    padding: 4rem 0;
+
+    &__img {
+      text-align: center;
+    }
+
+    &__txt {
+      font-family: 'Noto Sans JP', sans-serif;
+      color: #fff;
+      font-size: 2.4rem;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 2.4rem;
+    }
+  }
+
+  .about {
+    padding-top: 6.4rem;
+
+    &__ttl {
+      font-size: 3.2rem;
+      text-align: center;
+    }
+
+    &__list {
+      margin-top: 4rem;
+      display: flex;
+      gap: 2.4rem;
+
+      li {
+        background: #ffff;
+        border: 1px solid #F2F4E3;
+        border-radius: 1rem;
+        padding: 4rem;
+      }
+    }
+
+    &__list-top {
+      text-align: center;
+    }
+
+    &__list-ttl {
+      font-size: 2.4rem;
+      padding-top: .8rem;
+    }
+
+    &__list-body {
+      font-size: 1.6rem;
+      padding-top: 1.6rem;
+    }
+  }
+
+  .about-story {
+
+    &__wrap {
+      margin-top: 4rem;
+      display: flex;
+
+      li {
+        position: relative;
+        width: calc(100% / 3);
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    &__txt-area {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+    }
+
+    &__ttl {
+      color: #fff;
+      font-size: 2.4rem;
+      text-align: center;
+      padding-bottom: 2.4rem;
+    }
+
+    .btn-A {
+      text-align: center;
+    }
+  }
+
+  .chinese {
+    padding: 6.4rem 0;
+
+    &__wrap {
+      background: #fff;
+      border: 1px solid #F2F4E3;
+      border-radius: 1rem;
+      padding: 4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+    }
+
+    &__ttl {
+      display: grid;
+      font-family: 'Noto Sans JP', sans-serif;
+      color: #6F4627;
+      font-size: 2.4rem;
+      text-align: center;
+
+      span {
+        font-size: 1.6rem;
+      }
+    }
+
+    &__txt {
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    &__address {
+      font-family: 'Noto Sans JP', sans-serif;
+
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+}
