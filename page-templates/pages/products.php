@@ -1,5 +1,4 @@
-<?php
-get_header(); ?>
+<?php get_header('', ['pageId' => 'products']); ?>
 
 <main class="contents contents--products">
     <div class="products">

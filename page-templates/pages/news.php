@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('', ['pageId' => 'news']); ?>
 <main class="contents contents--news">
     <div class="container l-inner news">
         <h2 class="sec-ttl">

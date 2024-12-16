@@ -1,0 +1,12 @@
+# 無視するビルド成果物
+assets/css/style.css.map
+assets/js/
+dist/
+build/
+
+# Node.jsモジュール
+node_modules/
+
+# その他、不要なファイル
+*.log
+.DS_Store
