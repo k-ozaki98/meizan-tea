@@ -1,10 +1,23 @@
-import { initContact } from './pages/contact';
-import { initTop } from './pages/top'
-import { renderReactApp } from './react';
+import {
+  initContact
+} from './pages/contact';
+import {
+  initTop
+} from './pages/top'
+import {
+  initCommon
+} from './common'
+import {
+  renderReactApp
+} from './react';
 import TopApp from "./react/TopApp";
 
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import {
+  gsap
+} from 'gsap'
+import {
+  ScrollTrigger
+} from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -15,13 +28,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // renderReactApp('js-react-app', TopApp)
   }
 
+
   const isContact = pageId === 'contact';
   if (isContact) {
     initContact();
   }
 
   const navItems = document.querySelectorAll('.header__nav-item');
-  
+
   if (!pageId || !navItems.length) return;
 
   navItems.forEach(item => {
@@ -30,4 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
       item.classList.add('is-active');
     }
   })
+
+  initCommon()
 })
