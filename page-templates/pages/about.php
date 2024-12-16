@@ -1,4 +1,5 @@
-<?php get_header(); ?>
+<?php get_header('', ['pageId' => 'about']); ?>
+
 <main class="contents contents--about">
   <div class="l-inner">
     <h2 class="heading-A"><span>ABOUT</span>私たちのこと</h2>
