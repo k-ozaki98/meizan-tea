@@ -21,24 +21,24 @@
 .contents.contents--top {
 	.about {
 		padding: 6rem 0;
-	
+
 		&__txt {
 			color: $main-color;
 			font-size: 1.6rem;
 			text-align: center;
 		}
-	
+
 		.btn-A {
 			text-align: center;
 			margin-top: 2.5rem;
 		}
-	
+
 		&__img {
 			text-align: center;
 			padding: 2.4rem 0 4rem;
 		}
 	}
-	
+
 	.strength {
 		&__card {
 			li {
@@ -50,24 +50,24 @@
 				border-radius: 3rem;
 				padding: 6.4rem;
 				margin-top: 2.4rem;
-	
+
 				@include g.max-screen(g.$bp-sp) {
 					display: block;
 					padding: 4rem 2.4rem;
 				}
 			}
 		}
-	
+
 		&__txt-area {
 			color: #fff;
 			width: 50%;
 			flex-shrink: 0;
-	
+
 			@include g.max-screen(g.$bp-sp) {
 				width: 100%;
 			}
 		}
-	
+
 		&__num {
 			display: inline-block;
 			font-family: "Advent Pro", sans-serif;
@@ -78,31 +78,31 @@
 			border-radius: 5rem;
 			padding: 0 1.5rem;
 		}
-	
+
 		&__ttl {
 			font-size: 4rem;
 			margin: 1rem 0;
-	
+
 			@include g.max-screen(g.$bp-sp) {
 				font-size: 3.2rem;
 			}
 		}
-	
+
 		&__txt {
 			font-size: 1.6rem;
 		}
-	
+
 		.btn-A {
 			text-align: left;
 			margin-top: 4.3rem;
 		}
 	}
-	
+
 	.tea {
 		position: relative;
 		background: linear-gradient(180deg, rgba(255, 255, 247, 1) 0%, rgba(255, 255, 255, 1) 100%);
 		padding-bottom: 1rem;
-	
+
 		&::before {
 			position: absolute;
 			content: "";
@@ -114,7 +114,7 @@
 			left: 0;
 			z-index: 0;
 		}
-	
+
 		&::after {
 			position: absolute;
 			content: "";
@@ -125,47 +125,83 @@
 			bottom: -6.4rem;
 			left: 0;
 		}
-	
+
 		.heading-A {
 			position: relative;
 			z-index: 1;
 		}
-	
+
 		&__txt {
 			font-size: 1.6rem;
 			text-align: center;
 			padding-top: 2.4rem;
 		}
-	
+
 		&__list {
 			display: flex;
 			flex-wrap: wrap;
 			gap: 4rem;
 			margin: 4rem 0;
-	
+
 			@include g.max-screen(g.$bp-sp) {
 				gap: 2.4rem;
 				justify-content: center;
 			}
-	
+
 			li {
+				width: 29rem;
+				height: 29rem;
+
 				@include g.max-screen(g.$bp-sp) {
 					width: calc(100% / 2 - 24px);
 				}
+
 			}
-	
+
 			a {
 				position: relative;
+				display: block;
+				width: 100%;
+				height: 100%;
+				border-radius: 50%;
+				overflow: hidden;
+
+				&:hover .wave {
+					top: 0%;
+				}
 			}
 		}
-	
+
+		.wave {
+			background-color: $main-color;
+			position: absolute;
+			top: 110%;
+			height: 200%;
+			width: 200%;
+			border-radius: 38%;
+			left: -50%;
+			transform: rotate(360deg);
+			transition: all 5s ease;
+			animation: wave 30s linear infinite;
+		}
+
+		@keyframes wave {
+			0% {
+				transform: rotate(0deg);
+			}
+
+			100% {
+				transform: rotate(3600deg);
+			}
+		}
+
 		&__ttl-wrap {
 			position: absolute;
 			transform: translate(-50%, -50%);
 			top: 50%;
 			left: 50%;
 		}
-	
+
 		&__ttl {
 			color: #fff;
 			font-size: 2.8rem;
@@ -175,23 +211,23 @@
 			-webkit-text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
 			-ms-text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
 			text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
-	
+
 			@include g.max-screen(g.$bp-sp) {
 				font-size: 2.4rem;
 			}
 		}
-	
+
 		.btn-A {
 			text-align: center;
 		}
 	}
-	
+
 	.news {
 		background: url("../images/top/news-bg.jpg")no-repeat;
 		background-size: cover;
 		background-position: 50%;
 		padding: 12.4rem 0 6.4rem;
-	
+
 		&__container {
 			display: flex;
 			background-color: #FFFFFF;
@@ -199,53 +235,53 @@
 			width: 90%;
 			padding: 6.4rem;
 			margin: 0 0 0 auto;
-	
+
 			@include g.max-screen(g.$bp-sp) {
 				display: block;
 				padding: 4rem 2.4rem;
 			}
 		}
-	
+
 		&__list {
 			width: 60%;
-	
+
 			@include g.max-screen(g.$bp-sp) {
 				width: 100%;
 			}
-	
+
 			li {
 				padding: 2.4rem 0;
 				border-bottom: 1px dashed #D8E3E5;
-	
+
 				&:first-of-type {
 					border-top: 1px dashed #D8E3E5;
 				}
-	
+
 				a {
 					display: block;
 				}
 			}
 		}
-	
+
 		&__ttl-area {
 			width: 40%;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
-	
+
 			@include g.max-screen(g.$bp-sp) {
 				width: 100%;
 			}
 		}
-	
+
 		.heading-A {
 			text-align: left;
-	
+
 			@include g.max-screen(g.$bp-sp) {
 				text-align: center;
 			}
 		}
-	
+
 		&__date-area {
 			display: flex;
 			align-items: center;
@@ -253,22 +289,22 @@
 			font-size: 1.6rem;
 			padding-bottom: 1rem;
 		}
-	
+
 		&__cate {
 			color: #fff;
 			background-color: #4D6569;
 			border-radius: 1.6rem 0 1.6rem 0;
 			padding: 0 1.5rem;
 		}
-	
+
 		&__ttl {
 			font-size: 1.6rem;
 			transition: .25s all;
-	
+
 			&:hover {
 				color: #D5D933;
 			}
 		}
 	}
-	
+
 }

@@ -93,6 +93,7 @@
       <ul class="tea__list">
         <li>
           <a href="">
+            <div class="wave"></div>
             <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/tea-img01.png" alt="">
             <div class="tea__ttl-wrap">
               <p class="tea__ttl">中国茶</p>
@@ -101,6 +102,7 @@
         </li>
         <li>
           <a href="">
+            <div class="wave"></div>
             <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/tea-img02.png" alt="">
             <div class="tea__ttl-wrap">
               <p class="tea__ttl">台湾茶</p>
@@ -109,6 +111,7 @@
         </li>
         <li>
           <a href="">
+            <div class="wave"></div>
             <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/tea-img03.png" alt="">
             <div class="tea__ttl-wrap">
               <p class="tea__ttl">紅　茶</p>
@@ -117,6 +120,7 @@
         </li>
         <li>
           <a href="">
+            <div class="wave"></div>
             <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/tea-img04.png" alt="">
             <div class="tea__ttl-wrap">
               <p class="tea__ttl">ハーブ類・<br>オリジナル</p>
@@ -125,6 +129,7 @@
         </li>
         <li>
           <a href="">
+            <div class="wave"></div>
             <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/tea-img05.png" alt="">
             <div class="tea__ttl-wrap">
               <p class="tea__ttl">日本茶</p>
@@ -133,6 +138,7 @@
         </li>
         <li>
           <a href="">
+            <div class="wave"></div>
             <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/tea-img06.png" alt="">
             <div class="tea__ttl-wrap">
               <p class="tea__ttl">茶外茶</p>
