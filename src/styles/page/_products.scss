@@ -201,12 +201,32 @@
 		&__item {
 			background: #fff;
 			padding: 4rem;
+			border: 1px solid #F2F4E3;
+			border-radius: 32px;
 
 		}
 
 		&__icon {
 			width: 8rem;
 			height: 8rem;
+		}
+
+		&__tag {
+			color: #FEFFF7;
+			font-size: 1.4rem;
+			background: #4D6569;
+			padding: 0.6rem 1.6rem;
+			border-radius: 12px 0 12px 0;
+			display: inline-block;
+			margin-bottom: 0.8rem;
+			line-height: 1;
+		}
+
+		&__recipe {
+			display: block;
+			color: #4D6569;
+			font-size: 1.6rem;
+			margin-bottom: 1.6rem;
 		}
 
 		&__head {
@@ -247,6 +267,34 @@
 
 		&__body {
 			font-size: 1.6rem;
+			margin-bottom: 1.6rem;
+		}
+	}
+
+	.various-tea {
+		border-top: 1px solid #F2F4E3;
+		padding-top: 4rem;
+		margin-top: 6.4rem;
+
+		&__ttl {
+			text-align: center;
+			font-size: 2.4rem;
+			margin-bottom: 4rem;
+			font-weight: normal;
+		}
+
+		&__list {
+			display: flex;
+			gap: 3.2rem;
+			justify-content: space-between;
+		}
+
+		&__item {
+			width: calc((100% - 16rem) * 1 / 6);
+
+			&.is-active {
+				opacity: 0.6;
+			}
 		}
 	}
 }

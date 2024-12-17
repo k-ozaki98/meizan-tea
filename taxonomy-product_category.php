@@ -4,6 +4,11 @@
 // 現在のタクソノミー情報を取得
 $current_term = get_queried_object();
 $term_title_en = get_field('category_title_en', $current_term);
+$categories = get_terms(array(
+    'taxonomy' => 'product_category',
+    'hide_empty' => false,
+    'parent' => 0,
+));
 ?>
 
 <main class="contents contents--products">
@@ -53,6 +58,26 @@ $term_title_en = get_field('category_title_en', $current_term);
                     <p>商品が見つかりませんでした。</p>
                 <?php endif; 
             } ?>
+
+            <section class="various-tea">
+                <h3 class="various-tea__ttl">その他のおすすめ茶種</h3>
+
+                <?php if ($categories) : ?>
+                    <ul class="various-tea__list">
+                        <?php foreach ($categories as $category) :
+                            $category_image = get_field('category_image', $category);
+                            $category_link = get_term_link($category);
+                            $is_current = $category->term_id === $current_term->term_id;
+                        ?>
+                        <li class="various-tea__item <?php echo $is_current ? 'is-active' : ''; ?>">
+                            <a href="<?php echo esc_url($category_link); ?>">
+                                <img src="<?php echo esc_url($category_image); ?>" alt="<?php echo esc_attr($category->name); ?>">
+                            </a>
+                        </li>
+                        <?php endforeach; ?>
+                    </ul>
+                <?php endif; ?>
+            </section>
         </div>
     </div>
 </main>

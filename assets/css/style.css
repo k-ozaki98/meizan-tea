@@ -3185,6 +3185,32 @@ sup {
   opacity: 0.8;
 }
 
+.btn-D a {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #D8E3E5;
+  font-family: "Advent Pro", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+  padding: 2.2rem 2.4rem;
+  line-height: 1.2;
+  font-size: 1.6rem;
+  border-radius: 60px;
+}
+.btn-D a::after {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 2.4rem;
+  transform: translateY(-50%);
+  background: url(../images/common/footer-arrow.svg) no-repeat center center;
+  background-size: contain;
+}
+
 .hmb-btn {
   position: relative;
   cursor: pointer;
@@ -4206,10 +4232,28 @@ sup {
 .contents.contents--products .child-category-list__item {
   background: #fff;
   padding: 4rem;
+  border: 1px solid #F2F4E3;
+  border-radius: 32px;
 }
 .contents.contents--products .child-category-list__icon {
   width: 8rem;
   height: 8rem;
+}
+.contents.contents--products .child-category-list__tag {
+  color: #FEFFF7;
+  font-size: 1.4rem;
+  background: #4D6569;
+  padding: 0.6rem 1.6rem;
+  border-radius: 12px 0 12px 0;
+  display: inline-block;
+  margin-bottom: 0.8rem;
+  line-height: 1;
+}
+.contents.contents--products .child-category-list__recipe {
+  display: block;
+  color: #4D6569;
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
 }
 .contents.contents--products .child-category-list__head {
   display: flex;
@@ -4240,6 +4284,29 @@ sup {
 }
 .contents.contents--products .child-category-list__body {
   font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+.contents.contents--products .various-tea {
+  border-top: 1px solid #F2F4E3;
+  padding-top: 4rem;
+  margin-top: 6.4rem;
+}
+.contents.contents--products .various-tea__ttl {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 4rem;
+  font-weight: normal;
+}
+.contents.contents--products .various-tea__list {
+  display: flex;
+  gap: 3.2rem;
+  justify-content: space-between;
+}
+.contents.contents--products .various-tea__item {
+  width: calc((100% - 16rem) * 1 / 6);
+}
+.contents.contents--products .various-tea__item.is-active {
+  opacity: 0.6;
 }
 
 /*----------------------------------------------------

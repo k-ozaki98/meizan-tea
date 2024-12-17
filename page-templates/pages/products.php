@@ -1,9 +1,5 @@
 <?php get_header('', ['pageId' => 'products']); ?>
 
-<?php
-
-?>
-
 <main class="contents contents--products">
     <section class="products">
         <div class="l-inner">
