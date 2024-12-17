@@ -3368,8 +3368,14 @@ sup {
 .fix-btn a:hover .wave {
   top: 0%;
 }
+.fix-btn__txt {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
 .fix-btn .wave {
-  background-color: #00282E;
+  background-color: #D5D933;
   position: absolute;
   top: 110%;
   height: 200%;

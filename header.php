@@ -52,6 +52,9 @@ $pageId = esc_attr(isset($pageId) ? $pageId : '');
       <a href="">
         <div class="wave"></div>
         <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/footer-btn.svg" alt="">
+        <div class="fix-btn__txt">
+          <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/footer-btn-txt.svg" alt="">
+        </div>
       </a>
     </div>
   </header>
