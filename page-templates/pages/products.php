@@ -1,7 +1,11 @@
 <?php get_header('', ['pageId' => 'products']); ?>
 
+<?php
+
+?>
+
 <main class="contents contents--products">
-    <div class="products">
+    <section class="products">
         <div class="l-inner">
             <h2 class="sec-ttl">
                 <span class="sec-ttl__en">TEA</span>
@@ -42,10 +46,47 @@
                 <p>カテゴリーが見つかりませんでした。</p>
             <?php endif; ?>
 
-            
+            <section class="product-guide">
+                <h3 class="product-guide__heading">取り扱い商品のご案内</h3>
+                <div class="product-guide__wrap">
+                    <p class="product-guide__ttl">お茶全般</p>
+                    <ul class="product-guide__list">
+                        <li class="product-guide__item">中国茶</li>
+                        <li class="product-guide__item">台湾茶</li>
+                        <li class="product-guide__item">紅茶（インド・セイロン他）</li>
+                        <li class="product-guide__item">ハーブティー</li>
+                        <li class="product-guide__item">フレーバーティー</li>
+                        <li class="product-guide__item">アレンジティー</li>
+                        <li class="product-guide__item">ヘルスティー</li>
+                        <li class="product-guide__item">日本茶</li>
+                        <li class="product-guide__item">業務用ティーバック</li>
+                        <li class="product-guide__item">ギフトセット</li>
+                        <li class="product-guide__item">レジサイドパッケージ</li>
+                        <li class="product-guide__item">その他のパッケージ加工</li>
+                    </ul>
+                </div>
+                <div class="product-guide__wrap">
+                    <p class="product-guide__ttl">茶器類</p>
+                    <div class="product-guide__item">各国のバラエティー豊かな茶器類を取り揃えております。</div>
+                </div>
+            </section>
+
+            <section class="product-contact">
+                <h3 class="product-contact__ttl">
+                    まずはお気軽にお問い合わせください
+                </h3>
+                <ul class="u-ul-style u-ul-style--disc">
+                    <li>カフェ、レストラン、ホテル、茶葉専門店などのメニューのご相談をお受けします。</li>
+                    <li>企業や学校での中国茶・紅茶の研修や講座の企画、出張をいたします。</li>
+                    <li>お客さまのニーズに合わせてオリジナルブレンドをご用意します。</li>
+                </ul>
+                <div class="btn-C">
+                    <a href="/contact">お問い合わせはこちら</a>
+                </div>
+            </section>
             
         </div>
-    </div>
+    </section>
 </main>
 
 <?php get_footer(); ?>

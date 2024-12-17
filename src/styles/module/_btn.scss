@@ -32,6 +32,32 @@
   }
 }
 
+.btn-C {
+    width: 38rem;
+    padding: 1.5rem;
+    background: #D5D933;
+    color: #00282E;
+    border: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.6rem;
+    border-radius: 60px;
+    transition: 0.2s;
+    font-family: "Noto Serif JP", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    text-align: center;
+    margin: 0 auto;
+
+    @include g.max-screen(g.$bp-sp) {
+      width: 100%;
+      fz
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+}
+
 .hmb-btn {
   position: relative;
   cursor: pointer;
