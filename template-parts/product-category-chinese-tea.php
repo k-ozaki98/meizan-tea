@@ -9,6 +9,11 @@ $child_terms = get_terms([
 ]);
 
 if (!empty($child_terms)) : ?>
+    <p class="child-chinese-text">
+    中国と台湾で生産されるお茶の種類は1000~2000種類と言われています。<br>
+    製造過程の発酵度合いや、お茶を淹れた時の水色によって六分類されます。<br>
+    更に、花茶・工芸茶・茶外茶が三分類されます。
+    </p>
     <ul class="child-category-list">
         <?php foreach ($child_terms as $child) : 
             $category_tag = get_field('category_tag', $child);

@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('', ['pageId' => 'product']); ?>
 
 <?php
 // 現在のタクソノミー情報を取得
@@ -57,7 +57,15 @@ $categories = get_terms(array(
                 <?php else : ?>
                     <p>商品が見つかりませんでした。</p>
                 <?php endif; 
-            } ?>
+            }
+            
+            switch($current_term->slug) {
+                case 'black-tea':
+                    get_template_part('template-parts/black-tea');
+                    break;
+            }
+            
+            ?>
 
             <section class="various-tea">
                 <h3 class="various-tea__ttl">その他のおすすめ茶種</h3>
@@ -67,7 +75,8 @@ $categories = get_terms(array(
                         <?php foreach ($categories as $category) :
                             $category_image = get_field('category_image', $category);
                             $category_link = get_term_link($category);
-                            $is_current = $category->term_id === $current_term->term_id;
+                            $is_current = ($category->term_id === $current_term->term_id) || 
+                                          ($current_term->parent && $category->term_id === $current_term->parent);
                         ?>
                         <li class="various-tea__item <?php echo $is_current ? 'is-active' : ''; ?>">
                             <a href="<?php echo esc_url($category_link); ?>">

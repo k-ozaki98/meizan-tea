@@ -25,5 +25,9 @@
 
   &__ja {
     font-size: 4.8rem;
+
+    @include g.max-screen(g.$bp-sp) {
+      font-size: 3.6rem;
+    }
   }
 }

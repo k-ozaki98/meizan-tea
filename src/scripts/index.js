@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   navItems.forEach(item => {
     const navId = item.getAttribute('data-nav-id');
-    if (navId === pageId) {
+    if (navId === pageId || (pageId === 'product' && navId === 'products')) {
       item.classList.add('is-active');
     }
   })
