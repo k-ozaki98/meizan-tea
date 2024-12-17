@@ -26,6 +26,10 @@
 			color: $main-color;
 			font-size: 1.6rem;
 			text-align: center;
+
+			@include g.max-screen(g.$bp-sp) {
+				padding-top: 1.6rem;
+			}
 		}
 
 		.btn-A {
@@ -90,11 +94,19 @@
 
 		&__txt {
 			font-size: 1.6rem;
+
+			@include g.max-screen(g.$bp-sp) {
+				padding-bottom: 2rem;
+			}
 		}
 
 		.btn-A {
 			text-align: left;
 			margin-top: 4.3rem;
+
+			@include g.max-screen(g.$bp-sp) {
+				text-align: center;
+			}
 		}
 	}
 
@@ -153,7 +165,8 @@
 				height: 29rem;
 
 				@include g.max-screen(g.$bp-sp) {
-					width: calc(100% / 2 - 24px);
+					width: 15rem;
+					height: 15rem;
 				}
 
 			}
@@ -247,6 +260,7 @@
 
 			@include g.max-screen(g.$bp-sp) {
 				width: 100%;
+				margin: 4rem 0;
 			}
 
 			li {
@@ -303,6 +317,12 @@
 
 			&:hover {
 				color: #D5D933;
+			}
+		}
+
+		.btn-A {
+			@include g.max-screen(g.$bp-sp) {
+				text-align: center;
 			}
 		}
 	}

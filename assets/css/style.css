@@ -2767,6 +2767,11 @@ sup {
 .header__logo {
   width: 10rem;
 }
+@media screen and (max-width: 767px) {
+  .header__logo {
+    padding-left: 2.4rem;
+  }
+}
 .header__nav {
   display: flex;
   align-items: center;
@@ -2822,8 +2827,19 @@ sup {
   padding: 2.8rem 0;
   position: relative;
 }
+@media screen and (max-width: 767px) {
+  .footer-top__wrap {
+    display: block;
+    padding: 4rem 2.4rem 2.4rem 2.4rem;
+  }
+}
 .footer-top__icon {
   width: 5.7rem;
+}
+@media screen and (max-width: 767px) {
+  .footer-top__icon {
+    margin: 0 auto 1.6rem;
+  }
 }
 .footer-top__container {
   color: #FEFFF7;
@@ -2848,10 +2864,20 @@ sup {
   background: #00282E;
   padding: 8rem 0;
 }
+@media screen and (max-width: 767px) {
+  .footer-menu {
+    padding: 4rem 0;
+  }
+}
 .footer-menu__wrap {
   display: flex;
   justify-content: space-between;
   gap: 8rem;
+}
+@media screen and (max-width: 767px) {
+  .footer-menu__wrap {
+    display: block;
+  }
 }
 .footer-menu__list {
   display: flex;
@@ -2859,11 +2885,22 @@ sup {
   gap: 2.4rem;
   width: 56rem;
 }
+@media screen and (max-width: 767px) {
+  .footer-menu__list {
+    display: block;
+    width: 100%;
+  }
+}
 .footer-menu__list li {
   width: calc((100% - 2.4rem) / 2);
   font-size: 1.4rem;
   line-height: 1.3;
   margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 767px) {
+  .footer-menu__list li {
+    width: 100%;
+  }
 }
 .footer-menu__list li:first-of-type {
   width: 100%;
@@ -2890,31 +2927,70 @@ sup {
   flex-direction: column;
   gap: 2.4rem;
 }
+@media screen and (max-width: 767px) {
+  .footer-menu__bnr {
+    margin-top: 4rem;
+  }
+}
 .footer-menu__bnr li {
   width: 36rem;
+}
+@media screen and (max-width: 767px) {
+  .footer-menu__bnr li {
+    width: 100%;
+  }
+}
+.footer-menu__bnr a {
+  transition: 0.25s all;
+}
+.footer-menu__bnr a:hover {
+  opacity: 0.7;
 }
 
 .footer-detail {
   padding: 8rem 0;
   background: #03333A;
 }
+@media screen and (max-width: 767px) {
+  .footer-detail {
+    padding: 4rem 0;
+  }
+}
 .footer-detail__inner {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 767px) {
+  .footer-detail__inner {
+    display: block;
+  }
+}
 .footer-detail__wrap {
   width: 51.6rem;
+}
+@media screen and (max-width: 767px) {
+  .footer-detail__wrap {
+    width: 100%;
+  }
 }
 .footer-detail__wrap dl {
   display: flex;
   flex-direction: column;
+  margin: 1.3rem 0;
+  font-size: 1.2rem;
 }
 .footer-detail__wrap dt {
   font-weight: bold;
-  font-size: 1.2rem;
 }
 .footer-detail__map {
   width: 42rem;
+}
+@media screen and (max-width: 767px) {
+  .footer-detail__map {
+    width: 100%;
+    height: 32.7rem;
+    margin-top: 4rem;
+  }
 }
 .footer-detail__map iframe {
   width: 100%;
@@ -2928,6 +3004,27 @@ sup {
   margin-bottom: 2.4rem;
   border-bottom: 1px dotted #4D6569;
 }
+.footer-detail .google-link {
+  position: relative;
+  font-family: "Jost", sans-serif;
+  font-size: 1.4rem;
+  padding-right: 2rem;
+}
+.footer-detail .google-link::after {
+  position: absolute;
+  content: "";
+  background: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2213%22%20height%3D%2214%22%20viewBox%3D%220%200%2013%2014%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M5.05556%202.66667V4.11111H1.44444V12.0556H9.38889V8.44444H10.8333V12.7778C10.8333%2012.9693%2010.7572%2013.153%2010.6218%2013.2885C10.4864%2013.4239%2010.3027%2013.5%2010.1111%2013.5H0.722222C0.530677%2013.5%200.346977%2013.4239%200.211534%2013.2885C0.076091%2013.153%200%2012.9693%200%2012.7778V3.38889C0%203.19734%200.076091%203.01364%200.211534%202.8782C0.346977%202.74276%200.530677%202.66667%200.722222%202.66667H5.05556ZM13%200.5V6.27778H11.5556V2.96494L5.92728%208.59394L4.90606%207.57272L10.5336%201.94444H7.22222V0.5H13Z%22%20fill%3D%22white%22%2F%3E%3C%2Fsvg%3E") no-repeat center;
+  background-size: contain;
+  width: 1.3rem;
+  height: 1.3rem;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 0;
+}
+.footer-detail__tel {
+  font-size: 1.2rem;
+  margin-top: 1.3rem;
+}
 
 .footer-bottom {
   background: #00282E;
@@ -2938,8 +3035,19 @@ sup {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .footer-bottom__wrap {
+    display: block;
+    text-align: center;
+  }
+}
 .footer-bottom__logo {
   width: 8.5rem;
+}
+@media screen and (max-width: 767px) {
+  .footer-bottom__logo {
+    margin: 0 auto 2.4rem;
+  }
 }
 .footer-bottom__copy {
   font-size: 1.1rem;
@@ -2957,6 +3065,16 @@ sup {
   top: 60%;
   left: 50%;
   z-index: 2;
+}
+@media screen and (max-width: 767px) {
+  .mv__wrap {
+    top: 50%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mv__logo {
+    width: 12rem;
+  }
 }
 .mv__ttl {
   color: #FEFFF7;
@@ -3006,6 +3124,7 @@ sup {
 @media screen and (max-width: 767px) {
   .heading-A {
     font-size: 3.6rem;
+    line-height: 1.3;
   }
 }
 .heading-A span {
@@ -3494,6 +3613,11 @@ sup {
   font-size: 1.6rem;
   text-align: center;
 }
+@media screen and (max-width: 767px) {
+  .contents.contents--top .about__txt {
+    padding-top: 1.6rem;
+  }
+}
 .contents.contents--top .about .btn-A {
   text-align: center;
   margin-top: 2.5rem;
@@ -3550,9 +3674,19 @@ sup {
 .contents.contents--top .strength__txt {
   font-size: 1.6rem;
 }
+@media screen and (max-width: 767px) {
+  .contents.contents--top .strength__txt {
+    padding-bottom: 2rem;
+  }
+}
 .contents.contents--top .strength .btn-A {
   text-align: left;
   margin-top: 4.3rem;
+}
+@media screen and (max-width: 767px) {
+  .contents.contents--top .strength .btn-A {
+    text-align: center;
+  }
 }
 .contents.contents--top .tea {
   position: relative;
@@ -3607,7 +3741,8 @@ sup {
 }
 @media screen and (max-width: 767px) {
   .contents.contents--top .tea__list li {
-    width: calc(50% - 24px);
+    width: 15rem;
+    height: 15rem;
   }
 }
 .contents.contents--top .tea__list a {
@@ -3691,6 +3826,7 @@ sup {
 @media screen and (max-width: 767px) {
   .contents.contents--top .news__list {
     width: 100%;
+    margin: 4rem 0;
   }
 }
 .contents.contents--top .news__list li {
@@ -3741,6 +3877,11 @@ sup {
 }
 .contents.contents--top .news__ttl:hover {
   color: #D5D933;
+}
+@media screen and (max-width: 767px) {
+  .contents.contents--top .news .btn-A {
+    text-align: center;
+  }
 }
 
 /*----------------------------------------------------
