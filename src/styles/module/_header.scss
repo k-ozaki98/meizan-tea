@@ -3,11 +3,9 @@
 @use '../lib/global'as g;
 
 .header {
-  // 削除してください
-  background: #00282E;
-  // 削除してください
+  background-color: #00282E;
   color: #FEFFF7;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 999;
   width: 100%;
@@ -62,6 +60,7 @@
 }
 
 .header--clone {
+  background: #00282E;
   position: fixed;
   top: 0;
   left: 0;
