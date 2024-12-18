@@ -8,6 +8,9 @@ import {
   initCommon
 } from './common'
 import {
+  initCloneHeader
+} from './modules/header-clone'
+import {
   renderReactApp
 } from './react';
 import TopApp from "./react/TopApp";
@@ -23,9 +26,11 @@ gsap.registerPlugin(ScrollTrigger)
 document.addEventListener('DOMContentLoaded', () => {
   const pageId = document.querySelector('body').getAttribute('data-pageid')
   const isTop = pageId === 'top';
+  const headerTop = document.getElementById('#header');
   if (isTop) {
     initTop() // トップページ用スクリプト
     // renderReactApp('js-react-app', TopApp)
+    initCloneHeader()
   }
 
 
@@ -45,5 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   })
 
-  initCommon()
+  initCommon();
+
 })

@@ -2751,9 +2751,9 @@ sup {
 	module
 --------------------------*/
 .header {
-  background: #00282E;
+  background-color: #00282E;
   color: #FEFFF7;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 999;
   width: 100%;
@@ -2800,6 +2800,7 @@ sup {
 }
 
 .header--clone {
+  background: #00282E;
   position: fixed;
   top: 0;
   left: 0;
@@ -3056,6 +3057,9 @@ sup {
 .mv {
   position: relative;
 }
+.mv img {
+  width: 100%;
+}
 .mv__wrap {
   position: absolute;
   display: flex;
@@ -3098,7 +3102,7 @@ sup {
 }
 
 .menu-sp {
-  background: #333;
+  background: #00282E;
   position: fixed;
   top: 0;
   left: 0;
@@ -3108,10 +3112,47 @@ sup {
   opacity: 0;
   pointer-events: none;
   transition: 0.25s;
+  padding: 2.4rem;
+  overflow: scroll;
 }
 .menu-sp.open {
   opacity: 1;
   pointer-events: auto;
+}
+.menu-sp__nav {
+  margin-top: 7rem;
+}
+.menu-sp__nav-item a {
+  position: relative;
+  display: grid;
+  font-size: 1.6rem;
+  color: #fff;
+  padding: 1.6rem 0;
+  border-bottom: 1px dotted #4D6569;
+}
+.menu-sp__nav-item a::after {
+  position: absolute;
+  content: "";
+  background: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%2014%2014%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M10.6283%207.67699L0.0439879%207.67699L0.043988%205.93786L10.6283%205.93786L5.96399%201.27351L7.19355%200.043945L13.957%206.80742L7.19355%2013.5709L5.96399%2012.3413L10.6283%207.67699Z%22%20fill%3D%22%23D5D933%22%2F%3E%3C%2Fsvg%3E") no-repeat center;
+  background-size: contain;
+  width: 1.6rem;
+  height: 1.6rem;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 0;
+}
+.menu-sp__nav-item a span {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 1.2rem;
+}
+.menu-sp__bnr {
+  margin-top: 4rem;
+}
+.menu-sp__bnr li {
+  margin: 2.4rem 0;
+}
+.menu-sp__bnr li img {
+  width: 100%;
 }
 
 .heading-A {
@@ -3629,6 +3670,10 @@ sup {
 /*--------------------------
 	page
 --------------------------*/
+.contents {
+  padding: 8.5rem 0 0;
+}
+
 .sec-ttl {
   display: flex;
   flex-direction: column;
@@ -3668,6 +3713,17 @@ sup {
 	※CSSに展開した場合
 
 ----------------------------------------------------*/
+body.home .header {
+  background-color: transparent;
+}
+
+body.home .header--clone {
+  background-color: #00282E;
+}
+
+.contents.contents--top {
+  padding: 0;
+}
 .contents.contents--top .about {
   padding: 6rem 0;
 }
