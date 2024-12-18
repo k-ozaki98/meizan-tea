@@ -22,11 +22,18 @@ $categories = get_terms(array(
             <?php
             $current_term = get_queried_object();
             global $current_term;
-            // 中国茶の場合、専用テンプレートを読み込む
+
+            // トップコンテンツ
+            switch($current_term->slug) {
+                case 'original':
+                    get_template_part('template-parts/original-top');
+                    break;
+            }
+
+            // メインコンテンツ
             if ($current_term->slug === 'chinese-tea') {
-                get_template_part('template-parts/product-category-chinese-tea'); // 別ファイルを読み込む
+                get_template_part('template-parts/product-category-chinese-tea');
             } else {
-                // 他のカテゴリ用処理
                 if (have_posts()) : ?>
                     <ul class="product-list">
                         <?php while (have_posts()) : the_post(); ?>
@@ -59,9 +66,19 @@ $categories = get_terms(array(
                 <?php endif; 
             }
             
+            // ボトムコンテンツ
             switch($current_term->slug) {
                 case 'black-tea':
                     get_template_part('template-parts/black-tea');
+                    break;
+                case 'japanese-tea':
+                    get_template_part('template-parts/japanese-tea');
+                    break;
+                case 'other-tea':
+                    get_template_part('template-parts/other-tea');
+                    break;
+                case 'original':
+                    get_template_part('template-parts/original-bottom');
                     break;
             }
             
