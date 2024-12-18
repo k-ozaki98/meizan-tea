@@ -3271,6 +3271,7 @@ sup {
   background-color: #FFFFFF;
   text-align: center;
   padding: 4rem 0;
+  cursor: pointer;
 }
 .pagetop a {
   position: relative;

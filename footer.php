@@ -16,12 +16,12 @@
   <div class="footer-menu">
     <div class="l-inner footer-menu__wrap">
       <ul class="footer-menu__list">
-        <li><a href="">トップページ</a></li>
-        <li><a href="">私たちのこと</a></li>
-        <li><a href="">取扱商品</a></li>
-        <li><a href="">新着情報</a></li>
-        <li><a href="">会社案内</a></li>
-        <li><a href="">お問い合わせ</a></li>
+        <li><a href="/">トップページ</a></li>
+        <li><a href="/about/">私たちのこと</a></li>
+        <li><a href="/products/">取扱商品</a></li>
+        <li><a href="/news/">新着情報</a></li>
+        <li><a href="/company/">会社案内</a></li>
+        <li><a href="/contact/">お問い合わせ</a></li>
       </ul>
       <ul class="footer-menu__bnr">
         <li>
@@ -62,7 +62,7 @@
       <div class="footer-bottom__logo">
         <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/footer-logo.svg" alt="明山 MEIZAN TEA">
       </div>
-      <p class="footer-bottom__copy">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
+      <p class="footer-bottom__copy">Copyright © Meizan Tea Corporation.All Rights Reserved.</p>
     </div>
   </div>
 
