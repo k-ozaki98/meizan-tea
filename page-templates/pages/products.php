@@ -14,7 +14,7 @@
             // product_categoryタクソノミーからカテゴリーを取得
             $categories = get_terms(array(
                 'taxonomy' => 'product_category',
-                'orderby' => 'name', // カテゴリ名でソート
+                'orderby' => 'term_order', 
                 'hide_empty' => false, // 空のカテゴリーも取得
                 'parent' => 0,
             ));

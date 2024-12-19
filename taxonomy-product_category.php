@@ -6,6 +6,7 @@ $current_term = get_queried_object();
 $term_title_en = get_field('category_title_en', $current_term);
 $categories = get_terms(array(
     'taxonomy' => 'product_category',
+    'orderby' => 'term_order', 
     'hide_empty' => false,
     'parent' => 0,
 ));

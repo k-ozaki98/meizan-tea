@@ -4,6 +4,7 @@ global $current_term;
 // 子カテゴリーを取得
 $child_terms = get_terms([
     'taxonomy' => 'product_category',
+    'orderby' => 'term_order', 
     'parent' => $current_term->term_id,
     'hide_empty' => false,
 ]);
