@@ -5,6 +5,12 @@
 
 .contents--about {
 
+  .l-inner {
+    @include g.max-screen(g.$bp-sp) {
+      padding: 0;
+    }
+  }
+
   .heading-A {
     margin: 6.4rem 0;
   }
@@ -34,6 +40,11 @@
     &__ttl {
       font-size: 3.2rem;
       text-align: center;
+
+      @include g.max-screen(g.$bp-sp) {
+        font-size: 2.4rem;
+        line-height: 1.2;
+      }
     }
 
     &__list {
@@ -41,11 +52,20 @@
       display: flex;
       gap: 2.4rem;
 
+      @include g.max-screen(g.$bp-sp) {
+        display: block;
+      }
+
       li {
         background: #ffff;
         border: 1px solid #F2F4E3;
         border-radius: 1rem;
         padding: 4rem;
+
+        @include g.max-screen(g.$bp-sp) {
+          border-radius: 0;
+          margin: 1.6rem 0;
+        }
       }
     }
 
@@ -65,17 +85,77 @@
   }
 
   .about-story {
+    padding-top: 6.4rem;
 
     &__wrap {
       margin-top: 4rem;
       display: flex;
 
+      @include g.max-screen(g.$bp-sp) {
+        display: block;
+      }
+
       li {
         position: relative;
+        overflow: hidden;
         width: calc(100% / 3);
+
+        @include g.max-screen(g.$bp-sp) {
+          width: 100%;
+        }
 
         img {
           width: 100%;
+        }
+
+      }
+    }
+
+    &__bg {
+      position: relative;
+      display: block;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgb(0, 0, 0);
+        opacity: .3;
+        transition: .25s linear;
+      }
+
+      &:hover {
+
+        &::before {
+          background-color: rgb(0, 0, 0);
+          opacity: 0;
+        }
+
+        img {
+          transition: .25s linear;
+          transform: scale(1.1);
+        }
+
+        .btn-A {
+          a {
+            color: #D5D933;
+
+            span {
+              animation: txtMove .5s;
+            }
+
+            &::after {
+              border: 2px solid #D5D933;
+            }
+
+            &::before {
+              background: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%2014%2014%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M10.6283%207.67699L0.0439879%207.67699L0.043988%205.93786L10.6283%205.93786L5.96399%201.27351L7.19355%200.043945L13.957%206.80742L7.19355%2013.5709L5.96399%2012.3413L10.6283%207.67699Z%22%20fill%3D%22%23D5D933%22%2F%3E%3C%2Fsvg%3E')no-repeat center;
+              animation: arrowMove .5s;
+            }
+          }
         }
       }
     }
@@ -85,6 +165,10 @@
       transform: translate(-50%, -50%);
       top: 50%;
       left: 50%;
+
+      @include g.max-screen(g.$bp-sp) {
+        width: 100%;
+      }
     }
 
     &__ttl {
@@ -92,6 +176,7 @@
       font-size: 2.4rem;
       text-align: center;
       padding-bottom: 2.4rem;
+
     }
 
     .btn-A {

@@ -12,7 +12,7 @@
     </div>
 
     <section class="about">
-      <h2 class="about__ttl">私たちが大切にしていること</h2>
+      <h2 class="about__ttl">私たちが<br class="is-Sp">大切にしていること</h2>
 
       <ul class="about__list">
         <li>
@@ -60,7 +60,7 @@
 
     <ul class="about-story__wrap">
       <li>
-        <a href="">
+        <a class="about-story__bg" href="">
           <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-story01.jpg" alt="">
           <div class="about-story__txt-area">
             <p class="about-story__ttl">ビジョン</p>
@@ -71,7 +71,7 @@
         </a>
       </li>
       <li>
-        <a href="">
+        <a class="about-story__bg" href="">
           <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-story02.jpg" alt="">
           <div class="about-story__txt-area">
             <p class="about-story__ttl">私たちの強み</p>
@@ -82,7 +82,7 @@
         </a>
       </li>
       <li>
-        <a href="">
+        <a class="about-story__bg" href="">
           <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-story03.jpg" alt="">
           <div class="about-story__txt-area">
             <p class="about-story__ttl">社長インタビュー</p>
