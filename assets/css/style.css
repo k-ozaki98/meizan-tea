@@ -2758,6 +2758,9 @@ sup {
   z-index: 999;
   width: 100%;
 }
+.header.hidden {
+  transform: translateY(-100%);
+}
 .header__inner {
   display: flex;
   justify-content: space-between;

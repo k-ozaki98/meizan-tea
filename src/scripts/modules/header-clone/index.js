@@ -54,6 +54,7 @@ export const initCloneHeader = (id = 'header') => {
     // スクロール位置がヘッダーの高さ以内なら is-top クラスを追加
     if (headerHeight > scrollTop) {
       cloneHeader.classList.add('is-top');
+      originalHeader.classList.remove('hidden');
     } else {
       cloneHeader.classList.remove('is-top');
     }
