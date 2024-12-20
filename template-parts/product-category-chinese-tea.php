@@ -30,7 +30,7 @@ if (!empty($child_terms)) : ?>
             }
         ?>
             <li class="<?php echo esc_attr($item_class); ?>">
-                <div href="<?php echo get_term_link($child); ?>" class="child-category-card">
+                <div class="child-category-card">
                     <div class="child-category-list__head">
                         <h1 class="child-category-list__ttl"><?php echo esc_html($child->name); ?></h1>
                         <?php if ($category_icon) : ?>
@@ -48,8 +48,17 @@ if (!empty($child_terms)) : ?>
                     <div class="child-category-list__body">
                         <?php echo esc_html($category_text); ?>
                     </div>
+                    
                     <div class="btn-D">
-                        <a href="<?php echo get_term_link($child); ?>">VIEW MORE</a>
+                        <?php if ($current_term->slug === 'blue-tea') : ?>
+                            <!-- 青茶の場合は3つの地区ボタンを表示 -->
+                            <a href="<?php echo esc_url(get_term_link('anxi-district', 'product_category')); ?>" class="btn">安渓地区</a>
+                            <a href="<?php echo esc_url(get_term_link('wuyishan-district', 'product_category')); ?>" class="btn">武夷山地区</a>
+                            <a href="<?php echo esc_url(get_term_link('fenghuangshan-district', 'product_category')); ?>" class="btn">鳳凰山地区</a>
+                        <?php else : ?>
+                            <!-- 通常のリンク -->
+                            <a href="<?php echo get_term_link($child); ?>" class="btn">VIEW MORE</a>
+                        <?php endif; ?>
                     </div>
                 </div>
             </li>
