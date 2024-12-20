@@ -50,8 +50,10 @@ if (!empty($child_terms)) : ?>
                     </div>
                     
                     <div class="btn-D">
-                        <?php if ($current_term->slug === 'blue-tea') : ?>
-                            <!-- 青茶の場合は3つの地区ボタンを表示 -->
+                        <?php if ($child->slug === 'blue-tea') : ?>
+
+                            <?php var_dump($child); ?>
+                            <!-- 中国茶-青茶の場合は3つの地区ボタンを表示 -->
                             <a href="<?php echo esc_url(get_term_link('anxi-district', 'product_category')); ?>" class="btn">安渓地区</a>
                             <a href="<?php echo esc_url(get_term_link('wuyishan-district', 'product_category')); ?>" class="btn">武夷山地区</a>
                             <a href="<?php echo esc_url(get_term_link('fenghuangshan-district', 'product_category')); ?>" class="btn">鳳凰山地区</a>
