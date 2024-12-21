@@ -9,6 +9,7 @@ define('THEME_URI', get_template_directory_uri());
 require_once THEME_DIR . '/inc/custom-post-types.php';
 require_once THEME_DIR . '/inc/enqueue-scripts.php';
 require_once THEME_DIR . '/inc/theme-support.php';
+require_once THEME_DIR . '/inc/admin-customization.php';
 
 function custom_page_rules() {
     global $wp_rewrite;
