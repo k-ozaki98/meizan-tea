@@ -5173,6 +5173,189 @@ body.home .header--clone {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .contents--vison .l-inner {
+    padding: 0;
+  }
+}
+.contents--vison .heading-A {
+  margin: 6.4rem 0;
+}
+.contents--vison .vison-mv {
+  position: relative;
+}
+.contents--vison .vison-mv__img {
+  text-align: center;
+}
+.contents--vison .vison-mv__txt {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  font-size: 4.8rem;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  text-align: center;
+}
+.contents--vison .about {
+  padding-top: 6.4rem;
+}
+.contents--vison .about__ttl {
+  font-size: 3.2rem;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .contents--vison .about__ttl {
+    font-size: 2.4rem;
+    line-height: 1.2;
+  }
+}
+.contents--vison .about__list {
+  margin-top: 4rem;
+  display: flex;
+  gap: 2.4rem;
+}
+@media screen and (max-width: 767px) {
+  .contents--vison .about__list {
+    display: block;
+  }
+}
+.contents--vison .about__list li {
+  background: white;
+  border: 1px solid #F2F4E3;
+  border-radius: 1rem;
+  padding: 4rem;
+}
+@media screen and (max-width: 767px) {
+  .contents--vison .about__list li {
+    border-radius: 0;
+    margin: 1.6rem 0;
+  }
+}
+.contents--vison .about__list-top {
+  text-align: center;
+}
+.contents--vison .about__list-ttl {
+  font-size: 2.4rem;
+  padding-top: 0.8rem;
+}
+.contents--vison .about__list-body {
+  font-size: 1.6rem;
+  padding-top: 1.6rem;
+}
+.contents--vison .about-story {
+  padding-top: 6.4rem;
+}
+.contents--vison .about-story__wrap {
+  margin-top: 4rem;
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .contents--vison .about-story__wrap {
+    display: block;
+  }
+}
+.contents--vison .about-story__wrap li {
+  position: relative;
+  overflow: hidden;
+  width: 50%;
+}
+@media screen and (max-width: 767px) {
+  .contents--vison .about-story__wrap li {
+    width: 100%;
+  }
+}
+.contents--vison .about-story__wrap li img {
+  width: 100%;
+}
+.contents--vison .about-story__bg {
+  position: relative;
+  display: block;
+}
+.contents--vison .about-story__bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.3;
+  transition: 0.25s linear;
+}
+.contents--vison .about-story__bg:hover::before {
+  background-color: rgb(0, 0, 0);
+  opacity: 0;
+}
+.contents--vison .about-story__bg:hover img {
+  transition: 0.25s linear;
+  transform: scale(1.1);
+}
+.contents--vison .about-story__bg:hover .btn-A a {
+  color: #D5D933;
+}
+.contents--vison .about-story__bg:hover .btn-A a span {
+  animation: txtMove 0.5s;
+}
+.contents--vison .about-story__bg:hover .btn-A a::after {
+  border: 2px solid #D5D933;
+}
+.contents--vison .about-story__bg:hover .btn-A a::before {
+  background: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%2014%2014%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M10.6283%207.67699L0.0439879%207.67699L0.043988%205.93786L10.6283%205.93786L5.96399%201.27351L7.19355%200.043945L13.957%206.80742L7.19355%2013.5709L5.96399%2012.3413L10.6283%207.67699Z%22%20fill%3D%22%23D5D933%22%2F%3E%3C%2Fsvg%3E") no-repeat center;
+  animation: arrowMove 0.5s;
+}
+.contents--vison .about-story__txt-area {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+@media screen and (max-width: 767px) {
+  .contents--vison .about-story__txt-area {
+    width: 100%;
+  }
+}
+.contents--vison .about-story__ttl {
+  color: #fff;
+  font-size: 2.4rem;
+  text-align: center;
+  padding-bottom: 2.4rem;
+}
+.contents--vison .about-story .btn-A {
+  text-align: center;
+}
+.contents--vison .chinese {
+  padding: 6.4rem 0;
+}
+.contents--vison .chinese__wrap {
+  background: #fff;
+  border: 1px solid #F2F4E3;
+  border-radius: 1rem;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.contents--vison .chinese__ttl {
+  display: grid;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #6F4627;
+  font-size: 2.4rem;
+  text-align: center;
+}
+.contents--vison .chinese__ttl span {
+  font-size: 1.6rem;
+}
+.contents--vison .chinese__txt {
+  font-family: "Noto Sans JP", sans-serif;
+}
+.contents--vison .chinese__address {
+  font-family: "Noto Sans JP", sans-serif;
+}
+.contents--vison .chinese__address a {
+  text-decoration: underline;
+}
+
 /*--------------------------
 	animation
 --------------------------*/

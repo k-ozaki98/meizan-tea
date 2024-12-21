@@ -60,7 +60,7 @@
 
     <ul class="about-story__wrap">
       <li>
-        <a class="about-story__bg" href="">
+        <a class="about-story__bg" href="/vison/">
           <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-story01.jpg" alt="">
           <div class="about-story__txt-area">
             <p class="about-story__ttl">ビジョン</p>
