@@ -46,6 +46,12 @@
 			flex-wrap: wrap;
 			gap: 6.5rem;
 			margin-bottom: 6.4rem;
+
+			@include g.max-screen(g.$bp-sp) {
+				display: flex;
+				flex-direction: column;
+				gap: 6.4rem;
+			}
 		}
 
 	}
@@ -345,6 +351,28 @@
 			&.is-active {
 				opacity: 0.6;
 			}
+		}
+	}
+
+	.blue-tea-btn {
+		display: flex;
+		align-items: center;
+		justify-content: left;
+		padding: 1.6rem 2.4rem;
+		gap: 1.6rem;
+		margin-bottom: 1.6rem;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+		.btn-icon {
+			width: 3.2rem;
+			height: 3.2rem;
+			display: inline-block;
+		}
+
+		.btn-text {
+			display: inline-block;
 		}
 	}
 }

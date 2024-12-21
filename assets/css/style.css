@@ -4172,6 +4172,13 @@ body.home .header--clone {
   gap: 6.5rem;
   margin-bottom: 6.4rem;
 }
+@media screen and (max-width: 767px) {
+  .contents.contents--products .products__list {
+    display: flex;
+    flex-direction: column;
+    gap: 6.4rem;
+  }
+}
 .contents.contents--products .product-item {
   display: flex;
   flex-direction: column;
@@ -4424,6 +4431,25 @@ body.home .header--clone {
 }
 .contents.contents--products .various-tea__item.is-active {
   opacity: 0.6;
+}
+.contents.contents--products .blue-tea-btn {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 1.6rem 2.4rem;
+  gap: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+.contents.contents--products .blue-tea-btn:last-of-type {
+  margin-bottom: 0;
+}
+.contents.contents--products .blue-tea-btn .btn-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  display: inline-block;
+}
+.contents.contents--products .blue-tea-btn .btn-text {
+  display: inline-block;
 }
 
 /*----------------------------------------------------

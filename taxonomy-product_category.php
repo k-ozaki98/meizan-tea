@@ -91,14 +91,16 @@ $categories = get_terms(array(
                 <?php if ($categories) : ?>
                     <ul class="various-tea__list">
                         <?php foreach ($categories as $category) :
-                            $category_image = get_field('category_image', $category);
+                            $category_icon = get_field('category_icon', $category);
                             $category_link = get_term_link($category);
                             $is_current = ($category->term_id === $current_term->term_id) || 
-                                          ($current_term->parent && $category->term_id === $current_term->parent);
+                            ($current_term->parent && $category->term_id === $current_term->parent) ||
+                            ($current_term->parent && ($parent_term = get_term($current_term->parent, 'product_category')) && 
+                            $parent_term->parent && $category->term_id === $parent_term->parent);
                         ?>
                         <li class="various-tea__item <?php echo $is_current ? 'is-active' : ''; ?>">
                             <a href="<?php echo esc_url($category_link); ?>">
-                                <img src="<?php echo esc_url($category_image); ?>" alt="<?php echo esc_attr($category->name); ?>">
+                                <img src="<?php echo esc_url($category_icon); ?>" alt="<?php echo esc_attr($category->name); ?>">
                             </a>
                         </li>
                         <?php endforeach; ?>

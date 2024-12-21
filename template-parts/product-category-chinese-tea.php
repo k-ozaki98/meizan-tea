@@ -51,12 +51,35 @@ if (!empty($child_terms)) : ?>
                     
                     <div class="btn-D">
                         <?php if ($child->slug === 'blue-tea') : ?>
+                            <?php 
+                            // 各地区のカテゴリー画像を取得
+                            $anxi = get_term_by('slug', 'anxi-district', 'product_category');
+                            $wuyishan = get_term_by('slug', 'wuyishan-district', 'product_category');
+                            $fenghuang = get_term_by('slug', 'fenghuangshan-district', 'product_category');
 
-                            <?php var_dump($child); ?>
+                            $anxi_icon = get_field('category_image', $anxi);
+                            $wuyishan_icon = get_field('category_image', $wuyishan);
+                            $fenghuang_icon = get_field('category_image', $fenghuang);
+                            ?>
                             <!-- 中国茶-青茶の場合は3つの地区ボタンを表示 -->
-                            <a href="<?php echo esc_url(get_term_link('anxi-district', 'product_category')); ?>" class="btn">安渓地区</a>
-                            <a href="<?php echo esc_url(get_term_link('wuyishan-district', 'product_category')); ?>" class="btn">武夷山地区</a>
-                            <a href="<?php echo esc_url(get_term_link('fenghuangshan-district', 'product_category')); ?>" class="btn">鳳凰山地区</a>
+                            <a href="<?php echo esc_url(get_term_link('anxi-district', 'product_category')); ?>" class="btn blue-tea-btn">
+                                <?php if ($anxi_icon) : ?>
+                                    <span class="btn-icon"><img src="<?php echo esc_url($anxi_icon); ?>" alt="安渓地区"></span>
+                                <?php endif; ?>
+                                <span class="btn-text">安渓地区</span>
+                            </a>
+                            <a href="<?php echo esc_url(get_term_link('wuyishan-district', 'product_category')); ?>" class="btn blue-tea-btn">
+                                <?php if ($wuyishan_icon) : ?>
+                                    <span class="btn-icon"><img src="<?php echo esc_url($wuyishan_icon); ?>" alt="武夷山地区"></span>
+                                <?php endif; ?>
+                                <span class="btn-text">武夷山地区</span>
+                            </a>
+                            <a href="<?php echo esc_url(get_term_link('fenghuangshan-district', 'product_category')); ?>" class="btn blue-tea-btn">
+                                <?php if ($fenghuang_icon) : ?>
+                                    <span class="btn-icon"><img src="<?php echo esc_url($fenghuang_icon); ?>" alt="鳳凰山地区"></span>
+                                <?php endif; ?>
+                                <span class="btn-text">鳳凰山地区</span>
+                            </a>
                         <?php else : ?>
                             <!-- 通常のリンク -->
                             <a href="<?php echo get_term_link($child); ?>" class="btn">VIEW MORE</a>
