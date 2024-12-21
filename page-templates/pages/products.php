@@ -8,7 +8,7 @@
                 <span class="sec-ttl__ja">茶</span>
             </h2>
 
-            <p class="products__intro">中国茶から紅茶、日本茶、ハーブ類まで常時数百種類の茶葉を取扱っています。</p>
+            <p class="products__intro">中国茶から紅茶、日本茶、ハーブ類まで<br class="is-sp">常時数百種類の茶葉を取扱っています。</p>
     
             <?php
             // product_categoryタクソノミーからカテゴリーを取得
@@ -69,7 +69,7 @@
 
             <section class="product-contact">
                 <h3 class="product-contact__ttl">
-                    まずはお気軽にお問い合わせください
+                    まずはお気軽に<br class="is-Sp">お問い合わせください
                 </h3>
                 <ul class="u-ul-style u-ul-style--disc">
                     <li>カフェ、レストラン、ホテル、茶葉専門店などのメニューのご相談をお受けします。</li>

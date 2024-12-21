@@ -3,7 +3,18 @@
 <?php
 // 現在のタクソノミー情報を取得
 $current_term = get_queried_object();
-$term_title_en = get_field('category_title_en', $current_term);
+$parent_term = null;
+$display_term = $current_term;
+if ($current_term->parent) {
+    $parent_term = get_term($current_term->parent, 'product_category');
+    if ($parent_term->parent) {
+        $grandparent_term = get_term($parent_term->parent, 'product_category');
+        $display_term = $grandparent_term; 
+    } else {
+        $display_term = $parent_term;  
+    }
+}
+$term_title_en = get_field('category_title_en', $display_term);
 $categories = get_terms(array(
     'taxonomy' => 'product_category',
     'orderby' => 'term_order', 
@@ -17,8 +28,25 @@ $categories = get_terms(array(
         <div class="l-inner">
             <h2 class="sec-ttl">
                 <span class="sec-ttl__en"><?php echo esc_html($term_title_en); ?></span>
-                <span class="sec-ttl__ja"><?php single_term_title(); ?></span>
+                <span class="sec-ttl__ja"><?php echo esc_html($display_term->name); ?></span>
+                <?php
+                $category_subtitle = get_field('category_subtitle', $current_term);
+                if ($category_subtitle) : ?>
+                    <span class="sec-ttl__heading"><?php echo nl2br(esc_html($category_subtitle)); ?></span>
+                <?php endif; ?>
             </h2>
+
+            <?php
+            // 孫カテゴリーの場合にテキストを表示
+            if ($current_term->parent && ($parent_term = get_term($current_term->parent, 'product_category')) && $parent_term->parent) :
+                $sub_category_text = get_field('category_text', $current_term);
+                if ($sub_category_text) :
+            ?>
+                <p class="products__text"><?php echo nl2br(esc_html($sub_category_text)); ?></p>
+            <?php 
+                endif;
+            endif;
+            ?>
             
             <?php
             $current_term = get_queried_object();

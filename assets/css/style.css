@@ -3700,11 +3700,29 @@ sup {
 }
 .sec-ttl__ja {
   font-size: 4.8rem;
+  line-height: 1.2;
 }
 @media screen and (max-width: 767px) {
   .sec-ttl__ja {
     font-size: 3.6rem;
   }
+}
+.sec-ttl__heading {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  margin-top: 2.4rem;
+  position: relative;
+  text-align: center;
+}
+.sec-ttl__heading::after {
+  content: "";
+  height: 1.6rem;
+  width: 2px;
+  background: #00282E;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: -2.4rem;
 }
 
 /*----------------------------------------------------
@@ -4144,7 +4162,7 @@ body.home .header--clone {
 
 ----------------------------------------------------*/
 .contents.contents--products {
-  padding: 14.4rem 0;
+  padding: 14.4rem 0 6.4rem;
 }
 .contents.contents--products .products {
   position: relative;
@@ -4160,10 +4178,22 @@ body.home .header--clone {
   left: 0;
   z-index: 0;
 }
+@media screen and (max-width: 767px) {
+  .contents.contents--products .products::before {
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%22375%22%20height%3D%2282%22%20viewBox%3D%220%200%20375%2082%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M0%2033.1035C19.7502%2019.6859%2080.3006%20-1.72687%20166.937%2019.9639C253.574%2041.6547%20341.034%2017.044%20373.934%202.02734%22%20stroke%3D%22%23E5E8D3%22%20stroke-width%3D%224%22%2F%3E%3Cpath%20d%3D%22M1.06641%2081.073C20.8166%2067.6553%20143.512%20-17.1607%20230.148%204.53002C316.785%2026.2208%20342.1%2065.0135%20375%2049.9968%22%20stroke%3D%22%23E5E8D3%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E") no-repeat center top;
+    background-size: contain;
+  }
+}
 .contents.contents--products .products__intro {
   font-size: 1.6rem;
   text-align: center;
   margin-bottom: 6.4rem;
+}
+.contents.contents--products .products__text {
+  font-size: 1.6rem;
+  width: 80%;
+  margin: 0 auto 6.4rem;
+  text-align: center;
 }
 .contents.contents--products .products__list {
   display: grid;
@@ -4187,6 +4217,15 @@ body.home .header--clone {
   justify-content: space-between;
   font-size: 1.6rem;
 }
+@media screen and (max-width: 767px) {
+  .contents.contents--products .product-item__img {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .contents.contents--products .product-item__img img {
+    width: 100%;
+  }
+}
 .contents.contents--products .product-btn {
   margin-top: 6.4rem;
 }
@@ -4194,8 +4233,13 @@ body.home .header--clone {
   background: #FFFFFF;
   padding: 4rem;
   border: 1px solid #F2F4E3;
-  border-radius: 30px;
+  border-radius: 32px;
   margin-bottom: 6.4rem;
+}
+@media screen and (max-width: 767px) {
+  .contents.contents--products .product-guide {
+    padding: 4rem 2.4rem;
+  }
 }
 .contents.contents--products .product-guide__heading {
   background: #4D6569;
@@ -4235,6 +4279,11 @@ body.home .header--clone {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1.6rem;
 }
+@media screen and (max-width: 767px) {
+  .contents.contents--products .product-guide__list {
+    grid-template-columns: 1fr;
+  }
+}
 .contents.contents--products .product-guide__item {
   padding: 1.6rem 2.4rem;
   font-size: 1.6rem;
@@ -4258,6 +4307,12 @@ body.home .header--clone {
   border-radius: 32px;
   padding: 4rem 10rem;
   border: 1px solid #F2F4E3;
+  color: #00282E;
+}
+@media screen and (max-width: 767px) {
+  .contents.contents--products .product-contact {
+    padding: 4rem 2.4rem;
+  }
 }
 .contents.contents--products .product-contact .u-ul-style--disc {
   width: 85%;
@@ -4268,6 +4323,11 @@ body.home .header--clone {
   gap: 0.8rem;
   margin-bottom: 2.4rem;
 }
+@media screen and (max-width: 767px) {
+  .contents.contents--products .product-contact .u-ul-style--disc {
+    width: 100%;
+  }
+}
 .contents.contents--products .product-contact .u-ul-style--disc li::before {
   font-size: 1.6rem;
   color: #D5D933;
@@ -4276,6 +4336,7 @@ body.home .header--clone {
   font-size: 2.4rem;
   text-align: center;
   margin-bottom: 2.4rem;
+  color: #4D6569;
 }
 .contents.contents--products .product-contact__text {
   font-size: 1.6rem;
