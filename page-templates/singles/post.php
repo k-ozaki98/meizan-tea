@@ -43,9 +43,11 @@ if ($post && $post->post_type === 'post') :
             </div>
 
             <div class="news-footer">
-                <a href="<?php echo get_permalink(get_page_by_path('news')); ?>" class="btn-back btn-B">
-                    新着情報TOPへ
-                </a>
+                <div class="btn-B">
+                    <a href="<?php echo get_permalink(get_page_by_path('news')); ?>" class="btn-back">
+                        新着情報TOPへ
+                    </a>
+                </div>
             </div>
         </article>
     </div>

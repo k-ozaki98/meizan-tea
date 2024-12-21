@@ -4,31 +4,34 @@
 @use '../lib/vars'as *;
 
 .btn-B {
-  font-size: 1.6rem;
-  display: inline-block;
-  text-align: center;
   width: 38.4rem;
-  height: 6rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  background: #fff;
-  border-radius: 60px;
-  border: 1px solid #D8E3E5;
   margin: 0 auto;
-
-  &::after {
-    content: "";
-    width: 1.5rem;
-    height: 1.5rem;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 3rem;
+  a {
+    font-size: 1.6rem;
     display: inline-block;
-    background: url(../images/common/back-btn-icon.svg) no-repeat center center;
-    background-size: contain;
+    text-align: center;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: #fff;
+    border-radius: 60px;
+    border: 1px solid #D8E3E5;
+  
+    &::after {
+      content: "";
+      width: 1.5rem;
+      height: 1.5rem;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 3rem;
+      display: inline-block;
+      background: url(../images/common/back-btn-icon.svg) no-repeat center center;
+      background-size: contain;
+    }
+
   }
 }
 
