@@ -6,6 +6,10 @@
 .btn-B {
   width: 38.4rem;
   margin: 0 auto;
+
+  @include g.max-screen(g.$bp-sp) {
+    width: 100%;
+  }
   a {
     font-size: 1.6rem;
     display: inline-block;

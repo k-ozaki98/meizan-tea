@@ -15,6 +15,7 @@
   margin-bottom: 6.4rem;
   position: relative;
   z-index: 1;
+  text-align: center;
 
   &__en {
     font-family: "Advent Pro", sans-serif;
@@ -37,6 +38,10 @@
     margin-top: 2.4rem;
     position: relative;
     text-align: center;
+
+    @include g.max-screen(g.$bp-sp) {
+      font-size: 2rem;
+    }
 
     &::after {
       content: "";

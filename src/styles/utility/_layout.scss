@@ -30,6 +30,12 @@
     padding: 0 1.5rem;
     width: 100%;
   }
+
+  &--sp {
+    @include g.max-screen(g.$bp-sp) {
+      padding: 0;
+    }
+  }
 }
 
 .l-flex {

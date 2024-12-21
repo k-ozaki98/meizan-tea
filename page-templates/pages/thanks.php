@@ -7,7 +7,10 @@
         </h2>
 
         <div class="contact-img">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/images/contact/thanks-img.svg" alt="入力完了">
+            <picture>
+                <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri() ?>/assets/images/contact/thanks-img-sp.svg">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/images/contact/thanks-img.svg" alt="入力完了">
+            </picture>
         </div>
     
         <section class="contact-form complete">

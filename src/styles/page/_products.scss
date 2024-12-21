@@ -32,6 +32,7 @@
 			top: 0;
 			left: 0;
 			z-index: 0;
+			pointer-events: none;
 
 			@include g.max-screen(g.$bp-sp) {
 				background: url('data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%22375%22%20height%3D%2282%22%20viewBox%3D%220%200%20375%2082%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M0%2033.1035C19.7502%2019.6859%2080.3006%20-1.72687%20166.937%2019.9639C253.574%2041.6547%20341.034%2017.044%20373.934%202.02734%22%20stroke%3D%22%23E5E8D3%22%20stroke-width%3D%224%22%2F%3E%3Cpath%20d%3D%22M1.06641%2081.073C20.8166%2067.6553%20143.512%20-17.1607%20230.148%204.53002C316.785%2026.2208%20342.1%2065.0135%20375%2049.9968%22%20stroke%3D%22%23E5E8D3%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E') no-repeat center top;
@@ -50,6 +51,11 @@
 			width: 80%;
 			margin: 0 auto 6.4rem;
 			text-align: center;
+
+			@include g.max-screen(g.$bp-sp) {
+				width: 100%;
+				padding: 0 1.5rem;
+			}
 		}
 
 		&__list {
@@ -214,6 +220,11 @@
 			text-align: center;
 			margin-bottom: 2.4rem;
 			color: #4D6569;
+
+			@include g.max-screen(g.$bp-sp) {
+				font-weight: normal;
+				text-align: left;
+			}
 		}
 
 		&__text {
@@ -255,11 +266,16 @@
 		&__icon {
 			width: 8rem;
 			height: 8rem;
+
+			img {
+				width: 100%;
+			}
 		}
 		&__name-ja {
 			font-size: 3.2rem;
 			font-weight: 500;
 			line-height: 1.2;
+			margin-bottom: 0.8rem;
 		}
 		&__name-en {
 			font-size: 1.6rem;
@@ -279,6 +295,11 @@
 		font-size: 1.6rem;
 		text-align: center;
 		margin-bottom: 6.4rem;
+
+		@include g.max-screen(g.$bp-sp) {
+			width: 100%;
+			padding: 0 1.5rem;
+		}
 	}
 
 	.child-category-list {
@@ -286,11 +307,19 @@
 		gap: 2.4rem;
 		grid-template-columns: 1fr 1fr;
 
+		@include g.max-screen(g.$bp-sp) {
+			grid-template-columns: 1fr;
+		}
+
 		&__item {
 			background: #fff;
 			padding: 4rem;
 			border: 1px solid #F2F4E3;
 			border-radius: 32px;
+
+			@include g.max-screen(g.$bp-sp) {
+				padding: 4rem 2.4rem;
+			}
 
 		}
 
@@ -386,6 +415,10 @@
 
 			@include g.max-screen(g.$bp-sp) {
 				width: calc((100% - 3.2rem) * 1 / 2);
+
+				img {
+					width: 100%;
+				}
 			}
 
 			&.is-active {
@@ -402,6 +435,10 @@
 		padding: 1.6rem 2.4rem;
 		gap: 1.6rem;
 		margin-bottom: 1.6rem;
+
+		@include g.max-screen(g.$bp-sp) {
+			font-size: 2rem;
+		}
 
 		&:last-of-type {
 			margin-bottom: 0;
@@ -425,12 +462,20 @@
 		gap: 1.6rem;
 		margin-top: 6.4rem;
 
+		@include g.max-screen(g.$bp-sp) {
+			flex-direction: column;
+		}
+
 		.btn-D {
 			width: calc((100% - 3.2rem) * 1 / 3);
 			display: flex;
 			align-items: center;
 			justify-content: left;
 			gap: 1.6rem;
+
+			@include g.max-screen(g.$bp-sp) {
+				width: 100%;
+			}
 			
 			a {
 				padding: 1.6rem 2.4rem;

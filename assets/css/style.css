@@ -2714,6 +2714,11 @@ sup {
     width: 100%;
   }
 }
+@media screen and (max-width: 767px) {
+  .l-inner--sp {
+    padding: 0;
+  }
+}
 
 .l-flex {
   display: flex;
@@ -3179,6 +3184,11 @@ sup {
 .btn-B {
   width: 38.4rem;
   margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+  .btn-B {
+    width: 100%;
+  }
 }
 .btn-B a {
   font-size: 1.6rem;
@@ -3693,6 +3703,7 @@ sup {
   margin-bottom: 6.4rem;
   position: relative;
   z-index: 1;
+  text-align: center;
 }
 .sec-ttl__en {
   font-family: "Advent Pro", sans-serif;
@@ -3715,6 +3726,11 @@ sup {
   margin-top: 2.4rem;
   position: relative;
   text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .sec-ttl__heading {
+    font-size: 2rem;
+  }
 }
 .sec-ttl__heading::after {
   content: "";
@@ -4179,6 +4195,7 @@ body.home .header--clone {
   top: 0;
   left: 0;
   z-index: 0;
+  pointer-events: none;
 }
 @media screen and (max-width: 767px) {
   .contents.contents--products .products::before {
@@ -4196,6 +4213,12 @@ body.home .header--clone {
   width: 80%;
   margin: 0 auto 6.4rem;
   text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .contents.contents--products .products__text {
+    width: 100%;
+    padding: 0 1.5rem;
+  }
 }
 .contents.contents--products .products__list {
   display: grid;
@@ -4340,6 +4363,12 @@ body.home .header--clone {
   margin-bottom: 2.4rem;
   color: #4D6569;
 }
+@media screen and (max-width: 767px) {
+  .contents.contents--products .product-contact__ttl {
+    font-weight: normal;
+    text-align: left;
+  }
+}
 .contents.contents--products .product-contact__text {
   font-size: 1.6rem;
   margin-bottom: 2.4rem;
@@ -4379,10 +4408,14 @@ body.home .header--clone {
   width: 8rem;
   height: 8rem;
 }
+.contents.contents--products .product-list__icon img {
+  width: 100%;
+}
 .contents.contents--products .product-list__name-ja {
   font-size: 3.2rem;
   font-weight: 500;
   line-height: 1.2;
+  margin-bottom: 0.8rem;
 }
 .contents.contents--products .product-list__name-en {
   font-size: 1.6rem;
@@ -4401,16 +4434,32 @@ body.home .header--clone {
   text-align: center;
   margin-bottom: 6.4rem;
 }
+@media screen and (max-width: 767px) {
+  .contents.contents--products .child-chinese-text {
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+}
 .contents.contents--products .child-category-list {
   display: grid;
   gap: 2.4rem;
   grid-template-columns: 1fr 1fr;
+}
+@media screen and (max-width: 767px) {
+  .contents.contents--products .child-category-list {
+    grid-template-columns: 1fr;
+  }
 }
 .contents.contents--products .child-category-list__item {
   background: #fff;
   padding: 4rem;
   border: 1px solid #F2F4E3;
   border-radius: 32px;
+}
+@media screen and (max-width: 767px) {
+  .contents.contents--products .child-category-list__item {
+    padding: 4rem 2.4rem;
+  }
 }
 .contents.contents--products .child-category-list__icon {
   width: 8rem;
@@ -4491,6 +4540,9 @@ body.home .header--clone {
   .contents.contents--products .various-tea__item {
     width: calc((100% - 3.2rem) * 1 / 2);
   }
+  .contents.contents--products .various-tea__item img {
+    width: 100%;
+  }
 }
 .contents.contents--products .various-tea__item.is-active {
   opacity: 0.6;
@@ -4502,6 +4554,11 @@ body.home .header--clone {
   padding: 1.6rem 2.4rem;
   gap: 1.6rem;
   margin-bottom: 1.6rem;
+}
+@media screen and (max-width: 767px) {
+  .contents.contents--products .blue-tea-btn {
+    font-size: 2rem;
+  }
 }
 .contents.contents--products .blue-tea-btn:last-of-type {
   margin-bottom: 0;
@@ -4521,12 +4578,22 @@ body.home .header--clone {
   gap: 1.6rem;
   margin-top: 6.4rem;
 }
+@media screen and (max-width: 767px) {
+  .contents.contents--products .district-buttons {
+    flex-direction: column;
+  }
+}
 .contents.contents--products .district-buttons .btn-D {
   width: calc((100% - 3.2rem) * 1 / 3);
   display: flex;
   align-items: center;
   justify-content: left;
   gap: 1.6rem;
+}
+@media screen and (max-width: 767px) {
+  .contents.contents--products .district-buttons .btn-D {
+    width: 100%;
+  }
 }
 .contents.contents--products .district-buttons .btn-D a {
   padding: 1.6rem 2.4rem;
@@ -4572,13 +4639,27 @@ body.home .header--clone {
 .contents.contents--contact .contact-inner {
   width: 80rem;
 }
+@media screen and (max-width: 767px) {
+  .contents.contents--contact .contact-inner {
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+}
 .contents.contents--contact .contact-img {
   margin-bottom: 4rem;
+}
+.contents.contents--contact .contact-img img {
+  width: 100%;
 }
 .contents.contents--contact .contact {
   padding: 6rem 0 6.4rem;
   /* 郵便番号入力部分をグループ化 */
   /* レスポンシブ対応 */
+}
+@media screen and (max-width: 767px) {
+  .contents.contents--contact .contact {
+    padding: 6rem 1.5rem 6.4rem;
+  }
 }
 .contents.contents--contact .contact .form-list {
   max-width: 1000px;

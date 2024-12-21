@@ -7,7 +7,10 @@
         </h2>
     
         <div class="contact-img">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/images/contact/contact-img.svg" alt="入力フォーム">
+            <picture>
+                <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri() ?>/assets/images/contact/contact-img-sp.svg">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/images/contact/contact-img.svg" alt="入力フォーム">
+            </picture>
         </div>
         <div class="contact-form">
             <?php

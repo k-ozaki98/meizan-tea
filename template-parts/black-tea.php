@@ -18,7 +18,9 @@
     </div>
 </section>
 
-<div class="u-align-c btn-C">
-  <a href="../black-tea-chinese-tea/">キーマン紅茶など中国紅茶はこちら</a>
-
+<div class="l-inner">
+    <div class="u-align-c btn-C">
+      <a href="../black-tea-chinese-tea/">キーマン紅茶など中国紅茶はこちら</a>
+    
+    </div>
 </div>

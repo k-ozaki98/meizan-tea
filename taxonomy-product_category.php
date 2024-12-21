@@ -25,7 +25,7 @@ $categories = get_terms(array(
 
 <main class="contents contents--products">
     <div class="products">
-        <div class="l-inner">
+        <div class="l-inner l-inner--sp">
             <h2 class="sec-ttl">
                 <span class="sec-ttl__en"><?php echo esc_html($term_title_en); ?></span>
                 <span class="sec-ttl__ja"><?php echo esc_html($display_term->name); ?></span>
@@ -113,6 +113,8 @@ $categories = get_terms(array(
             
             ?>
 
+        </div>
+        <div class="l-inner">
             <?php 
             // 中国茶のIDを取得
             $chinese_tea = get_term_by('slug', 'chinese-tea', 'product_category');
@@ -194,6 +196,7 @@ $categories = get_terms(array(
                     </ul>
                 <?php endif; ?>
             </section>
+
         </div>
     </div>
 </main>
