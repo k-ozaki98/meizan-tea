@@ -113,6 +113,65 @@ $categories = get_terms(array(
             
             ?>
 
+            <?php 
+            // 中国茶のIDを取得
+            $chinese_tea = get_term_by('slug', 'chinese-tea', 'product_category');
+
+            // 現在のタームが中国茶の子カテゴリー（青茶など）の場合、または孫カテゴリー（地区）の場合
+            if (($current_term->parent && $current_term->parent === $chinese_tea->term_id) || 
+                ($current_term->parent && ($parent = get_term($current_term->parent, 'product_category')) && 
+                $parent->parent === $chinese_tea->term_id)) :
+            ?> 
+                <?php
+                // 現在のタームが青茶または青茶の子カテゴリーの場合
+                $blue_tea = get_term_by('slug', 'blue-tea', 'product_category');
+                if ($current_term->term_id === $blue_tea->term_id || 
+                    ($current_term->parent && $current_term->parent === $blue_tea->term_id)) :
+                    // 各地区のタームを取得
+                    $anxi = get_term_by('slug', 'anxi-district', 'product_category');
+                    $wuyishan = get_term_by('slug', 'wuyishan-district', 'product_category');
+                    $fenghuang = get_term_by('slug', 'fenghuangshan-district', 'product_category');
+
+                    $anxi_icon = get_field('category_image', $anxi);
+                    $wuyishan_icon = get_field('category_image', $wuyishan);
+                    $fenghuang_icon = get_field('category_image', $fenghuang);
+                ?>
+                    <div class="district-buttons">
+                        <div class="btn-D <?php echo ($current_term->slug === 'anxi-district') ? 'is-active' : ''; ?>">
+                            <a href="<?php echo get_term_link($anxi); ?>" 
+                            class="btn">
+                                <?php if ($anxi_icon) : ?>
+                                    <span class="btn-icon"><img src="<?php echo esc_url($anxi_icon); ?>" alt="安渓地区"></span>
+                                <?php endif; ?>
+                                <span class="btn-text">安渓地区</span>
+                            </a>
+                        </div>
+                        <div class="btn-D <?php echo ($current_term->slug === 'wuyishan-district') ? 'is-active' : ''; ?>">
+                            <a href="<?php echo get_term_link($wuyishan); ?>" 
+                            class="btn">
+                                <?php if ($wuyishan_icon) : ?>
+                                    <span class="btn-icon"><img src="<?php echo esc_url($wuyishan_icon); ?>" alt="武夷山地区"></span>
+                                <?php endif; ?>
+                                <span class="btn-text">武夷山地区</span>
+                            </a>
+                        </div>
+                        <div class="btn-D <?php echo ($current_term->slug === 'fenghuangshan-district') ? 'is-active' : ''; ?>">
+                            <a href="<?php echo get_term_link($fenghuang); ?>" 
+                            class="btn">
+                                <?php if ($fenghuang_icon) : ?>
+                                    <span class="btn-icon"><img src="<?php echo esc_url($fenghuang_icon); ?>" alt="鳳凰山地区"></span>
+                                <?php endif; ?>
+                                <span class="btn-text">鳳凰山地区</span>
+                            </a>
+                        </div>
+                    </div>
+                <?php endif; ?>
+                <div class="btn-B chinese-btn">
+                    <a href="<?php echo get_term_link($chinese_tea); ?>">中国茶TOPへ</a>
+                </div>
+
+            <?php endif; ?>
+
             <section class="various-tea">
                 <h3 class="various-tea__ttl">その他のおすすめ茶種</h3>
 
