@@ -4966,6 +4966,15 @@ body.home .header--clone {
 .contents--company .company__wrap dd:last-of-type {
   border-bottom: 1px solid #D8E3E5;
 }
+.contents--company .company__wrap dd .dd-flex {
+  display: flex;
+}
+.contents--company .company__wrap dd .dd-flex span {
+  width: 20%;
+}
+.contents--company .company__wrap dd br {
+  display: none;
+}
 .contents--company .history {
   padding: 6.4rem 0;
 }
@@ -4976,15 +4985,11 @@ body.home .header--clone {
 }
 .contents--company .history__wrap {
   position: relative;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
   margin-top: 4rem;
-  gap: 4rem;
 }
 @media screen and (max-width: 767px) {
   .contents--company .history__wrap {
-    display: block;
+    padding-top: 1rem;
   }
 }
 .contents--company .history__wrap::before {
@@ -4997,17 +5002,37 @@ body.home .header--clone {
   top: 0;
   left: 0;
 }
-.contents--company .history__wrap dt {
-  position: relative;
-  width: 20%;
+.contents--company .history__list {
+  display: flex;
+  align-items: baseline;
+  gap: 0 4rem;
 }
 @media screen and (max-width: 767px) {
-  .contents--company .history__wrap dt {
-    width: 40%;
-    padding-top: 1.6rem;
+  .contents--company .history__list {
+    display: block;
   }
 }
-.contents--company .history__wrap dt::before {
+.contents--company .history__list-data {
+  width: 20%;
+  display: flex;
+  align-items: baseline;
+}
+@media screen and (max-width: 767px) {
+  .contents--company .history__list-data {
+    width: 100%;
+  }
+}
+.contents--company .history__list-deco {
+  position: relative;
+  width: 100%;
+  padding-bottom: 0.5rem;
+}
+@media screen and (max-width: 767px) {
+  .contents--company .history__list-deco {
+    width: 9%;
+  }
+}
+.contents--company .history__list-deco::before {
   position: absolute;
   content: "";
   width: 2rem;
@@ -5016,45 +5041,72 @@ body.home .header--clone {
   border: 3px solid #4D6569;
   border-radius: 50%;
   transform: translateY(-50%);
-  top: 50%;
   left: -0.6rem;
   z-index: 1;
 }
-.contents--company .history__wrap dt::after {
+.contents--company .history__list-deco::after {
   position: absolute;
   content: "";
   width: 100%;
   border-top: 1px dashed #4D6569;
-  transform: translateY(-50%);
-  top: 50%;
   left: 0;
   z-index: 0;
 }
-.contents--company .history__wrap dt span {
+.contents--company .history__list dt {
+  width: 60%;
+  position: relative;
+  flex-shrink: 0;
+}
+@media screen and (max-width: 767px) {
+  .contents--company .history__list dt {
+    width: 30%;
+    margin-top: 1.6rem;
+  }
+}
+.contents--company .history__list dt span {
   position: relative;
   display: block;
-  width: 60%;
   color: #fff;
   background-color: #4D6569;
   border-radius: 2rem 0 2rem 0;
   font-size: 1.8rem;
+  line-height: 1.1;
   text-align: center;
-  padding: 0.5rem 0;
-  margin: 0 0 0 auto;
+  padding: 1rem 0;
   z-index: 1;
 }
-.contents--company .history__wrap dd {
+.contents--company .history__list dd {
   width: 75%;
   font-size: 1.6rem;
-  border-bottom: 1px solid #D8E3E5;
   padding: 2rem 0;
+  border-bottom: 1px solid #D8E3E5;
 }
 @media screen and (max-width: 767px) {
-  .contents--company .history__wrap dd {
+  .contents--company .history__list dd {
     width: 90%;
     padding: 1.6rem 0;
     margin: 0 0 0 auto;
   }
+}
+.contents--company .history__list dd .dd-flex {
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .contents--company .history__list dd .dd-flex {
+    display: grid;
+  }
+}
+.contents--company .history__list-dd {
+  width: 75%;
+}
+@media screen and (max-width: 767px) {
+  .contents--company .history__list-dd {
+    width: 90%;
+    margin: 0 0 0 auto;
+  }
+}
+.contents--company .history__list-dd dd {
+  width: 100%;
 }
 .contents--company .img-area {
   padding: 6.4rem 0;
@@ -5062,11 +5114,15 @@ body.home .header--clone {
 .contents--company .img-area__wrap {
   display: flex;
   gap: 4rem;
+  width: 100%;
 }
 @media screen and (max-width: 767px) {
   .contents--company .img-area__wrap {
     display: block;
   }
+}
+.contents--company .img-area__wrap img {
+  width: calc(33.3333333333% - 30px);
 }
 @media screen and (max-width: 767px) {
   .contents--company .img-area__wrap img {
