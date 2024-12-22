@@ -6,10 +6,27 @@
 
     <div class="vison-mv">
       <div class="vison-mv__img">
-        <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/vison-img.png" alt="">
+        <picture>
+          <source media="(max-width:767px)" type="image/png" srcset="<?php echo get_template_directory_uri() ?>/assets/images/about/vison-img_sp.png" />
+          <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/vison-img.png" alt="">
+        </picture>
       </div>
       <p class="vison-mv__txt">満たす<br>満ちる</p>
     </div>
+
+    <section class="vison">
+      <h2 class="vison__ttl">人と心と時間を満たす</h2>
+      <p class="vison__txt">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。</p>
+      <p class="vison__txt">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。</p>
+      <p class="vison__txt">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。</p>
+
+      <div class="vison__name-area">
+        <p class="vison__name">代表取締役<br>砂押 悠子</p>
+        <div class="vison__img">
+          <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/vison-name.png" alt="" width="140" height="30">
+        </div>
+      </div>
+    </section>
   </div>
   <div class="about-story">
     <ul class="about-story__wrap">
@@ -36,6 +53,10 @@
         </a>
       </li>
     </ul>
+  </div>
+
+  <div class="btn-B">
+    <a href="/about/">私たちのことTOPへ</a>
   </div>
 
 </main>

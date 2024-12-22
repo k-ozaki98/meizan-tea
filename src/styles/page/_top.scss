@@ -109,6 +109,12 @@ body.home .header--clone {
 			}
 		}
 
+		&__img-area {
+			img {
+				width: 100%;
+			}
+		}
+
 		.btn-A {
 			text-align: left;
 			margin-top: 4.3rem;
@@ -170,8 +176,8 @@ body.home .header--clone {
 			}
 
 			li {
-				width: 29rem;
-				height: 29rem;
+				width: calc(100% / 3 - 27px);
+				height: 100%;
 
 				@include g.max-screen(g.$bp-sp) {
 					width: 15rem;
@@ -190,6 +196,10 @@ body.home .header--clone {
 
 				&:hover .wave {
 					top: 0%;
+				}
+
+				img {
+					width: 100%;
 				}
 			}
 		}
