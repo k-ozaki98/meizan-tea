@@ -70,6 +70,7 @@ $categories = get_terms(array(
                             $icon = get_field('icon');
                             $furigana = get_field('furigana');
                             $origin = get_field('origin');
+                            $subtitle = get_field('subtitle');
                             ?>
                             <li class="product-list__item">
                                 <div class="product-list__top">
@@ -77,7 +78,10 @@ $categories = get_terms(array(
                                         <img src="<?php echo esc_url($icon); ?>" alt="<?php echo esc_attr($icon); ?>">
                                     </div>
                                     <div class="product-list__name">
-                                        <h1 class="product-list__name-ja"><?php the_title(); ?></h1>
+                                        <h1 class="product-list__name-ja">
+                                            <?php the_title(); ?>
+                                            <?php if($subtitle) : ?><span class="product-list__sub"><?php echo esc_html($subtitle); ?></span><?php endif; ?>
+                                        </h1>
                                         <p class="product-list__name-en"><?php echo esc_html($furigana); ?></p>
                                     </div>
                                 </div>
@@ -94,9 +98,21 @@ $categories = get_terms(array(
                     <p>商品が見つかりませんでした。</p>
                 <?php endif; 
             }
+
+            $term_to_check = $current_term;
+            if ($current_term->parent) {
+                $parent_term = get_term($current_term->parent, 'product_category');
+                if ($parent_term->parent) {
+                    // 孫カテゴリーの場合は現在のタームを使用
+                    $term_to_check = $current_term;
+                } else {
+                    // 子カテゴリーの場合は親タームを使用
+                    $term_to_check = $parent_term;
+                }
+            }
             
             // ボトムコンテンツ
-            switch($current_term->slug) {
+            switch($term_to_check->slug) {
                 case 'black-tea':
                     get_template_part('template-parts/black-tea');
                     break;
@@ -108,6 +124,9 @@ $categories = get_terms(array(
                     break;
                 case 'original':
                     get_template_part('template-parts/original-bottom');
+                    break;
+                case 'fenghuangshan-district':
+                    get_template_part('template-parts/fenghuangshan');
                     break;
             }
             

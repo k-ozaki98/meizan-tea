@@ -4411,11 +4411,19 @@ body.home .header--clone {
 .contents.contents--products .product-list__icon img {
   width: 100%;
 }
+.contents.contents--products .product-list__name {
+  max-width: 73%;
+}
 .contents.contents--products .product-list__name-ja {
   font-size: 3.2rem;
   font-weight: 500;
   line-height: 1.2;
   margin-bottom: 0.8rem;
+}
+.contents.contents--products .product-list__sub {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  display: inline-block;
 }
 .contents.contents--products .product-list__name-en {
   font-size: 1.6rem;
@@ -4511,6 +4519,54 @@ body.home .header--clone {
 .contents.contents--products .child-category-list__body {
   font-size: 1.6rem;
   margin-bottom: 1.6rem;
+}
+.contents.contents--products .fenghuangshan {
+  padding: 4rem;
+  background: #fff;
+  border-radius: 32px;
+  border: 1px solid #F2F4E3;
+}
+@media screen and (max-width: 767px) {
+  .contents.contents--products .fenghuangshan {
+    padding: 4rem 2.4rem;
+  }
+}
+.contents.contents--products .fenghuangshan__heading {
+  font-size: 3.2rem;
+  line-height: 1.2;
+  color: #00282E;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 2.4rem;
+}
+.contents.contents--products .fenghuangshan__content {
+  border-top: 1px solid #F2F4E3;
+  padding-top: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+.contents.contents--products .fenghuangshan__content:last-of-type {
+  margin-bottom: 0;
+}
+.contents.contents--products .fenghuangshan__ttl {
+  color: #00282E;
+  font-size: 2.4rem;
+  line-height: 1.2;
+  font-weight: normal;
+  margin-bottom: 0.8rem;
+}
+.contents.contents--products .fenghuangshan__furigana {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  margin-bottom: 1.6rem;
+  color: #4D6569;
+}
+.contents.contents--products .fenghuangshan__origin {
+  font-size: 1.6rem;
+  color: #4D6569;
+  margin-bottom: 1.6rem;
+}
+.contents.contents--products .fenghuangshan__body {
+  font-size: 1.6rem;
 }
 .contents.contents--products .various-tea {
   border-top: 1px solid #F2F4E3;
