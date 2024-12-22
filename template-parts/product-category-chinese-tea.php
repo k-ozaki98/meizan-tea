@@ -21,6 +21,7 @@ if (!empty($child_terms)) : ?>
             $category_icon = get_field('category_image', $child);
             $category_recipe = get_field('category_recipe', $child);
             $category_text = get_field('category_text', $child);
+            
             $is_tea = get_field('category_tea', $child);
 
             // クラス名を動的に変更
