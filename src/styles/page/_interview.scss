@@ -1,0 +1,306 @@
+@charset "utf-8";
+
+@use '../lib/global'as g;
+@use '../lib/vars'as *;
+
+.contents--interview {
+
+  .l-inner {
+    @include g.max-screen(g.$bp-sp) {
+      padding: 0;
+    }
+  }
+
+  .heading-A {
+    margin: 6.4rem 0;
+  }
+
+  .interview-mv {
+    display: flex;
+
+    @include g.max-screen(g.$bp-sp) {
+      display: block;
+    }
+
+    &__img {
+      width: 50%;
+      flex-shrink: 0;
+
+      @include g.max-screen(g.$bp-sp) {
+        width: 100%;
+      }
+
+      img {
+        width: 100%;
+        border-radius: 3rem 0 0 3rem;
+
+        @include g.max-screen(g.$bp-sp) {
+          border-radius: 3rem 3rem 0 0;
+        }
+      }
+    }
+
+    &__txt-area {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: $main-color;
+      color: #fff;
+      border-radius: 0 3rem 3rem 0;
+      padding: 0 6.4rem;
+
+      @include g.max-screen(g.$bp-sp) {
+        border-radius: 0 0 3rem 3rem;
+        padding: 4rem 2.4rem;
+      }
+    }
+
+    &__copy {
+      font-size: 3.2rem;
+      border-bottom: 1px solid #4D6569;
+      padding-bottom: 4rem;
+
+      @include g.max-screen(g.$bp-sp) {
+        font-size: 2.4rem;
+        padding-bottom: 3.2rem;
+      }
+    }
+
+    &__name {
+      font-size: 2rem;
+      font-weight: bold;
+      padding-top: 4rem;
+
+      @include g.max-screen(g.$bp-sp) {
+        font-size: 1.6rem;
+        padding-top: 3.2rem;
+      }
+    }
+  }
+
+  .interview {
+
+    &__cont {
+      width: 70%;
+      margin: 6.4rem auto 0;
+
+      @include g.max-screen(g.$bp-sp) {
+        width: 90%;
+      }
+
+    }
+
+    &__img {
+      width: 70%;
+      margin: 0 auto;
+      padding-top: 6.4rem;
+
+      @include g.max-screen(g.$bp-sp) {
+        width: 100%;
+      }
+
+      img {
+        width: 100%;
+        border-radius: 3rem;
+
+        @include g.max-screen(g.$bp-sp) {
+          border-radius: 0;
+        }
+      }
+    }
+
+    &__ttl {
+      position: relative;
+      font-size: 1.8rem;
+      padding-left: 4rem;
+
+      @include g.max-screen(g.$bp-sp) {
+        padding-left: 4rem;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        background: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2230%22%20height%3D%2230%22%20viewBox%3D%220%200%2030%2030%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M3.5%2010C3.5%206.41015%206.41015%203.5%2010%203.5H26.5V20C26.5%2023.5899%2023.5898%2026.5%2020%2026.5H3.5V10Z%22%20stroke%3D%22%23D5D933%22%20stroke-width%3D%227%22%2F%3E%3C%2Fsvg%3E')no-repeat center;
+        background-size: contain;
+        width: 2.8rem;
+        height: 2.8rem;
+        transform: translateY(-50%);
+        top: 50%;
+        left: 0;
+
+        @include g.max-screen(g.$bp-sp) {
+          width: 2.8rem;
+          height: 2.8rem;
+        }
+      }
+    }
+
+    &__txt {
+      padding-top: 2.4rem;
+    }
+
+  }
+
+  .profile {
+    width: 70%;
+    margin: 6.4rem auto 0;
+    background-color: #fff;
+    border: 1px solid #F2F4E3;
+    border-radius: .4rem;
+    padding: 2.4rem;
+
+    @include g.max-screen(g.$bp-sp) {
+      width: 100%;
+    }
+
+    &__wrap {
+      display: flex;
+      gap: 2.4rem;
+
+      @include g.max-screen(g.$bp-sp) {
+        display: block;
+      }
+    }
+
+    &__img {
+      width: 12%;
+      flex-shrink: 0;
+
+      @include g.max-screen(g.$bp-sp) {
+        width: 33%;
+        margin: 0 auto 2.4rem;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &__name {
+      font-size: 1.6rem;
+      font-weight: bold;
+      padding-bottom: 1.6rem;
+    }
+
+    &__txt {
+      font-size: 1.4rem;
+    }
+  }
+
+  .about-story {
+    padding-top: 6.4rem;
+
+    &__wrap {
+      margin-top: 4rem;
+      display: flex;
+
+      @include g.max-screen(g.$bp-sp) {
+        display: block;
+      }
+
+      li {
+        position: relative;
+        overflow: hidden;
+        width: 50%;
+        height: 50rem;
+
+        @include g.max-screen(g.$bp-sp) {
+          width: 100%;
+          height: 30rem;
+        }
+
+        a {
+          height: 100%;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+      }
+    }
+
+    &__bg {
+      position: relative;
+      display: block;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgb(0, 0, 0);
+        opacity: .3;
+        transition: .25s linear;
+      }
+
+      &:hover {
+
+        &::before {
+          background-color: rgb(0, 0, 0);
+          opacity: 0;
+        }
+
+        img {
+          transition: .25s linear;
+          transform: scale(1.1);
+        }
+
+        .btn-A {
+          a {
+            color: #D5D933;
+
+            span {
+              animation: txtMove .5s;
+            }
+
+            &::after {
+              border: 2px solid #D5D933;
+            }
+
+            &::before {
+              background: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%2014%2014%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M10.6283%207.67699L0.0439879%207.67699L0.043988%205.93786L10.6283%205.93786L5.96399%201.27351L7.19355%200.043945L13.957%206.80742L7.19355%2013.5709L5.96399%2012.3413L10.6283%207.67699Z%22%20fill%3D%22%23D5D933%22%2F%3E%3C%2Fsvg%3E')no-repeat center;
+              animation: arrowMove .5s;
+            }
+          }
+        }
+      }
+    }
+
+    &__txt-area {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+
+      @include g.max-screen(g.$bp-sp) {
+        width: 100%;
+      }
+    }
+
+    &__ttl {
+      color: #fff;
+      font-size: 2.4rem;
+      text-align: center;
+      padding-bottom: 2.4rem;
+
+    }
+
+    .btn-A {
+      text-align: center;
+    }
+  }
+
+  .btn-B {
+    margin: 6.4rem auto;
+
+    @include g.max-screen(g.$bp-sp) {
+      width: 90%;
+    }
+  }
+}
