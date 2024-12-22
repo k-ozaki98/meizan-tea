@@ -9,6 +9,7 @@
   gap: .5rem;
   font-size: 4.8rem;
   text-align: center;
+  font-weight: normal;
 
   @include g.max-screen(g.$bp-sp) {
     font-size: 3.6rem;
@@ -18,5 +19,6 @@
   span {
     font-family: "Advent Pro", sans-serif;
     font-size: 1.6rem;
+    font-weight: bold;
   }
 }

@@ -1,42 +1,38 @@
 <?php get_header('', ['pageId' => 'news']); ?>
 <main class="contents contents--news">
-    <div class="container l-inner news">
-        <h2 class="sec-ttl">
-            <span class="sec-ttl__en">NEWS</span>
-            <span class="sec-ttl__ja">新着情報</span>
-        </h2>
+  <div class="container l-inner news">
+    <h2 class="heading-A"><span>NEWS</span>新着情報</h2>
 
-        <?php
+    <?php
         // 投稿がある年を取得
         global $wpdb;
         $years = $wpdb->get_col(
-            "SELECT DISTINCT YEAR(post_date) 
-            FROM $wpdb->posts 
-            WHERE post_type = 'post' 
-            AND post_status = 'publish' 
+            "SELECT DISTINCT YEAR(post_date)
+            FROM $wpdb->posts
+            WHERE post_type = 'post'
+            AND post_status = 'publish'
             ORDER BY post_date DESC"
         );
-        
+
         ?>
 
-        <form method="get" class="news-filter-form" action="<?php echo esc_url(get_permalink()); ?>">
-            <div class="select-wrapper">
-                <select id="filter-year" name="year" onchange="this.form.submit();">
-                    <option value="">すべての年</option>
-                    <?php 
+    <form method="get" class="news-filter-form" action="<?php echo esc_url(get_permalink()); ?>">
+      <div class="select-wrapper">
+        <select id="filter-year" name="year" onchange="this.form.submit();">
+          <option value="">すべての年</option>
+          <?php
                     $selected_year = isset($_GET['year']) ? (int)$_GET['year'] : '';
-                    foreach ($years as $year) : 
+                    foreach ($years as $year) :
                     ?>
-                        <option value="<?php echo esc_attr($year); ?>" 
-                                <?php selected($selected_year, (int)$year); ?>>
-                            <?php echo esc_html($year); ?>年
-                        </option>
-                    <?php endforeach; ?>
-                </select>
-            </div>
-        </form>
+          <option value="<?php echo esc_attr($year); ?>" <?php selected($selected_year, (int)$year); ?>>
+            <?php echo esc_html($year); ?>年
+          </option>
+          <?php endforeach; ?>
+        </select>
+      </div>
+    </form>
 
-        <?php
+    <?php
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
         $args = array(
             'post_type' => 'post',
@@ -57,18 +53,18 @@
                 )
             );
         }
-        
+
         $news_query = new WP_Query($args);
 
-        
+
 
         if ($news_query->have_posts()) : ?>
-            <ul class="news-list">
-                <?php while ($news_query->have_posts()) : $news_query->the_post(); ?>
-                <li class="news-list__item">
-                    <a href="<?php the_permalink(); ?>">
-                        <div class="news-list__top">
-                        <?php 
+    <ul class="news-list">
+      <?php while ($news_query->have_posts()) : $news_query->the_post(); ?>
+      <li class="news-list__item">
+        <a href="<?php the_permalink(); ?>">
+          <div class="news-list__top">
+            <?php
                         $categories = get_the_category();
                         if ($categories) {
                             $category = $categories[0];
@@ -84,21 +80,21 @@
                                     $category_class = 'news-category--default';
                             }
                         ?>
-                            <span class="news-category <?php echo esc_attr($category_class); ?>">
-                                <?php echo esc_html($category->name); ?>
-                            </span>
-                        <?php } ?>
-                            <span class="date">
-                                <?php echo get_the_date('Y.m.d'); ?>
-                            </span>
-                        </div>
-                        <h1 class="news-list__ttl"><?php the_title(); ?></h1>
-                    </a>
-                </li>
-                <?php endwhile; ?>
-            </ul>
+            <span class="news-category <?php echo esc_attr($category_class); ?>">
+              <?php echo esc_html($category->name); ?>
+            </span>
+            <?php } ?>
+            <span class="date">
+              <?php echo get_the_date('Y.m.d'); ?>
+            </span>
+          </div>
+          <h1 class="news-list__ttl"><?php the_title(); ?></h1>
+        </a>
+      </li>
+      <?php endwhile; ?>
+    </ul>
 
-            <?php
+    <?php
             // ページネーション
             $current_url = home_url(add_query_arg(array(), $wp->request));
             echo paginate_links(array(
@@ -112,12 +108,12 @@
             ));
             ?>
 
-        <?php else : ?>
-            <p class="no-posts">お知らせはありません。</p>
-        <?php 
+    <?php else : ?>
+    <p class="no-posts">お知らせはありません。</p>
+    <?php
         endif;
         wp_reset_postdata();
         ?>
-    </div>
+  </div>
 </main>
 <?php get_footer(); ?>

@@ -3169,6 +3169,7 @@ sup {
   gap: 0.5rem;
   font-size: 4.8rem;
   text-align: center;
+  font-weight: normal;
 }
 @media screen and (max-width: 767px) {
   .heading-A {
@@ -3179,6 +3180,7 @@ sup {
 .heading-A span {
   font-family: "Advent Pro", sans-serif;
   font-size: 1.6rem;
+  font-weight: bold;
 }
 
 .btn-A a {
@@ -3347,15 +3349,17 @@ sup {
   transition: 0.2s;
   font-family: "Noto Serif JP", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   text-align: center;
+  font-weight: bold;
   margin: 0 auto;
+}
+.btn-C a:hover {
+  color: #fff;
+  background: #A6A926;
 }
 @media screen and (max-width: 767px) {
   .btn-C {
     width: 100%;
   }
-}
-.btn-C:hover {
-  opacity: 0.8;
 }
 
 .btn-D a {
@@ -3445,6 +3449,10 @@ sup {
   text-align: center;
   padding: 4rem 0;
   cursor: pointer;
+  transition: 0.25s all;
+}
+.pagetop:hover {
+  opacity: 0.7;
 }
 .pagetop a {
   position: relative;
@@ -3492,7 +3500,7 @@ sup {
   left: 50%;
 }
 .fix-btn .wave {
-  background-color: #D5D933;
+  background-color: #A6A926;
   position: absolute;
   top: 110%;
   height: 200%;
@@ -3712,6 +3720,7 @@ sup {
 .sec-ttl__en {
   font-family: "Advent Pro", sans-serif;
   font-size: 1.6rem;
+  font-weight: bold;
   line-height: 1.2;
   text-align: center;
 }
@@ -4066,13 +4075,13 @@ body.home .header--clone {
 
 	階層はルートクラスより、三階層までが基本
 	【例】
-	.top-sec .top-sec__ttl span {		
+	.top-sec .top-sec__ttl span {
 	}
 	※CSSに展開した場合
 
 ----------------------------------------------------*/
-.contents.contents--news {
-  padding: 6.4rem 0;
+.contents.contents--news .heading-A {
+  margin: 6.4rem auto;
 }
 .contents.contents--news .news form {
   text-align: center;
@@ -4697,7 +4706,7 @@ body.home .header--clone {
 
 	階層はルートクラスより、三階層までが基本
 	【例】
-	.top-sec .top-sec__ttl span {		
+	.top-sec .top-sec__ttl span {
 	}
 	※CSSに展開した場合
 
@@ -4780,8 +4789,10 @@ body.home .header--clone {
 .contents.contents--contact .contact .zip-code-group {
   display: flex;
   align-items: center;
-  gap: 4rem; /* 要素間の隙間 */
-  flex-wrap: wrap; /* スマホ表示時の折り返し用 */
+  gap: 4rem;
+  /* 要素間の隙間 */
+  flex-wrap: wrap;
+  /* スマホ表示時の折り返し用 */
 }
 .contents.contents--contact .contact .zip-input-group {
   display: flex;
@@ -4828,7 +4839,8 @@ body.home .header--clone {
   font-family: "Noto Serif JP", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 .contents.contents--contact .contact .submit-btn .btn:hover {
-  opacity: 0.8;
+  color: #fff;
+  background: #A6A926;
 }
 .contents.contents--contact .contact .wpcf7-not-valid-tip {
   font-size: 1.6rem;
@@ -5931,6 +5943,156 @@ body.home .header--clone {
 }
 @media screen and (max-width: 767px) {
   .contents--strength .btn-B {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contents--oem .l-inner {
+    padding: 0;
+  }
+}
+.contents--oem .heading-A {
+  margin: 6.4rem 0;
+}
+.contents--oem .oem-mv img {
+  width: 100%;
+}
+.contents--oem .oem {
+  padding-top: 6.4rem;
+}
+@media screen and (max-width: 767px) {
+  .contents--oem .oem {
+    padding: 6.4rem 2.4rem 0 2.4rem;
+  }
+}
+.contents--oem .oem__ttl {
+  font-size: 3.2rem;
+  padding-bottom: 2.4rem;
+}
+@media screen and (max-width: 767px) {
+  .contents--oem .oem__ttl {
+    font-size: 2.4rem;
+  }
+}
+.contents--oem .oem__wrap {
+  display: flex;
+  gap: 4rem;
+  padding-bottom: 2.4rem;
+}
+@media screen and (max-width: 767px) {
+  .contents--oem .oem__wrap {
+    display: block;
+  }
+}
+.contents--oem .oem__txt-area {
+  width: 60%;
+}
+@media screen and (max-width: 767px) {
+  .contents--oem .oem__txt-area {
+    width: 100%;
+  }
+}
+.contents--oem .oem__txt {
+  font-size: 1.6rem;
+  padding-bottom: 2.4rem;
+}
+.contents--oem .oem__img {
+  width: 35%;
+}
+@media screen and (max-width: 767px) {
+  .contents--oem .oem__img {
+    width: 100%;
+  }
+}
+.contents--oem .oem__img img {
+  width: 100%;
+}
+.contents--oem .oem__list {
+  background: #fff;
+  border: 1px solid #F2F4E3;
+  border-radius: 3rem;
+  padding: 2.4rem 4rem;
+}
+@media screen and (max-width: 767px) {
+  .contents--oem .oem__list {
+    padding: 2.4rem;
+  }
+}
+.contents--oem .oem__list li {
+  position: relative;
+  padding-left: 2rem;
+  font-size: 1.6rem;
+}
+.contents--oem .oem__list li::before {
+  position: absolute;
+  content: "●";
+  color: #D5D933;
+  left: 0;
+}
+.contents--oem .oem__img-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+  margin: 4rem 0;
+}
+@media screen and (max-width: 767px) {
+  .contents--oem .oem__img-wrap {
+    justify-content: center;
+  }
+}
+.contents--oem .oem__img-wrap img {
+  width: calc(33.3333333333% - 20px);
+}
+@media screen and (max-width: 767px) {
+  .contents--oem .oem__img-wrap img {
+    width: calc(50% - 25px);
+  }
+}
+.contents--oem .oem__contact {
+  display: flex;
+  gap: 2.4rem;
+  background: #4D6569;
+  border-radius: 3rem;
+  padding: 4rem;
+}
+@media screen and (max-width: 767px) {
+  .contents--oem .oem__contact {
+    display: block;
+  }
+}
+.contents--oem .oem__contact-icon {
+  width: 10%;
+}
+@media screen and (max-width: 767px) {
+  .contents--oem .oem__contact-icon {
+    width: 30%;
+    margin: 0 auto 2.4rem;
+  }
+}
+.contents--oem .oem__contact-icon img {
+  width: 100%;
+}
+.contents--oem .oem__contact-ttl {
+  color: #fff;
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+  .contents--oem .oem__contact-ttl {
+    font-size: 2.4rem;
+  }
+}
+.contents--oem .oem__contact-txt {
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.btn-C {
+  margin: 6.4rem auto;
+}
+@media screen and (max-width: 767px) {
+  .btn-C {
     width: 90%;
   }
 }

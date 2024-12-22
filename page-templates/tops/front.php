@@ -37,7 +37,7 @@
       <h2 class="heading-A"><span>ABOUT US</span>人と心と時間を<br class="is-Sp">満たす</h2>
       <p class="about__txt">時に癒やし、時に賑わいの中心となり、人と人、心や時間までもが<br class="is-Pc_Tab">満ちるお茶のある毎日のために。</p>
       <div class="btn-A">
-        <a href=""><span>VIEW MORE</span></a>
+        <a href="/about/"><span>VIEW MORE</span></a>
       </div>
       <div class="about__img">
         <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/about-img.png" alt="">
@@ -110,7 +110,7 @@
       <p class="tea__txt">中国茶から紅茶、日本茶、ハーブ類まで常時数百種類の茶葉を取扱っています。</p>
       <ul class="tea__list">
         <li>
-          <a href="">
+          <a href="/product-category/chinese-tea/">
             <div class="wave"></div>
             <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/tea-img01.png" alt="">
             <div class="tea__ttl-wrap">
@@ -119,7 +119,7 @@
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="/product-category/taiwan-tea/">
             <div class="wave"></div>
             <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/tea-img02.png" alt="">
             <div class="tea__ttl-wrap">
@@ -128,7 +128,7 @@
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="/product-category/black-tea/">
             <div class="wave"></div>
             <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/tea-img03.png" alt="">
             <div class="tea__ttl-wrap">
@@ -137,7 +137,7 @@
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="/product-category/original/">
             <div class="wave"></div>
             <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/tea-img04.png" alt="">
             <div class="tea__ttl-wrap">
@@ -146,7 +146,7 @@
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="/product-category/japanese-tea/">
             <div class="wave"></div>
             <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/tea-img05.png" alt="">
             <div class="tea__ttl-wrap">
@@ -155,7 +155,7 @@
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="/product-category/other-tea/">
             <div class="wave"></div>
             <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/tea-img06.png" alt="">
             <div class="tea__ttl-wrap">
@@ -165,7 +165,7 @@
         </li>
       </ul>
       <div class="btn-A">
-        <a href=""><span>VIEW MORE</span></a>
+        <a href="/products/"><span>VIEW MORE</span></a>
       </div>
     </div>
   </section>
@@ -175,7 +175,7 @@
       <div class="news__ttl-area">
         <h2 class="heading-A"><span>NEWS</span>新着情報</h2>
         <div class="btn-A is-Pc_Tab">
-          <a href=""><span>VIEW MORE</span></a>
+          <a href="/news/"><span>VIEW MORE</span></a>
         </div>
       </div>
       <ul class="news__list">
@@ -215,7 +215,7 @@
         <?php endif; ?>
       </ul>
       <div class="btn-A is-Sp">
-        <a href=""><span>VIEW MORE</span></a>
+        <a href="/news/"><span>VIEW MORE</span></a>
       </div>
     </div>
   </section>

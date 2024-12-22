@@ -196,7 +196,13 @@
     transition: 0.2s;
     font-family: "Noto Serif JP", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
     text-align: center;
+    font-weight: bold;
     margin: 0 auto;
+
+    &:hover {
+      color: #fff;
+      background: #A6A926;
+    }
 
   }
 
@@ -204,9 +210,6 @@
     width: 100%;
   }
 
-  &:hover {
-    opacity: 0.8;
-  }
 }
 
 .btn-D {
@@ -317,6 +320,11 @@
   text-align: center;
   padding: 4rem 0;
   cursor: pointer;
+  transition: .25s all;
+
+  &:hover {
+    opacity: .7;
+  }
 
   a {
     position: relative;
@@ -370,7 +378,7 @@
   }
 
   .wave {
-    background-color: #D5D933;
+    background-color: #A6A926;
     position: absolute;
     top: 110%;
     height: 200%;
