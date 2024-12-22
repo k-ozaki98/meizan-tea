@@ -3,6 +3,138 @@
 @use '../lib/global'as g;
 @use '../lib/vars'as *;
 
+.btn-A {
+
+  a {
+    position: relative;
+    font-family: "Advent Pro", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding-right: 6rem;
+    transition: .25s all;
+
+
+    &::after {
+      position: absolute;
+      content: "";
+      border: 2px solid $main-color;
+      border-radius: 100%;
+      width: 4rem;
+      height: 4rem;
+      transform: translateY(-50%);
+      top: 50%;
+      right: 0;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      background: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%2014%2014%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M10.6283%207.67699L0.0439879%207.67699L0.043988%205.93786L10.6283%205.93786L5.96399%201.27351L7.19355%200.043945L13.957%206.80742L7.19355%2013.5709L5.96399%2012.3413L10.6283%207.67699Z%22%20fill%3D%22%2300282E%22%2F%3E%3C%2Fsvg%3E')no-repeat center;
+      background-size: contain;
+      width: 1.4rem;
+      height: 1.3rem;
+      transform: translateY(-50%) translateX(0);
+      top: 50%;
+      right: 1.3rem;
+    }
+
+    span {
+      display: inline-block;
+    }
+
+    &:hover {
+      color: #D5D933;
+    }
+
+    &:hover span {
+      animation: txtMove .5s;
+    }
+
+    &:hover::after {
+      border: 2px solid #D5D933;
+    }
+
+    &:hover::before {
+      background: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%2014%2014%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M10.6283%207.67699L0.0439879%207.67699L0.043988%205.93786L10.6283%205.93786L5.96399%201.27351L7.19355%200.043945L13.957%206.80742L7.19355%2013.5709L5.96399%2012.3413L10.6283%207.67699Z%22%20fill%3D%22%23D5D933%22%2F%3E%3C%2Fsvg%3E')no-repeat center;
+      animation: arrowMove .5s;
+    }
+  }
+
+  &--white {
+    a {
+      color: #fff;
+
+      &::after {
+        border: 2px solid #fff;
+      }
+
+      &::before {
+        background: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%2014%2014%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M10.6283%207.67699L0.0439879%207.67699L0.043988%205.93786L10.6283%205.93786L5.96399%201.27351L7.19355%200.043945L13.957%206.80742L7.19355%2013.5709L5.96399%2012.3413L10.6283%207.67699Z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E')no-repeat center;
+      }
+    }
+  }
+}
+
+/* アニメーションキー */
+@keyframes arrowMove {
+  0% {
+    transform: translateY(-50%) translateX(0);
+    /* 初期位置 */
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(-50%) translateX(1.5rem);
+    /* 右へ移動 */
+    opacity: 0;
+    /* フェードアウト */
+  }
+
+  51% {
+    transform: translateY(-50%) translateX(-1.5rem);
+    /* 左端に移動 */
+    opacity: 0;
+    /* 表示なし */
+  }
+
+  100% {
+    transform: translateY(-50%) translateX(0);
+    /* 初期位置に戻る */
+    opacity: 1;
+    /* フェードイン */
+  }
+}
+
+@keyframes txtMove {
+  0% {
+    transform: translateY(0);
+    /* 初期位置 */
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(-1rem);
+    /* 上に移動 */
+    opacity: 0;
+    /* フェードアウト */
+  }
+
+  51% {
+    transform: translateY(1rem);
+    /* 上に移動 */
+    opacity: 0;
+    /* 表示なし */
+  }
+
+  100% {
+    transform: translateY(0);
+    /* 初期位置に戻る */
+    /* 初期位置に戻る */
+    opacity: 1;
+    /* フェードイン */
+  }
+}
+
 .btn-B {
   width: 38.4rem;
   margin: 0 auto;
@@ -10,6 +142,7 @@
   @include g.max-screen(g.$bp-sp) {
     width: 100%;
   }
+
   a {
     font-size: 1.6rem;
     display: inline-block;
@@ -22,7 +155,8 @@
     background: #fff;
     border-radius: 60px;
     border: 1px solid #D8E3E5;
-  
+    transition: .25s all;
+
     &::after {
       content: "";
       width: 1.5rem;
@@ -34,6 +168,10 @@
       display: inline-block;
       background: url(../images/common/back-btn-icon.svg) no-repeat center center;
       background-size: contain;
+    }
+
+    &:hover {
+      background: #EAF1F2;
     }
 
   }
@@ -202,137 +340,6 @@
   }
 }
 
-.btn-A {
-
-  a {
-    position: relative;
-    font-family: "Advent Pro", sans-serif;
-    font-size: 1.6rem;
-    font-weight: 600;
-    padding-right: 6rem;
-    transition: .25s all;
-
-
-    &::after {
-      position: absolute;
-      content: "";
-      border: 2px solid $main-color;
-      border-radius: 100%;
-      width: 4rem;
-      height: 4rem;
-      transform: translateY(-50%);
-      top: 50%;
-      right: 0;
-    }
-
-    &::before {
-      position: absolute;
-      content: "";
-      background: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%2014%2014%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M10.6283%207.67699L0.0439879%207.67699L0.043988%205.93786L10.6283%205.93786L5.96399%201.27351L7.19355%200.043945L13.957%206.80742L7.19355%2013.5709L5.96399%2012.3413L10.6283%207.67699Z%22%20fill%3D%22%2300282E%22%2F%3E%3C%2Fsvg%3E')no-repeat center;
-      background-size: contain;
-      width: 1.4rem;
-      height: 1.3rem;
-      transform: translateY(-50%) translateX(0);
-      top: 50%;
-      right: 1.3rem;
-    }
-
-    span {
-      display: inline-block;
-    }
-
-    &:hover {
-      color: #D5D933;
-    }
-
-    &:hover span {
-      animation: txtMove .5s;
-    }
-
-    &:hover::after {
-      border: 2px solid #D5D933;
-    }
-
-    &:hover::before {
-      background: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%2014%2014%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M10.6283%207.67699L0.0439879%207.67699L0.043988%205.93786L10.6283%205.93786L5.96399%201.27351L7.19355%200.043945L13.957%206.80742L7.19355%2013.5709L5.96399%2012.3413L10.6283%207.67699Z%22%20fill%3D%22%23D5D933%22%2F%3E%3C%2Fsvg%3E')no-repeat center;
-      animation: arrowMove .5s;
-    }
-  }
-
-  &--white {
-    a {
-      color: #fff;
-
-      &::after {
-        border: 2px solid #fff;
-      }
-
-      &::before {
-        background: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%2014%2014%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M10.6283%207.67699L0.0439879%207.67699L0.043988%205.93786L10.6283%205.93786L5.96399%201.27351L7.19355%200.043945L13.957%206.80742L7.19355%2013.5709L5.96399%2012.3413L10.6283%207.67699Z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E')no-repeat center;
-      }
-    }
-  }
-}
-
-/* アニメーションキー */
-@keyframes arrowMove {
-  0% {
-    transform: translateY(-50%) translateX(0);
-    /* 初期位置 */
-    opacity: 1;
-  }
-
-  50% {
-    transform: translateY(-50%) translateX(1.5rem);
-    /* 右へ移動 */
-    opacity: 0;
-    /* フェードアウト */
-  }
-
-  51% {
-    transform: translateY(-50%) translateX(-1.5rem);
-    /* 左端に移動 */
-    opacity: 0;
-    /* 表示なし */
-  }
-
-  100% {
-    transform: translateY(-50%) translateX(0);
-    /* 初期位置に戻る */
-    opacity: 1;
-    /* フェードイン */
-  }
-}
-
-@keyframes txtMove {
-  0% {
-    transform: translateY(0);
-    /* 初期位置 */
-    opacity: 1;
-  }
-
-  50% {
-    transform: translateY(-1rem);
-    /* 上に移動 */
-    opacity: 0;
-    /* フェードアウト */
-  }
-
-  51% {
-    transform: translateY(1rem);
-    /* 上に移動 */
-    opacity: 0;
-    /* 表示なし */
-  }
-
-  100% {
-    transform: translateY(0);
-    /* 初期位置に戻る */
-    /* 初期位置に戻る */
-    opacity: 1;
-    /* フェードイン */
-  }
-}
 
 .fix-btn {
   position: fixed;

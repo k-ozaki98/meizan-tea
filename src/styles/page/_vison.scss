@@ -31,58 +31,47 @@
       -ms-writing-mode: tb-rl;
       writing-mode: vertical-rl;
       text-align: center;
+
+      @include g.max-screen(g.$bp-sp) {
+        font-size: 3.6rem;
+      }
     }
   }
 
-  .about {
+  .vison {
     padding-top: 6.4rem;
+
+    @include g.max-screen(g.$bp-sp) {
+      padding: 6.4rem 2.4rem 0 2.4rem;
+    }
 
     &__ttl {
       font-size: 3.2rem;
-      text-align: center;
+      padding-bottom: 2.4rem;
 
       @include g.max-screen(g.$bp-sp) {
         font-size: 2.4rem;
-        line-height: 1.2;
       }
     }
 
-    &__list {
-      margin-top: 4rem;
-      display: flex;
-      gap: 2.4rem;
-
-      @include g.max-screen(g.$bp-sp) {
-        display: block;
-      }
-
-      li {
-        background: #ffff;
-        border: 1px solid #F2F4E3;
-        border-radius: 1rem;
-        padding: 4rem;
-
-        @include g.max-screen(g.$bp-sp) {
-          border-radius: 0;
-          margin: 1.6rem 0;
-        }
-      }
-    }
-
-    &__list-top {
-      text-align: center;
-    }
-
-    &__list-ttl {
-      font-size: 2.4rem;
-      padding-top: .8rem;
-    }
-
-    &__list-body {
+    &__txt {
       font-size: 1.6rem;
+      padding-bottom: 2.4rem;
+    }
+
+    &__name-area {
+      text-align: right;
+    }
+
+    &__name {
+      font-size: 1.6rem;
+    }
+
+    &__img {
       padding-top: 1.6rem;
     }
   }
+
 
   .about-story {
     padding-top: 6.4rem;
@@ -99,13 +88,21 @@
         position: relative;
         overflow: hidden;
         width: 50%;
+        height: 50rem;
 
         @include g.max-screen(g.$bp-sp) {
           width: 100%;
+          height: 30rem;
+        }
+
+        a {
+          height: 100%;
         }
 
         img {
           width: 100%;
+          height: 100%;
+          object-fit: cover;
         }
 
       }
@@ -184,41 +181,11 @@
     }
   }
 
-  .chinese {
-    padding: 6.4rem 0;
+  .btn-B {
+    margin: 6.4rem auto;
 
-    &__wrap {
-      background: #fff;
-      border: 1px solid #F2F4E3;
-      border-radius: 1rem;
-      padding: 4rem;
-      display: flex;
-      flex-direction: column;
-      gap: 2.4rem;
-    }
-
-    &__ttl {
-      display: grid;
-      font-family: 'Noto Sans JP', sans-serif;
-      color: #6F4627;
-      font-size: 2.4rem;
-      text-align: center;
-
-      span {
-        font-size: 1.6rem;
-      }
-    }
-
-    &__txt {
-      font-family: 'Noto Sans JP', sans-serif;
-    }
-
-    &__address {
-      font-family: 'Noto Sans JP', sans-serif;
-
-      a {
-        text-decoration: underline;
-      }
+    @include g.max-screen(g.$bp-sp) {
+      width: 90%;
     }
   }
 }
