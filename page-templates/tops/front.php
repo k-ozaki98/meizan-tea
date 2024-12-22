@@ -54,14 +54,14 @@
                 数百種の茶葉を取り扱っております。
               </p>
               <div class="btn-A btn-A--white is-Pc_Tab">
-                <a href=""><span>VIEW MORE</span></a>
+                <a href="/strength#strength01"><span>VIEW MORE</span></a>
               </div>
             </div>
             <div class="strength__img-area">
               <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/strength-img01.png" alt="">
             </div>
             <div class="btn-A btn-A--white is-Sp">
-              <a href=""><span>VIEW MORE</span></a>
+              <a href="/strength#strength01"><span>VIEW MORE</span></a>
             </div>
           </li>
           <li>
@@ -71,14 +71,14 @@
               <p class="strength__txt">明山茶業にはお茶のスペシャリスト、中国政府公認の高級評茶員が在籍しております。
               </p>
               <div class="btn-A btn-A--white is-Pc_Tab">
-                <a href=""><span>VIEW MORE</span></a>
+                <a href="/strength#strength02"><span>VIEW MORE</span></a>
               </div>
             </div>
             <div class="strength__img-area">
               <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/strength-img02.png" alt="">
             </div>
             <div class="btn-A btn-A--white is-Sp">
-              <a href=""><span>VIEW MORE</span></a>
+              <a href="/strength#strength02"><span>VIEW MORE</span></a>
             </div>
           </li>
           <li>
@@ -89,14 +89,14 @@
                 ＜OEM＞様々なご要望に応えるオリジナルティーをご提案します。
               </p>
               <div class="btn-A btn-A--white is-Pc_Tab">
-                <a href=""><span>VIEW MORE</span></a>
+                <a href="/strength#strength03"><span>VIEW MORE</span></a>
               </div>
             </div>
             <div class="strength__img-area">
               <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/strength-img03.png" alt="">
             </div>
             <div class="btn-A btn-A--white is-Sp">
-              <a href=""><span>VIEW MORE</span></a>
+              <a href="/strength#strength03"><span>VIEW MORE</span></a>
             </div>
           </li>
         </ul>
