@@ -39,9 +39,9 @@
       <div class="btn-A">
         <a href="/about/"><span>VIEW MORE</span></a>
       </div>
-      <div class="about__img">
+      <!-- <div class="about__img">
         <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/about-img.png" alt="">
-      </div>
+      </div> -->
 
       <div class="strength">
         <ul class="strength__card">

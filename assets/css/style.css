@@ -2891,7 +2891,7 @@ sup {
 .footer-menu__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 2.4rem;
+  gap: 2rem;
   width: 56rem;
 }
 @media screen and (max-width: 767px) {
@@ -2901,10 +2901,9 @@ sup {
   }
 }
 .footer-menu__list li {
-  width: calc((100% - 2.4rem) / 2);
+  width: calc((100% - 2rem) / 2);
   font-size: 1.4rem;
   line-height: 1.3;
-  margin-bottom: 1.5rem;
 }
 @media screen and (max-width: 767px) {
   .footer-menu__list li {
@@ -2919,6 +2918,7 @@ sup {
   display: block;
   border-bottom: 1px dotted #4D6569;
   position: relative;
+  transition: 0.25s all;
 }
 .footer-menu__list li a::after {
   content: "";
@@ -2931,9 +2931,13 @@ sup {
   background: url(../images/common/footer-arrow.svg) no-repeat center center;
   background-size: contain;
 }
+.footer-menu__list li a:hover {
+  color: #D5D933;
+}
 .footer-menu__bnr {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 2.4rem;
 }
 @media screen and (max-width: 767px) {
@@ -2985,7 +2989,7 @@ sup {
 .footer-detail__wrap dl {
   display: flex;
   flex-direction: column;
-  margin: 1.3rem 0;
+  margin: 0.8rem 0;
   font-size: 1.2rem;
 }
 .footer-detail__wrap dt {
@@ -3169,7 +3173,8 @@ sup {
   gap: 0.5rem;
   font-size: 4.8rem;
   text-align: center;
-  font-weight: normal;
+  font-weight: 300;
+  letter-spacing: 0.12em;
 }
 @media screen and (max-width: 767px) {
   .heading-A {
@@ -3181,6 +3186,7 @@ sup {
   font-family: "Advent Pro", sans-serif;
   font-size: 1.6rem;
   font-weight: bold;
+  letter-spacing: 0.1em;
 }
 
 .btn-A a {
@@ -3190,6 +3196,7 @@ sup {
   font-weight: 600;
   padding-right: 6rem;
   transition: 0.25s all;
+  letter-spacing: 0.12em;
 }
 .btn-A a::after {
   position: absolute;
@@ -3450,13 +3457,13 @@ sup {
   padding: 4rem 0;
   cursor: pointer;
   transition: 0.25s all;
+  color: #00282E;
 }
 .pagetop:hover {
-  opacity: 0.7;
+  color: #D5D933;
 }
 .pagetop a {
   position: relative;
-  color: #00282E;
   font-family: "Advent Pro", sans-serif;
   font-size: 1.6rem;
   font-weight: 600;
@@ -3509,7 +3516,7 @@ sup {
   left: -50%;
   transform: rotate(360deg);
   transition: all 5s ease;
-  animation: wave 30s linear infinite;
+  animation: wave 23s linear infinite;
 }
 @keyframes wave {
   0% {
@@ -3802,6 +3809,9 @@ body.home .header--clone {
   text-align: center;
   padding: 2.4rem 0 4rem;
 }
+.contents.contents--top .strength {
+  margin-top: 6.4rem;
+}
 .contents.contents--top .strength__card li {
   display: flex;
   justify-content: space-between;
@@ -3939,7 +3949,7 @@ body.home .header--clone {
   width: 100%;
 }
 .contents.contents--top .tea .wave {
-  background-color: #00282E;
+  background-color: #A6A926;
   position: absolute;
   top: 110%;
   height: 200%;
@@ -3948,7 +3958,7 @@ body.home .header--clone {
   left: -50%;
   transform: rotate(360deg);
   transition: all 5s ease;
-  animation: wave 30s linear infinite;
+  animation: wave 25s linear infinite;
 }
 @keyframes wave {
   0% {

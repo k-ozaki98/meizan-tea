@@ -53,6 +53,8 @@ body.home .header--clone {
 	}
 
 	.strength {
+		margin-top: 6.4rem;
+
 		&__card {
 			li {
 				display: flex;
@@ -205,7 +207,7 @@ body.home .header--clone {
 		}
 
 		.wave {
-			background-color: $main-color;
+			background-color: #A6A926;
 			position: absolute;
 			top: 110%;
 			height: 200%;
@@ -214,7 +216,7 @@ body.home .header--clone {
 			left: -50%;
 			transform: rotate(360deg);
 			transition: all 5s ease;
-			animation: wave 30s linear infinite;
+			animation: wave 25s linear infinite;
 		}
 
 		@keyframes wave {

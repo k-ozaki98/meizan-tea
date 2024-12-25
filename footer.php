@@ -41,12 +41,12 @@
           <dt>本社・倉庫</dt>
           <dd>〒160-0022　東京都新宿区新宿1-25-11</dd>
         </dl>
-        <a href="" class="google-link">Google map</a>
+        <a target="_blank" href="https://maps.app.goo.gl/nAN8ob17k2KkGLxn7" class="google-link">Google map</a>
         <dl>
           <dt>営業オフィス（2022.4月新設）</dt>
           <dd>〒160-0022　東京都新宿区新宿1-29-16-201（東京メトロ丸の内線 新宿御苑駅 徒歩3分）</dd>
         </dl>
-        <a href="" class="google-link">Google map</a>
+        <a target="_blank" href="https://maps.app.goo.gl/zkMWAQmq5oQRhURh8" class="google-link">Google map</a>
         <div class="footer-detail__tel">
           <a href="">TEL: 03-3351-3240</a>
           <a href="">FAX: 03-3351-3242</a>

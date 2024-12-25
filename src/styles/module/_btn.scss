@@ -12,7 +12,7 @@
     font-weight: 600;
     padding-right: 6rem;
     transition: .25s all;
-
+    letter-spacing: 0.12em;
 
     &::after {
       position: absolute;
@@ -321,14 +321,14 @@
   padding: 4rem 0;
   cursor: pointer;
   transition: .25s all;
+  color: $main-color;
 
   &:hover {
-    opacity: .7;
+    color: #D5D933;
   }
 
   a {
     position: relative;
-    color: $main-color;
     font-family: "Advent Pro", sans-serif;
     font-size: 1.6rem;
     font-weight: 600;
@@ -387,7 +387,7 @@
     left: -50%;
     transform: rotate(360deg);
     transition: all 5s ease;
-    animation: wave 30s linear infinite;
+    animation: wave 23s linear infinite;
   }
 
   @keyframes wave {
