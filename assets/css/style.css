@@ -2770,7 +2770,12 @@ sup {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 0;
+  padding: 1.5rem 10rem;
+}
+@media screen and (max-width: 767px) {
+  .header__inner {
+    padding: 1.5rem 0;
+  }
 }
 .header__logo {
   width: 10rem;
@@ -2849,6 +2854,9 @@ sup {
   .footer-top__icon {
     margin: 0 auto 1.6rem;
   }
+}
+.footer-top__icon img {
+  width: 100%;
 }
 .footer-top__container {
   color: #FEFFF7;
@@ -2959,6 +2967,9 @@ sup {
 .footer-menu__bnr a:hover {
   opacity: 0.7;
 }
+.footer-menu__bnr a img {
+  width: 100%;
+}
 
 .footer-detail {
   padding: 8rem 0;
@@ -2989,11 +3000,13 @@ sup {
 .footer-detail__wrap dl {
   display: flex;
   flex-direction: column;
-  margin: 0.8rem 0;
   font-size: 1.2rem;
 }
 .footer-detail__wrap dt {
   font-weight: bold;
+}
+.footer-detail__cont {
+  margin: 1.6rem 0 0;
 }
 .footer-detail__map {
   width: 42rem;
@@ -3036,12 +3049,16 @@ sup {
 }
 .footer-detail__tel {
   font-size: 1.2rem;
-  margin-top: 1.3rem;
 }
 
 .footer-bottom {
   background: #00282E;
-  padding: 3rem 0;
+  padding: 3rem 10rem;
+}
+@media screen and (max-width: 767px) {
+  .footer-bottom {
+    padding: 3rem 0;
+  }
 }
 .footer-bottom__wrap {
   display: flex;
@@ -3097,6 +3114,7 @@ sup {
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
   font-size: 4.8rem;
+  font-weight: 400;
   padding-top: 7.5rem;
   filter: blur(10px);
   opacity: 0;
@@ -3156,6 +3174,7 @@ sup {
 .menu-sp__nav-item a span {
   font-family: "Advent Pro", sans-serif;
   font-size: 1.2rem;
+  letter-spacing: 0.12em;
 }
 .menu-sp__bnr {
   margin-top: 4rem;
@@ -3186,7 +3205,7 @@ sup {
   font-family: "Advent Pro", sans-serif;
   font-size: 1.6rem;
   font-weight: bold;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
 }
 
 .btn-A a {
@@ -3381,6 +3400,7 @@ sup {
   line-height: 1.2;
   font-size: 1.6rem;
   border-radius: 60px;
+  letter-spacing: 0.12em;
 }
 .btn-D a::after {
   content: "";
@@ -3468,6 +3488,7 @@ sup {
   font-size: 1.6rem;
   font-weight: 600;
   padding-left: 3.2rem;
+  letter-spacing: 0.12em;
 }
 .pagetop a::before {
   position: absolute;
@@ -3730,6 +3751,7 @@ sup {
   font-weight: bold;
   line-height: 1.2;
   text-align: center;
+  letter-spacing: 0.12em;
 }
 .sec-ttl__ja {
   font-size: 4.8rem;
@@ -3847,10 +3869,12 @@ body.home .header--clone {
   background-color: #fff;
   border-radius: 5rem;
   padding: 0 1.5rem;
+  letter-spacing: 0.12em;
 }
 .contents.contents--top .strength__ttl {
   font-size: 4rem;
   margin: 1rem 0;
+  font-weight: 400;
 }
 @media screen and (max-width: 767px) {
   .contents.contents--top .strength__ttl {

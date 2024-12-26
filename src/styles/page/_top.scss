@@ -92,11 +92,13 @@ body.home .header--clone {
 			background-color: #fff;
 			border-radius: 5rem;
 			padding: 0 1.5rem;
+			letter-spacing: .12em;
 		}
 
 		&__ttl {
 			font-size: 4rem;
 			margin: 1rem 0;
+			font-weight: 400;
 
 			@include g.max-screen(g.$bp-sp) {
 				font-size: 3.2rem;

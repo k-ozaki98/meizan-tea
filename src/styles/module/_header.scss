@@ -18,7 +18,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 0;
+    padding: 1.5rem 10rem;
+
+    @include g.max-screen(g.$bp-sp) {
+      padding: 1.5rem 0;
+    }
   }
 
   &__logo {

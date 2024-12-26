@@ -37,19 +37,23 @@
     <div class="l-inner footer-detail__inner">
       <div class="footer-detail__wrap">
         <p class="footer-detail__ttl">明山茶業株式会社（ MEIZAN TEA Co., Ltd. ）</p>
-        <dl>
-          <dt>本社・倉庫</dt>
-          <dd>〒160-0022　東京都新宿区新宿1-25-11</dd>
-        </dl>
-        <a target="_blank" href="https://maps.app.goo.gl/nAN8ob17k2KkGLxn7" class="google-link">Google map</a>
-        <dl>
-          <dt>営業オフィス（2022.4月新設）</dt>
-          <dd>〒160-0022　東京都新宿区新宿1-29-16-201（東京メトロ丸の内線 新宿御苑駅 徒歩3分）</dd>
-        </dl>
-        <a target="_blank" href="https://maps.app.goo.gl/zkMWAQmq5oQRhURh8" class="google-link">Google map</a>
-        <div class="footer-detail__tel">
-          <a href="">TEL: 03-3351-3240</a>
-          <a href="">FAX: 03-3351-3242</a>
+        <div class="footer-detail__cont">
+          <dl>
+            <dt>本社・倉庫</dt>
+            <dd>〒160-0022　東京都新宿区新宿1-25-11</dd>
+          </dl>
+          <a target="_blank" href="https://maps.app.goo.gl/nAN8ob17k2KkGLxn7" class="google-link">Google map</a>
+        </div>
+        <div class="footer-detail__cont">
+          <dl>
+            <dt>営業オフィス（2022.4月新設）</dt>
+            <dd>〒160-0022　東京都新宿区新宿1-29-16-201（東京メトロ丸の内線 新宿御苑駅 徒歩3分）</dd>
+          </dl>
+          <a target="_blank" href="https://maps.app.goo.gl/zkMWAQmq5oQRhURh8" class="google-link">Google map</a>
+          <div class="footer-detail__tel">
+            <a href="">TEL: 03-3351-3240</a>
+            <a href="">FAX: 03-3351-3242</a>
+          </div>
         </div>
       </div>
       <div class="footer-detail__map">
@@ -58,7 +62,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <div class="l-inner footer-bottom__wrap">
+    <div class="footer-bottom__wrap">
       <div class="footer-bottom__logo">
         <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/footer-logo.svg" alt="明山 MEIZAN TEA">
       </div>

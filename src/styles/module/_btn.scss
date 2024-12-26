@@ -225,6 +225,7 @@
     line-height: 1.2;
     font-size: 1.6rem;
     border-radius: 60px;
+    letter-spacing: .12em;
 
     &::after {
       content: "";
@@ -333,6 +334,7 @@
     font-size: 1.6rem;
     font-weight: 600;
     padding-left: 3.2rem;
+    letter-spacing: .12em;
 
     &::before {
       position: absolute;

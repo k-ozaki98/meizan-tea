@@ -21,7 +21,7 @@ $pageId = esc_attr(isset($pageId) ? $pageId : '');
   <?php wp_body_open(); ?>
   <div class="wrap">
     <header class="header" id="header">
-      <div class="header__inner l-inner">
+      <div class="header__inner">
         <h1 class="header__logo">
           <a href="/"><img src="<?php echo get_template_directory_uri() ?>/assets/images/common/logo.svg" alt=""></a>
         </h1>
