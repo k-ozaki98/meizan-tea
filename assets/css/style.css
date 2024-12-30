@@ -4215,7 +4215,7 @@ body.home .header--clone {
   border-radius: 8px 0 8px 0;
 }
 .news-category--event {
-  background: #A6A926;
+  background: #A6A926 !important;
 }
 
 /*----------------------------------------------------

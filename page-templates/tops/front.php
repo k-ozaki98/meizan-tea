@@ -191,13 +191,26 @@
             $news_query = new WP_Query($args);
 
             if ($news_query->have_posts()) :
-                while ($news_query->have_posts()) : $news_query->the_post();
-                    $categories = get_the_category();
-                    $category = $categories ? $categories[0]->name : '';
+              while ($news_query->have_posts()) : $news_query->the_post();
+              $categories = get_the_category();
+              if ($categories) {
+                  $category = $categories[0];
+                  $category_class = '';
+                  switch($category->name) {
+                      case 'お知らせ':
+                          $category_class = 'news-category--news';
+                          break;
+                      case 'イベント':
+                          $category_class = 'news-category--event';
+                          break;
+                      default:
+                          $category_class = 'news-category--default';
+                  }
+              }
             ?>
         <li>
           <div class="news__date-area">
-            <p class="news__cate"><?php echo esc_html($category); ?></p>
+          <p class="news__cate <?php echo esc_attr($category_class); ?>"><?php echo esc_html($category->name); ?></p>
             <p class="news__date"><?php echo get_the_date('Y.m.d'); ?></p>
           </div>
           <a href="<?php echo home_url('/news/' . get_the_ID() . '/'); ?>" class="news__ttl">
