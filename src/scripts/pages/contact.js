@@ -22,5 +22,21 @@ export const initContact = () => {
             'your-address'
         );
     });
+
+    document.addEventListener('wpcf7invalid', function(event) {
+      let invalidFields = event.detail.apiResponse.invalid_fields;
+      for(let field in invalidFields) {
+        let element = document.querySelector(`[name="${field}"]`);
+        if(element) {
+          element.classList.add('has-error');
+        }
+      }
+    })
+
+    document.querySelectorAll('.wpcf7-form-control').forEach(input => {
+      input.addEventListener('input', function() {
+        this.classList.remove('has-error');
+      });
+    })
 });
 }

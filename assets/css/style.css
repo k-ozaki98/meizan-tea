@@ -4938,6 +4938,10 @@ body.home .header--clone {
   display: inline-block;
   width: 100%;
 }
+.contents.contents--contact .wpcf7-not-valid {
+  border-color: #DC5151 !important;
+  background: #FCF2F2 !important;
+}
 
 @media screen and (max-width: 767px) {
   .contents--about .l-inner {
