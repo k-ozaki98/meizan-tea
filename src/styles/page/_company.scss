@@ -4,6 +4,7 @@
 @use '../lib/vars'as *;
 
 .contents--company {
+
   .heading-A {
     margin: 6.4rem 0;
   }
@@ -13,6 +14,7 @@
       position: relative;
       font-size: 3.2rem;
       padding-left: 4.5rem;
+      font-weight: 400;
 
       @include g.max-screen(g.$bp-sp) {
         font-size: 2.4rem;
@@ -52,6 +54,7 @@
         font-weight: bold;
         padding: 2.4rem 0;
         border-top: 1px solid #4D6569;
+        font-weight: 600;
 
         @include g.max-screen(g.$bp-sp) {
           width: 100%;
@@ -89,11 +92,11 @@
 
           span {
             width: 20%;
-          }
-        }
 
-        br {
-          display: none;
+            @include g.max-screen(g.$bp-sp) {
+              width: 40%;
+            }
+          }
         }
       }
     }
@@ -122,7 +125,7 @@
         width: .6rem;
         height: 100%;
         top: 0;
-        left: 0;
+        left: .5rem;
       }
     }
 
@@ -151,7 +154,7 @@
         padding-bottom: .5rem;
 
         @include g.max-screen(g.$bp-sp) {
-          width: 9%;
+          width: 12%;
         }
 
         &::before {
@@ -163,7 +166,7 @@
           border: 3px solid #4D6569;
           border-radius: 50%;
           transform: translateY(-50%);
-          left: -.6rem;
+          left: -.2rem;
           z-index: 1;
         }
 
@@ -183,7 +186,7 @@
         flex-shrink: 0;
 
         @include g.max-screen(g.$bp-sp) {
-          width: 30%;
+          width: 40%;
           margin-top: 1.6rem;
         }
 
@@ -192,13 +195,13 @@
           display: block;
           color: #fff;
           background-color: #4D6569;
-          border-radius: 2rem 0 2rem 0;
+          border-radius: 1.2rem 0 1.2rem 0;
           font-size: 1.8rem;
           line-height: 1.1;
           text-align: center;
           padding: 1rem 0;
           z-index: 1;
-
+          letter-spacing: .1em;
         }
       }
 
@@ -209,7 +212,7 @@
         border-bottom: 1px solid #D8E3E5;
 
         @include g.max-screen(g.$bp-sp) {
-          width: 90%;
+          width: 88%;
           padding: 1.6rem 0;
           margin: 0 0 0 auto;
         }
@@ -217,8 +220,11 @@
         .dd-flex {
           display: flex;
 
-          @include g.max-screen(g.$bp-sp) {
-            display: grid;
+          span {
+            @include g.max-screen(g.$bp-sp) {
+              width: 15%;
+              flex-shrink: 0;
+            }
           }
         }
       }
@@ -227,19 +233,31 @@
         width: 75%;
 
         @include g.max-screen(g.$bp-sp) {
-          width: 90%;
+          width: 88%;
           margin: 0 0 0 auto;
         }
 
         dd {
           width: 100%;
         }
+
+        a {
+          transition: .25s all;
+
+          &:hover {
+            opacity: .7;
+          }
+        }
       }
     }
   }
 
   .img-area {
-    padding: 6.4rem 0;
+    padding: 0 0 6.4rem;
+
+    @include g.max-screen(g.$bp-sp) {
+      padding: 6.4rem 0;
+    }
 
     &__wrap {
       display: flex;

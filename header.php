@@ -61,7 +61,7 @@ $pageId = esc_attr(isset($pageId) ? $pageId : '');
     </ul>
     <ul class="menu-sp__bnr">
       <li>
-        <a href=""><img src="<?php echo get_template_directory_uri() ?>/assets/images/common/footer-bnr01.png" alt=""></a>
+        <a href="/oem/"><img src="<?php echo get_template_directory_uri() ?>/assets/images/common/footer-bnr01.png" alt=""></a>
       </li>
       <li>
         <a target="_blank" href="https://www.amazon.co.jp/s?rh=n%3A57239051%2Cp_4%3Ameizan+tea&ref=bl_dp_s_web_57239051"><img src="<?php echo get_template_directory_uri() ?>/assets/images/common/footer-bnr02.png" alt=""></a>

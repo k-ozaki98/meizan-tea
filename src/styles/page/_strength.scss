@@ -83,6 +83,10 @@
 
     &__img-txt {
       font-size: 1.2rem;
+
+      @include g.max-screen(g.$bp-sp) {
+        padding-top: 1.6rem;
+      }
     }
 
     &__oem-img {
@@ -123,6 +127,7 @@
 
       @include g.max-screen(g.$bp-sp) {
         display: block;
+        margin-top: 0;
       }
 
       li {

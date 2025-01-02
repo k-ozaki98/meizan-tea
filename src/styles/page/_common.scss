@@ -4,6 +4,10 @@
 
 .contents {
   padding: 8.5rem 0 0;
+
+  @include g.max-screen(g.$bp-sp) {
+    padding: 3rem 0 0;
+  }
 }
 
 .sec-ttl {

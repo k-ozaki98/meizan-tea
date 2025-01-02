@@ -28,7 +28,7 @@
       font-family: 'Noto Sans JP', sans-serif;
       color: #fff;
       font-size: 2.4rem;
-      font-weight: bold;
+      font-weight: 500;
       text-align: center;
       margin-top: 2.4rem;
     }
@@ -40,6 +40,7 @@
     &__ttl {
       font-size: 3.2rem;
       text-align: center;
+      font-weight: 500;
 
       @include g.max-screen(g.$bp-sp) {
         font-size: 2.4rem;
@@ -161,6 +162,7 @@
     }
 
     &__txt-area {
+      width: 100%;
       position: absolute;
       transform: translate(-50%, -50%);
       top: 50%;
@@ -176,7 +178,6 @@
       font-size: 2.4rem;
       text-align: center;
       padding-bottom: 2.4rem;
-
     }
 
     .btn-A {
@@ -195,6 +196,10 @@
       display: flex;
       flex-direction: column;
       gap: 2.4rem;
+
+      @include g.max-screen(g.$bp-sp) {
+        padding: 4rem 2.4rem;
+      }
     }
 
     &__ttl {
@@ -203,9 +208,19 @@
       color: #6F4627;
       font-size: 2.4rem;
       text-align: center;
+      font-weight: 400;
+
+      @include g.max-screen(g.$bp-sp) {
+        line-height: 1.2;
+      }
 
       span {
         font-size: 1.6rem;
+        letter-spacing: .12em;
+
+        @include g.max-screen(g.$bp-sp) {
+          padding-bottom: 1rem;
+        }
       }
     }
 
@@ -215,9 +230,15 @@
 
     &__address {
       font-family: 'Noto Sans JP', sans-serif;
+      letter-spacing: .12em;
 
       a {
         text-decoration: underline;
+        transition: .25s all;
+
+        &:hover {
+          opacity: .7;
+        }
       }
     }
   }

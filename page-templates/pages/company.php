@@ -21,12 +21,12 @@
         <dt>取扱品</dt>
         <dd>中国茶・紅茶・ハーブティー・日本茶・健康茶・茶器等</dd>
         <dt>役員</dt>
-        <dd><span class="dd-flex"><span>取締役会長</span>砂押　雅夫</span><br>
-          <span class="dd-flex"><span>代表取締役</span>砂押　悠子（伊藤　悠子）</span><br>
-          <span class="dd-flex"><span>取締役中国室長</span>張　文昕</span><br>
-          <span class="dd-flex"><span>取締役営業部長</span>石渡　真人</span><br>
-          <span class="dd-flex"><span>監査役</span>砂押　真樹子</span><br>
-          <span class="dd-flex"><span>顧問</span>高　銀塗</span><br>
+        <dd><span class="dd-flex"><span>取締役会長</span>砂押　雅夫</span>
+          <span class="dd-flex"><span>代表取締役</span>砂押　悠子（伊藤　悠子）</span>
+          <span class="dd-flex"><span>取締役中国室長</span>張　文昕</span>
+          <span class="dd-flex"><span>取締役営業部長</span>石渡　真人</span>
+          <span class="dd-flex"><span>監査役</span>砂押　真樹子</span>
+          <span class="dd-flex"><span>顧問</span>高　銀塗</span>
         </dd>
         <dt>取引銀行</dt>
         <dd>三菱UFJ銀行新宿支店<br>
@@ -52,12 +52,12 @@
           台湾區製茶工業同業公會（台湾）<br>
         </dd>
         <dt>茶関連資格保持者 </dt>
-        <dd><span class="dd-flex">中国政府公認評茶員　　張　文昕</span><br>
-          <span class="dd-flex">中国政府公認評茶員　　砂押　真樹子</span><br>
-          <span class="dd-flex">中国政府公認評茶員　　金丸　隆</span><br>
-          <span class="dd-flex">日本中国茶普及協会インストラクター　　砂押　悠子</span><br>
-          <span class="dd-flex">日本中国茶普及協会インストラクター　　清水　浩義</span><br>
-          <span class="dd-flex">日本紅茶協会ティーインストラクター　　清水　浩義</span><br>
+        <dd><span class="dd-flex">中国政府公認評茶員　　張　文昕</span>
+          <span class="dd-flex">中国政府公認評茶員　　砂押　真樹子</span>
+          <span class="dd-flex">中国政府公認評茶員　　金丸　隆</span>
+          <span class="dd-flex">日本中国茶普及協会インストラクター　　<br class="is-sp">砂押　悠子</span>
+          <span class="dd-flex">日本中国茶普及協会インストラクター　　<br class="is-sp">清水　浩義</span>
+          <span class="dd-flex">日本紅茶協会ティーインストラクター　　<br class="is-sp">清水　浩義</span>
         </dd>
       </dl>
     </section>
@@ -80,14 +80,6 @@
             <dt><span>1987年</span></dt>
           </div>
           <dd>FOODEX JAPAN　国際食品・飲料展（幕張メッセ）に参加以降、現在も継続出展中</dd>
-        </div>
-
-        <div class="history__list">
-          <div class="history__list-data">
-            <span class="history__list-deco"></span>
-            <dt><span>1988年</span></dt>
-          </div>
-          <dd>日本初、台湾茶原材料の缶飲料「赤ウーロン茶」<br>缶・ペットボトル・ティーバッグをAビール会社で発売（原料担当）</dd>
         </div>
 
         <div class="history__list">
