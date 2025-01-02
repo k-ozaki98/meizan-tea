@@ -2,7 +2,7 @@
 
 <main class="contents contents--oem">
   <div class="l-inner">
-    <h2 class="heading-A"><span>original equipment manufacturing</span>OEM</h2>
+    <h2 class="heading-A"><span>ORIGINAL EQUIPMENT MANUFACTURING</span>OEM</h2>
 
     <div class="oem-mv">
       <div class="oem-mv__img">

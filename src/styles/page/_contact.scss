@@ -39,7 +39,7 @@
         padding: 6rem 0 6.4rem;
 
         @include g.max-screen(g.$bp-sp) {
-            padding: 6rem 1.5rem 6.4rem;
+            padding: 6rem 2.4rem 6.4rem;
         }
 
         .form-list {
@@ -53,6 +53,10 @@
             justify-content: space-between;
             padding: 2.4rem 0;
             border-top: 1px dotted #ccc;
+
+            @include g.max-screen(g.$bp-sp) {
+                gap: .6rem;
+            }
         }
 
         .form-item:last-child {
@@ -72,6 +76,10 @@
         .form-field {
             flex: 1;
             width: 65%;
+
+            @include g.max-screen(g.$bp-sp) {
+                width: 100%;
+            }
         }
 
         .required,
@@ -81,10 +89,15 @@
             color: #fff;
             display: inline-block;
             top: 0;
-            transform: translateY(30%);
+            transform: translateY(20%);
             right: 0;
             padding: 0 0.8rem;
             border-radius: 8px 0 8px 0;
+
+            @include g.max-screen(g.$bp-sp) {
+                right: auto;
+                margin-left: 1.6rem;
+            }
         }
 
         .required {
@@ -109,6 +122,10 @@
             /* 要素間の隙間 */
             flex-wrap: wrap;
             /* スマホ表示時の折り返し用 */
+
+            @include g.max-screen(g.$bp-sp) {
+                gap: 1.6rem;
+            }
         }
 
         /* 郵便番号入力部分をグループ化 */
@@ -167,6 +184,10 @@
                 border-radius: 60px;
                 transition: 0.2s;
                 font-family: "Noto Serif JP", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+
+                @include g.max-screen(g.$bp-sp) {
+                    width: 100%;
+                }
             }
 
             .btn:hover {
@@ -252,7 +273,7 @@
     }
 
     .wpcf7-not-valid {
-        border-color: #DC5151!important;
-        background: #FCF2F2!important;
+        border-color: #DC5151 !important;
+        background: #FCF2F2 !important;
     }
 }
