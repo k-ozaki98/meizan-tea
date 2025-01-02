@@ -1,5 +1,4 @@
-<?php
-get_header();
+<?php get_header('', ['pageId' => 'news']);
 
 $post_id = get_query_var('news_post_id');
 $post = get_post($post_id);
@@ -7,7 +6,7 @@ $post = get_post($post_id);
 if ($post && $post->post_type === 'post') :
     setup_postdata($post);
 ?>
-<main class="contents contents--news-single">
+<main class="contents contents--news contents--news-single">
     <div class="container l-inner news">
         <article class="news-article">
             <div class="news-header">

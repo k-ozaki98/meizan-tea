@@ -19,9 +19,8 @@
     <form method="get" class="news-filter-form" action="<?php echo esc_url(get_permalink()); ?>">
       <div class="select-wrapper">
         <select id="filter-year" name="year" onchange="this.form.submit();">
-          <option value="">すべての年</option>
           <?php
-                    $selected_year = isset($_GET['year']) ? (int)$_GET['year'] : '';
+                    $selected_year = isset($_GET['year']) ? (int)$_GET['year'] : 2024;
                     foreach ($years as $year) :
                     ?>
           <option value="<?php echo esc_attr($year); ?>" <?php selected($selected_year, (int)$year); ?>>
@@ -51,6 +50,14 @@
                     'compare' => '=',
                     'inclusive' => true
                 )
+            );
+        } else {
+          $args['date_query'] = array(
+            array(
+              'year' => 2024,
+              'compare' => '=',
+              'inclusive' => true
+            )
             );
         }
 

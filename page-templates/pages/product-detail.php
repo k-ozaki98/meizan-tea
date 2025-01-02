@@ -55,13 +55,13 @@ $categories = get_terms(array(
             // トップコンテンツ
             switch($current_term->slug) {
                 case 'original':
-                    get_template_part('template-parts/original-top');
+                    get_template_part('../../template-parts/original-top');
                     break;
             }
 
             // メインコンテンツ
             if ($current_term->slug === 'chinese-tea') {
-                get_template_part('template-parts/product-category-chinese-tea');
+                get_template_part('../../template-parts/product-category-chinese-tea');
             } else {
                 if (have_posts()) : ?>
                     <ul class="product-list">
@@ -112,42 +112,22 @@ $categories = get_terms(array(
             }
             
             // ボトムコンテンツ
-            $chinese_tea = get_term_by('slug', 'chinese-tea', 'product_category');
-
-            if ($current_term->parent === $chinese_tea->term_id) {
-                // 中国茶の子カテゴリーの場合
-                switch($current_term->slug) {
-                    case 'green-tea':
-                        get_template_part('template-parts/chinese-green-tea');
-                        break;
-                    case 'black-tea-chinese-tea':
-                        get_template_part('template-parts/chinese-black-tea');
-                        break;
-                    case 'dark-tea':
-                        get_template_part('template-parts/chinese-dark-tea');
-                        break;
-                    case 'other-tea-chinese-tea':
-                        get_template_part('template-parts/chinese-other-tea');
-                }
-            } else {
-                switch($term_to_check->slug) {
-                    case 'black-tea':
-                        get_template_part('template-parts/black-tea');
-                        break;
-                    case 'japanese-tea':
-                        get_template_part('template-parts/japanese-tea');
-                        break;
-                    case 'other-tea':
-                        get_template_part('template-parts/other-tea');
-                        break;
-                    case 'original':
-                        get_template_part('template-parts/original-bottom');
-                        break;
-                    case 'fenghuangshan-district':
-                        get_template_part('template-parts/fenghuangshan');
-                        break;
-                }
-
+            switch($term_to_check->slug) {
+                case 'black-tea':
+                    get_template_part('../../template-parts/black-tea');
+                    break;
+                case 'japanese-tea':
+                    get_template_part('../../template-parts/japanese-tea');
+                    break;
+                case 'other-tea':
+                    get_template_part('../../template-parts/other-tea');
+                    break;
+                case 'original':
+                    get_template_part('../../template-parts/original-bottom');
+                    break;
+                case 'fenghuangshan-district':
+                    get_template_part('../../template-parts/fenghuangshan');
+                    break;
             }
             
             ?>

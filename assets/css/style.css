@@ -321,6 +321,7 @@ body {
   font-size: 1.6rem;
   font-family: "Noto Serif JP", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   line-height: 1.8;
+  letter-spacing: 1.6px;
 }
 @media screen and (max-width: 767px) {
   body {
@@ -3375,7 +3376,7 @@ sup {
   transition: 0.2s;
   font-family: "Noto Serif JP", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   text-align: center;
-  font-weight: bold;
+  font-weight: 500;
   margin: 0 auto;
 }
 .btn-C a:hover {
@@ -3752,10 +3753,12 @@ sup {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.12em;
+  font-weight: 600;
 }
 .sec-ttl__ja {
   font-size: 4.8rem;
   line-height: 1.2;
+  font-weight: 500;
 }
 @media screen and (max-width: 767px) {
   .sec-ttl__ja {
@@ -4114,6 +4117,9 @@ body.home .header--clone {
 	※CSSに展開した場合
 
 ----------------------------------------------------*/
+.contents.contents--news {
+  margin-bottom: 6.4rem;
+}
 .contents.contents--news .heading-A {
   margin: 6.4rem auto;
 }
@@ -4177,6 +4183,9 @@ body.home .header--clone {
   margin-bottom: 0.8rem;
 }
 
+.contents.contents--news-single .news-article {
+  margin-top: 6.4rem;
+}
 .contents.contents--news-single .news-header {
   padding-bottom: 6.4rem;
 }
@@ -4352,6 +4361,10 @@ body.home .header--clone {
   background: url(../images/products/category01.png) no-repeat center center;
   background-size: contain;
 }
+.contents.contents--products .product-guide__text {
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+}
 .contents.contents--products .product-guide__list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -4368,6 +4381,74 @@ body.home .header--clone {
   color: #4D6569;
   background: #EAF1F2;
   border-radius: 4px;
+}
+.contents.contents--products .chinese-detail {
+  padding: 4rem;
+  background: #fff;
+  border-radius: 32px;
+  border: 1px solid #F2F4E3;
+}
+@media screen and (max-width: 767px) {
+  .contents.contents--products .chinese-detail {
+    padding: 4rem 2.4rem;
+  }
+}
+.contents.contents--products .chinese-detail .border-b {
+  border-bottom: 1px solid #F2F4E3;
+  padding-bottom: 2.4rem;
+  margin-bottom: 4rem;
+}
+.contents.contents--products .chinese-detail .product-guide__ttl {
+  margin-bottom: 1.6rem;
+}
+.contents.contents--products .chinese-detail .product-guide__list {
+  grid-template-columns: 1fr 1fr;
+  gap: 2.4rem;
+}
+.contents.contents--products .chinese-detail__heading {
+  font-size: 3.2rem;
+  line-height: 1.2;
+  color: #00282E;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 2.4rem;
+}
+.contents.contents--products .chinese-detail__wrap {
+  margin-bottom: 4rem;
+}
+.contents.contents--products .chinese-detail__content {
+  border-top: 1px solid #F2F4E3;
+  padding-top: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+.contents.contents--products .chinese-detail__content:last-of-type {
+  margin-bottom: 0;
+}
+.contents.contents--products .chinese-detail__ttl {
+  color: #00282E;
+  font-size: 2.4rem;
+  line-height: 1.2;
+  font-weight: normal;
+  margin-bottom: 0.8rem;
+}
+.contents.contents--products .chinese-detail__furigana {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  margin-bottom: 1.6rem;
+  color: #4D6569;
+}
+.contents.contents--products .chinese-detail__origin {
+  font-size: 1.6rem;
+  color: #4D6569;
+  margin-bottom: 1.6rem;
+}
+.contents.contents--products .chinese-detail__body {
+  font-size: 1.6rem;
+}
+.contents.contents--products .chinese-detail__text {
+  width: 84%;
+  margin: 0 auto 4rem;
+  font-size: 1.6rem;
 }
 .contents.contents--products .product-guide-item {
   padding: 2.4rem;
@@ -4481,6 +4562,7 @@ body.home .header--clone {
 .contents.contents--products .product-list__name-en {
   font-size: 1.6rem;
   line-height: 1.2;
+  color: #4D6569;
 }
 .contents.contents--products .product-list__origin {
   color: #4D6569;
@@ -4573,54 +4655,6 @@ body.home .header--clone {
   font-size: 1.6rem;
   margin-bottom: 1.6rem;
 }
-.contents.contents--products .fenghuangshan {
-  padding: 4rem;
-  background: #fff;
-  border-radius: 32px;
-  border: 1px solid #F2F4E3;
-}
-@media screen and (max-width: 767px) {
-  .contents.contents--products .fenghuangshan {
-    padding: 4rem 2.4rem;
-  }
-}
-.contents.contents--products .fenghuangshan__heading {
-  font-size: 3.2rem;
-  line-height: 1.2;
-  color: #00282E;
-  text-align: center;
-  font-weight: normal;
-  margin-bottom: 2.4rem;
-}
-.contents.contents--products .fenghuangshan__content {
-  border-top: 1px solid #F2F4E3;
-  padding-top: 2.4rem;
-  margin-bottom: 2.4rem;
-}
-.contents.contents--products .fenghuangshan__content:last-of-type {
-  margin-bottom: 0;
-}
-.contents.contents--products .fenghuangshan__ttl {
-  color: #00282E;
-  font-size: 2.4rem;
-  line-height: 1.2;
-  font-weight: normal;
-  margin-bottom: 0.8rem;
-}
-.contents.contents--products .fenghuangshan__furigana {
-  font-size: 1.6rem;
-  line-height: 1.2;
-  margin-bottom: 1.6rem;
-  color: #4D6569;
-}
-.contents.contents--products .fenghuangshan__origin {
-  font-size: 1.6rem;
-  color: #4D6569;
-  margin-bottom: 1.6rem;
-}
-.contents.contents--products .fenghuangshan__body {
-  font-size: 1.6rem;
-}
 .contents.contents--products .various-tea {
   border-top: 1px solid #F2F4E3;
   padding-top: 4rem;
@@ -4654,7 +4688,10 @@ body.home .header--clone {
   }
 }
 .contents.contents--products .various-tea__item.is-active {
-  opacity: 0.6;
+  opacity: 0.5;
+}
+.contents.contents--products .various-tea__item.is-active a {
+  pointer-events: none;
 }
 .contents.contents--products .blue-tea-btn {
   display: flex;
@@ -4715,6 +4752,7 @@ body.home .header--clone {
 .contents.contents--products .district-buttons .is-active a {
   border-color: #D8E3E5;
   background: #D8E3E5;
+  pointer-events: none;
 }
 .contents.contents--products .district-buttons .is-active a::after {
   content: none;
@@ -4848,11 +4886,16 @@ body.home .header--clone {
   white-space: nowrap;
   font-size: 1.2rem;
   background: #4D6569;
+  border: 1px solid #4D6569;
   color: #FEFFF7;
   border-radius: 50px;
   cursor: pointer;
   padding: 1rem 2.4rem;
-  border: none;
+  transition: 0.2s;
+}
+.contents.contents--contact .contact .address-search-btn:hover {
+  background: #FEFFF7;
+  color: #4D6569;
 }
 .contents.contents--contact .contact .submit-btn {
   text-align: center;
