@@ -6,9 +6,9 @@ export const initTop = () => {
 
   const swiper = new Swiper('.swiper', {
     effect: 'fade',
-    speed: 3000,
+    speed: 5000,
     autoplay: {
-      delay: 3000,
+      delay: 2000,
     },
     fadeEffect: {
       crossFade: true

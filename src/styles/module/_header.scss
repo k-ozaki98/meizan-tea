@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 @use '../lib/global'as g;
+@use '../lib/vars'as *;
 
 .header {
   background-color: #00282E;
@@ -56,6 +57,25 @@
     &.is-active {
       color: #D5D933;
 
+    }
+  }
+
+  &__nav-item-oem {
+    font-family: "Jost", serif;
+    font-weight: 900;
+    color: $main-color;
+    background-color: #D5D933;
+    border-radius: 5rem;
+    transition: .2s;
+    margin-left: 1.5rem;
+
+    a {
+      padding: .3rem 2rem;
+    }
+
+    &:hover {
+      color: #FEFFF7;
+      background-color: #A6A926;
     }
   }
 

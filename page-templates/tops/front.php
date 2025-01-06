@@ -6,28 +6,25 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <picture>
-            <source media="(max-width:767px)" type="image/png" srcset="<?php echo get_template_directory_uri() ?>/assets/images/top/mv_sp.png" />
-            <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/mv.png" alt="">
+            <source media="(max-width:767px)" type="image/jpg" srcset="<?php echo get_template_directory_uri() ?>/assets/images/top/mv_sp.jpg" />
+            <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/mv.jpg" alt="">
           </picture>
         </div>
         <div class="swiper-slide">
           <picture>
-            <source media="(max-width:767px)" type="image/png" srcset="<?php echo get_template_directory_uri() ?>/assets/images/top/mv_sp.png" />
-            <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/mv.png" alt="">
+            <source media="(max-width:767px)" type="image/jpg" srcset="<?php echo get_template_directory_uri() ?>/assets/images/top/mv02_sp.jpg" />
+            <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/mv02.jpg" alt="">
           </picture>
         </div>
         <div class="swiper-slide">
           <picture>
-            <source media="(max-width:767px)" type="image/png" srcset="<?php echo get_template_directory_uri() ?>/assets/images/top/mv_sp.png" />
-            <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/mv.png" alt="">
+            <source media="(max-width:767px)" type="image/jpg" srcset="<?php echo get_template_directory_uri() ?>/assets/images/top/mv03_sp.jpg" />
+            <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/mv03.jpg" alt="">
           </picture>
         </div>
       </div>
     </div>
     <div class="mv__wrap">
-      <div class="mv__logo">
-        <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/logo.svg" alt="">
-      </div>
       <h2 class="mv__ttl">満たす<br>満ちる</h2>
     </div>
   </div>
@@ -35,7 +32,7 @@
   <section class="about">
     <div class="l-inner">
       <h2 class="heading-A"><span>ABOUT US</span>人と心と時間を<br class="is-Sp">満たす</h2>
-      <p class="about__txt">時に癒やし、時に賑わいの中心となり、人と人、心や時間までもが<br class="is-Pc_Tab">満ちるお茶のある毎日のために。</p>
+      <p class="about__txt">時に癒やし、時に賑わいの中心となり、<br>人と人、心や時間までもが満ちる<br>お茶のある毎日のために。</p>
       <div class="btn-A">
         <a href="/about/"><span>VIEW MORE</span></a>
       </div>
@@ -210,7 +207,7 @@
             ?>
         <li>
           <div class="news__date-area">
-          <p class="news__cate <?php echo esc_attr($category_class); ?>"><?php echo esc_html($category->name); ?></p>
+            <p class="news__cate <?php echo esc_attr($category_class); ?>"><?php echo esc_html($category->name); ?></p>
             <p class="news__date"><?php echo get_the_date('Y.m.d'); ?></p>
           </div>
           <a href="<?php echo home_url('/news/' . get_the_ID() . '/'); ?>" class="news__ttl">

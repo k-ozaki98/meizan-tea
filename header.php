@@ -13,6 +13,7 @@ $pageId = esc_attr(isset($pageId) ? $pageId : '');
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <?php wp_head(); ?>
 </head>
@@ -27,12 +28,12 @@ $pageId = esc_attr(isset($pageId) ? $pageId : '');
         </h1>
         <nav>
           <ul class="header__nav is-Pc_Tab">
-            <li class="header__nav-item" data-nav-id="top"><a href="/">トップページ</a></li>
             <li class="header__nav-item" data-nav-id="about"><a href="/about/">私たちのこと</a></li>
             <li class="header__nav-item" data-nav-id="products"><a href="/products/">取扱商品</a></li>
             <li class="header__nav-item" data-nav-id="news"><a href="/news/">新着情報</a></li>
             <li class="header__nav-item" data-nav-id="company"><a href="/company/">会社案内</a></li>
             <li class="header__nav-item" data-nav-id="contact"><a href="/contact/">お問い合わせ</a></li>
+            <li class="header__nav-item-oem" data-nav-id="oem"><a href="/oem/">OEM</a></li>
           </ul>
         </nav>
 

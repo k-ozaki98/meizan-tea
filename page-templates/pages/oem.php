@@ -1,4 +1,4 @@
-<?php get_header('', ['pageId' => 'about']); ?>
+<?php get_header('', ['pageId' => 'oem']); ?>
 
 <main class="contents contents--oem">
   <div class="l-inner">
