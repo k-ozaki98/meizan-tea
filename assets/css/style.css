@@ -3205,6 +3205,8 @@ sup {
   text-align: center;
   font-weight: 300;
   letter-spacing: 0.12em;
+  position: relative;
+  z-index: 2;
 }
 @media screen and (max-width: 767px) {
   .heading-A {
@@ -3787,6 +3789,7 @@ sup {
   margin-top: 2.4rem;
   position: relative;
   text-align: center;
+  font-family: "Noto Serif JP", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 @media screen and (max-width: 767px) {
   .sec-ttl__heading {
@@ -4583,6 +4586,7 @@ body.home .header--clone {
 .contents.contents--products .product-guide-item__ttl {
   font-size: 2rem;
   margin-bottom: 1.6rem;
+  font-weight: 700;
 }
 .contents.contents--products .product-contact {
   background: #EAF1F2;
@@ -4597,7 +4601,7 @@ body.home .header--clone {
   }
 }
 .contents.contents--products .product-contact .u-ul-style--disc {
-  width: 85%;
+  width: 86%;
   margin: 0 auto;
   font-size: 1.6rem;
   display: flex;
@@ -4613,6 +4617,9 @@ body.home .header--clone {
 .contents.contents--products .product-contact .u-ul-style--disc li::before {
   font-size: 1.6rem;
   color: #D5D933;
+}
+.contents.contents--products .product-contact .btn-C {
+  margin: 0 auto;
 }
 .contents.contents--products .product-contact__ttl {
   font-size: 2.4rem;
@@ -4839,6 +4846,7 @@ body.home .header--clone {
 }
 .contents.contents--products .blue-tea-btn .btn-text {
   display: inline-block;
+  font-family: "Noto Serif JP", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 .contents.contents--products .district-buttons {
   display: flex;
@@ -4887,6 +4895,7 @@ body.home .header--clone {
 }
 .contents.contents--products .district-buttons .btn-text {
   display: inline-block;
+  font-family: "Noto Serif JP", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 .contents.contents--products .chinese-btn {
   margin-top: 6.4rem;

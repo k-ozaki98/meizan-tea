@@ -48,6 +48,7 @@
     margin-top: 2.4rem;
     position: relative;
     text-align: center;
+    font-family: g.$font-family;
 
     @include g.max-screen(g.$bp-sp) {
       font-size: 2rem;

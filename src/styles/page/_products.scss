@@ -336,6 +336,7 @@
 		&__ttl {
 			font-size: 2rem;
 			margin-bottom: 1.6rem;
+			font-weight: 700;
 		}
 
 
@@ -353,7 +354,7 @@
 		}
 
 		.u-ul-style--disc {
-			width: 85%;
+			width: 86%;
 			margin: 0 auto;
 			font-size: 1.6rem;
 			display: flex;
@@ -371,6 +372,9 @@
 				}
 
 			}
+		}
+		.btn-C {
+			margin: 0 auto; 
 		}
 
 		&__ttl {
@@ -625,6 +629,7 @@
 
 		.btn-text {
 			display: inline-block;
+			font-family: g.$font-family;
 		}
 	}
 
@@ -681,6 +686,7 @@
 
 		.btn-text {
 			display: inline-block;
+			font-family: g.$font-family;
 		}
 	}
 
