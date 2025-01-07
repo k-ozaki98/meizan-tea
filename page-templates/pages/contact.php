@@ -1,10 +1,7 @@
 <?php get_header('', ['pageId' => 'contact']); ?>
 <main class="contents contents--contact">
     <div class="l-inner contact-inner contact">
-        <h2 class="sec-ttl">
-            <span class="sec-ttl__en">CONTACT</span>
-            <span class="sec-ttl__ja">お問い合わせ</span>
-        </h2>
+        <h2 class="heading-A"><span>CONTACT</span>お問い合わせ</h2>
     
         <div class="contact-img">
             <picture>

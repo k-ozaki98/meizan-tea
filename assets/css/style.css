@@ -4325,6 +4325,9 @@ body.home .header--clone {
     background-size: contain;
   }
 }
+.contents.contents--products .products .heading-A {
+  margin-bottom: 6.4rem;
+}
 .contents.contents--products .products__intro {
   font-size: 1.6rem;
   text-align: center;
@@ -4364,6 +4367,9 @@ body.home .header--clone {
   justify-content: space-between;
   font-size: 1.6rem;
 }
+.contents.contents--products .product-item__img {
+  position: relative;
+}
 @media screen and (max-width: 767px) {
   .contents.contents--products .product-item__img {
     width: 80%;
@@ -4372,6 +4378,63 @@ body.home .header--clone {
   .contents.contents--products .product-item__img img {
     width: 100%;
   }
+}
+.contents.contents--products .product-item__img::after {
+  content: "中国茶";
+  letter-spacing: 3.2px;
+  white-space: nowrap;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 2.8rem;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  -moz-text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
+  -webkit-text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
+  -ms-text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contents.contents--products .product-item__img--chinese-tea::after {
+  content: "中国茶";
+}
+.contents.contents--products .product-item__img--taiwan-tea::after {
+  content: "台湾茶";
+}
+.contents.contents--products .product-item__img--black-tea::after {
+  content: "紅　茶";
+}
+.contents.contents--products .product-item__img--japanese-tea::after {
+  content: "日本茶";
+}
+.contents.contents--products .product-item__img--other-tea::after {
+  content: "茶外茶";
+}
+.contents.contents--products .product-item__img--original::after {
+  content: "ハーブ類・";
+  left: 60%;
+}
+.contents.contents--products .product-item__img--original::before {
+  content: "オリジナル";
+  right: 40%;
+  height: 100%;
+  text-align: center;
+  letter-spacing: 3.2px;
+  color: #fff;
+  font-size: 2.8rem;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  -moz-text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
+  -webkit-text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
+  -ms-text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .contents.contents--products .product-btn {
   margin-top: 6.4rem;
@@ -4843,6 +4906,9 @@ body.home .header--clone {
 	※CSSに展開した場合
 
 ----------------------------------------------------*/
+.contents.contents--contact .heading-A {
+  margin-bottom: 6.4rem;
+}
 .contents.contents--contact .contact-inner {
   width: 80rem;
 }

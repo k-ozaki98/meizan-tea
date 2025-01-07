@@ -3,10 +3,7 @@
 <main class="contents contents--products">
   <section class="products">
     <div class="l-inner">
-      <h2 class="sec-ttl">
-        <span class="sec-ttl__en">TEA</span>
-        <span class="sec-ttl__ja">茶</span>
-      </h2>
+      <h2 class="heading-A"><span>TEA</span>茶</h2>
 
       <p class="products__intro">中国茶から紅茶、日本茶、ハーブ類まで<br class="is-Sp">常時数百種類の茶葉を取扱っています。</p>
 
@@ -30,7 +27,7 @@
                             $category_link = get_term_link($category);
                         ?>
         <li class="product-item">
-          <div class="product-item__img">
+        <div class="product-item__img product-item__img--<?= $category->slug ?>">
             <img src="<?php echo esc_html($category_image); ?>" alt="">
           </div>
           <p class="product-item__text"><?php echo esc_html($category_text); ?></p>

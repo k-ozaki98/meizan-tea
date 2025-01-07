@@ -40,6 +40,10 @@
 			}
 		}
 
+		.heading-A {
+			margin-bottom: 6.4rem;
+		}
+
 		&__intro {
 			font-size: 1.6rem;
 			text-align: center;
@@ -83,6 +87,7 @@
 		font-size: 1.6rem;
 
 		&__img {
+			position: relative;
 			@include g.max-screen(g.$bp-sp) {
 				width: 80%;
 				margin: 0 auto;
@@ -91,6 +96,78 @@
 					width: 100%;
 				}
 
+
+			}
+			&::after {
+				content: "中国茶";
+				letter-spacing: #{g.$font-size-px * 0.2}px;
+				white-space: nowrap;
+				height: 100%;
+				text-align: center;
+				color: #fff;
+				font-size: 2.8rem;
+				-ms-writing-mode: tb-rl;
+				writing-mode: vertical-rl;
+				-moz-text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
+				-webkit-text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
+				-ms-text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
+				text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				
+			}
+
+			&--chinese-tea {
+				&::after {
+					content: '中国茶';
+				}
+			}
+			&--taiwan-tea {
+				&::after {
+					content: '台湾茶';
+				}
+			}
+			&--black-tea {
+				&::after {
+					content: '紅　茶';
+				}
+			}
+			&--japanese-tea {
+				&::after {
+					content: '日本茶';
+				}
+			}
+			&--other-tea {
+				&::after {
+					content: '茶外茶';
+				}
+			}
+			&--original {
+				&::after {
+					content: 'ハーブ類・';
+					left: 60%;
+				}
+				&::before {
+					content: 'オリジナル';
+					right: 40%;
+					height: 100%;
+				text-align: center;
+					letter-spacing: #{g.$font-size-px * 0.2}px;
+					color: #fff;
+					font-size: 2.8rem;
+					-ms-writing-mode: tb-rl;
+					writing-mode: vertical-rl;
+					-moz-text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
+					-webkit-text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
+					-ms-text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
+					text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
 			}
 		}
 	}
@@ -194,6 +271,7 @@
 			grid-template-columns: 1fr 1fr;
 			gap: 2.4rem;
 		}
+		
 		&__heading {
 			font-size: 3.2rem;
 			line-height: 1.2;
