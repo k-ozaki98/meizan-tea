@@ -3821,14 +3821,6 @@ sup {
 	※CSSに展開した場合
 
 ----------------------------------------------------*/
-body.home .header {
-  background-color: transparent;
-}
-
-body.home .header--clone {
-  background-color: #00282E;
-}
-
 .contents.contents--top {
   padding: 0;
 }
@@ -6393,12 +6385,11 @@ body.home .header--clone {
   color: #FEFFF7;
   font-size: 1.4rem;
 }
-
-.btn-C {
+.contents--oem .btn-C {
   margin: 6.4rem auto;
 }
 @media screen and (max-width: 767px) {
-  .btn-C {
+  .contents--oem .btn-C {
     width: 90%;
   }
 }

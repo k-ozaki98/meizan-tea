@@ -29,6 +29,9 @@ export const initCloneHeader = (id = 'header') => {
   const cloneHeader = createCloneHeader(id); // クローンヘッダー
   const wrapElement = document.querySelector('.wrap');
 
+  originalHeader.style.backgroundColor = 'transparent';
+  cloneHeader.style.backgroundColor = '#00282E';
+
   // クローンヘッダーがまだ追加されていない場合に追加
   if (!wrapElement.contains(cloneHeader)) {
     wrapElement.insertBefore(cloneHeader, wrapElement.firstChild);

@@ -161,12 +161,12 @@
 
 
   }
-}
 
-.btn-C {
-  margin: 6.4rem auto;
+  .btn-C {
+    margin: 6.4rem auto;
 
-  @include g.max-screen(g.$bp-sp) {
-    width: 90%;
+    @include g.max-screen(g.$bp-sp) {
+      width: 90%;
+    }
   }
 }
