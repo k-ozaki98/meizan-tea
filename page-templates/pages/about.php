@@ -6,7 +6,7 @@
 
     <div class="about-mv">
       <div class="about-mv__img">
-        <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/about-img.png" alt="">
+        <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/about-img.png" alt="" width="400" height="207">
       </div>
       <p class="about-mv__txt">共に味わい<br>共に語らい<br>共に和み<br>共にくつろぐ</p>
     </div>
