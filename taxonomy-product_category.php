@@ -226,7 +226,7 @@ $categories = get_terms(array(
                             ($current_term->parent && ($parent_term = get_term($current_term->parent, 'product_category')) && 
                             $parent_term->parent && $category->term_id === $parent_term->parent);
                         ?>
-                        <li class="various-tea__item <?php echo $is_current ? 'is-active' : ''; ?>">
+                        <li class="various-tea__item <?php echo $is_current ? 'is-active ' : ''; ?>various-tea__item--<?php echo esc_attr($category->slug); ?>">
                             <a href="<?php echo esc_url($category_link); ?>">
                                 <img src="<?php echo esc_url($category_icon); ?>" alt="<?php echo esc_attr($category->name); ?>">
                             </a>
