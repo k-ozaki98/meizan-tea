@@ -4575,11 +4575,11 @@ sup {
 .contents.contents--products .product-guide-item {
   padding: 2.4rem;
   font-size: 1.6rem;
-  color: #4D6569;
   background: #EAF1F2;
   border-radius: 4px;
 }
 .contents.contents--products .product-guide-item__ttl {
+  color: #4D6569;
   font-size: 2rem;
   margin-bottom: 1.6rem;
   font-weight: 700;
