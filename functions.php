@@ -86,3 +86,18 @@ function add_ajaxzip3() {
 }
 add_action('wp_enqueue_scripts', 'add_ajaxzip3');
 
+
+// Simple Custom Post Order の設定
+add_filter('scpo_objects', function($objects) {
+    $objects[] = 'product'; // カスタム投稿タイプ名
+    return $objects;
+});
+
+// クエリの並び順を変更
+function modify_product_query($query) {
+    if (!is_admin() && $query->is_main_query() && is_tax('product_category')) {
+        $query->set('orderby', 'menu_order');
+        $query->set('order', 'ASC');
+    }
+}
+add_action('pre_get_posts', 'modify_product_query');
