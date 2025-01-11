@@ -226,6 +226,7 @@
     font-size: 1.6rem;
     border-radius: 60px;
     letter-spacing: .12em;
+    transition: .25s all;
 
     &::after {
       content: "";
@@ -240,7 +241,12 @@
       background-size: contain;
     }
 
+    &:hover {
+      color: #D5D933;
+    }
+
   }
+
 
 }
 

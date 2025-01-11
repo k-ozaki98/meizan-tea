@@ -58,7 +58,7 @@
 				content: '';
 				position: absolute;
 				top: 50%;
-				right: 1rem;
+				right: 2rem;
 				width: 0.8rem;
 				height: 0.8rem;
 				border-right: 0.2rem solid #333;
@@ -111,9 +111,11 @@
 	@include g.max-screen(g.$bp-sp) {
 		padding: 9rem 0 0;
 	}
+
 	.news-article {
 		margin-top: 6.4rem;
 	}
+
 	.news-header {
 		padding-bottom: 6.4rem;
 	}

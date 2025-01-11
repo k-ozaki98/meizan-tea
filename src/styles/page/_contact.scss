@@ -21,6 +21,7 @@
     .heading-A {
         margin-bottom: 6.4rem;
     }
+
     .contact-inner {
         width: 80rem;
 
@@ -74,6 +75,12 @@
             display: block;
             font-size: 1.6rem;
             font-weight: normal;
+
+            @include g.max-screen(g.$bp-sp) {
+                .is-pc-tab {
+                    display: none;
+                }
+            }
         }
 
         .form-field {

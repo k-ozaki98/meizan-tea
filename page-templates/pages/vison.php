@@ -2,7 +2,7 @@
 
 <main class="contents contents--vison">
   <div class="l-inner">
-    <h2 class="heading-A"><span>VISON</span>ビジョン</h2>
+    <h2 class="heading-A"><span>VISION</span>ビジョン</h2>
 
     <div class="vison-mv">
       <div class="vison-mv__img">
