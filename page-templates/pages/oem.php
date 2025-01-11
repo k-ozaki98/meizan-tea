@@ -56,7 +56,7 @@
   </div>
 
   <div class="btn-C">
-    <a href="/contact/">お問い合わせはこちら</a>
+    <a href="/meizan-tea/contact/">お問い合わせはこちら</a>
   </div>
 
 </main>

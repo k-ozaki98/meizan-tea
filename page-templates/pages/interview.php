@@ -67,23 +67,23 @@
   <div class="about-story">
     <ul class="about-story__wrap">
       <li>
-        <a class="about-story__bg" href="/vison/">
+        <a class="about-story__bg" href="/meizan-tea/vison/">
           <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-story01.jpg" alt="">
           <div class="about-story__txt-area">
             <p class="about-story__ttl">ビジョン</p>
             <div class="btn-A btn-A--white">
-              <object><a href="/vison/"><span>VIEW MORE</span></a></object>
+              <object><a href="/meizan-tea/vison/"><span>VIEW MORE</span></a></object>
             </div>
           </div>
         </a>
       </li>
       <li>
-        <a class="about-story__bg" href="/strength/">
+        <a class="about-story__bg" href="/meizan-tea/strength/">
           <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-story02.jpg" alt="">
           <div class="about-story__txt-area">
             <p class="about-story__ttl">私たちの強み</p>
             <div class="btn-A btn-A--white">
-              <object><a href="/strength/"><span>VIEW MORE</span></a></object>
+              <object><a href="/meizan-tea/strength/"><span>VIEW MORE</span></a></object>
             </div>
           </div>
         </a>
@@ -92,7 +92,7 @@
   </div>
 
   <div class="btn-B">
-    <a href="/about/">私たちのことTOPへ</a>
+    <a href="/meizan-tea/about/">私たちのことTOPへ</a>
   </div>
 
 </main>

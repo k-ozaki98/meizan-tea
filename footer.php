@@ -16,16 +16,16 @@
   <div class="footer-menu">
     <div class="l-inner footer-menu__wrap">
       <ul class="footer-menu__list">
-        <li><a href="/">トップページ</a></li>
-        <li><a href="/about/">私たちのこと</a></li>
-        <li><a href="/products/">取扱商品</a></li>
-        <li><a href="/news/">新着情報</a></li>
-        <li><a href="/company/">会社案内</a></li>
-        <li><a href="/contact/">お問い合わせ</a></li>
+        <li><a href="/meizan-tea/">トップページ</a></li>
+        <li><a href="/meizan-tea/about/">私たちのこと</a></li>
+        <li><a href="/meizan-tea/products/">取扱商品</a></li>
+        <li><a href="/meizan-tea/news/">新着情報</a></li>
+        <li><a href="/meizan-tea/company/">会社案内</a></li>
+        <li><a href="/meizan-tea/contact/">お問い合わせ</a></li>
       </ul>
       <ul class="footer-menu__bnr">
         <li>
-          <a href="/oem/"><img src="<?php echo get_template_directory_uri() ?>/assets/images/common/footer-bnr01.png" alt=""></a>
+          <a href="/meizan-tea/oem/"><img src="<?php echo get_template_directory_uri() ?>/assets/images/common/footer-bnr01.png" alt=""></a>
         </li>
         <li>
           <a target="_blank" href="https://www.amazon.co.jp/s?rh=n%3A57239051%2Cp_4%3Ameizan+tea&ref=bl_dp_s_web_57239051"><img src="<?php echo get_template_directory_uri() ?>/assets/images/common/footer-bnr02.png" alt=""></a>

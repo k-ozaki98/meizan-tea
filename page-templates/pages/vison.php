@@ -31,7 +31,7 @@
   <div class="about-story">
     <ul class="about-story__wrap">
       <li>
-        <a class="about-story__bg" href="/strength/">
+        <a class="about-story__bg" href="/meizan-tea/strength/">
           <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-story02.jpg" alt="">
           <div class="about-story__txt-area">
             <p class="about-story__ttl">私たちの強み</p>
@@ -42,7 +42,7 @@
         </a>
       </li>
       <li>
-        <a class="about-story__bg" href="/interview/">
+        <a class="about-story__bg" href="/meizan-tea/interview/">
           <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-story03.jpg" alt="">
           <div class="about-story__txt-area">
             <p class="about-story__ttl">社長インタビュー</p>
@@ -56,7 +56,7 @@
   </div>
 
   <div class="btn-B">
-    <a href="/about/">私たちのことTOPへ</a>
+    <a href="/meizan-tea/about/">私たちのことTOPへ</a>
   </div>
 
 </main>
