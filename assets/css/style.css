@@ -4955,6 +4955,27 @@ sup {
   margin-top: 6.4rem;
 }
 
+.contents--black-tea .sec-ttl {
+  gap: 0;
+}
+.contents--black-tea .sec-ttl__en {
+  margin-bottom: 2.4rem;
+}
+.contents--black-tea .sec-ttl__ja {
+  margin-bottom: 0.8rem;
+}
+@media screen and (max-width: 767px) {
+  .contents--black-tea .sec-ttl__ja {
+    margin-bottom: 1.6rem;
+  }
+}
+.contents--black-tea .sec-ttl__heading {
+  margin-top: 0;
+}
+.contents--black-tea .sec-ttl__heading::after {
+  content: none;
+}
+
 /*----------------------------------------------------
 
 	各ページの独自モジュールスタイルのCSS。

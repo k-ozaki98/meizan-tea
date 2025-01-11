@@ -772,3 +772,27 @@
 		margin-top: 6.4rem;
 	}
 }
+
+.contents--black-tea {
+	.sec-ttl {
+		gap: 0;
+
+		&__en {
+			margin-bottom: 2.4rem;
+		}
+
+		&__ja {
+			margin-bottom: 0.8rem;
+
+			@include g.max-screen(g.$bp-sp) {
+				margin-bottom: 1.6rem;
+			}
+		}
+	}
+	.sec-ttl__heading {
+		margin-top: 0;
+		&::after {
+			content: none;
+		}
+	}
+}
