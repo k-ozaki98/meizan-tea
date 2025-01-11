@@ -586,6 +586,7 @@
 
 		&__item {
 			width: calc((100% - 16rem) * 1 / 6);
+			position: relative;
 
 			@include g.max-screen(g.$bp-sp) {
 				width: calc((100% - 3.2rem) * 1 / 2);
@@ -600,6 +601,82 @@
 
 				a {
 					pointer-events: none;
+				}
+			}
+
+			&::after {
+				content: "";
+				pointer-events: none;
+				letter-spacing: #{g.$font-size-px * 0.2}px;
+				white-space: nowrap;
+				height: 100%;
+				text-align: center;
+				color: #fff;
+				font-size: 2.4rem;
+				font-weight: bold;
+				-ms-writing-mode: tb-rl;
+				writing-mode: vertical-rl;
+				-moz-text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
+				-webkit-text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
+				-ms-text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
+				text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+
+			}
+
+			&--chinese-tea {
+				&::after {
+					content: "中国茶";
+				}
+			}
+			&--taiwan-tea {
+				&::after {
+					content: "台湾茶";
+				}
+			}
+			&--black-tea {
+				&::after {
+					content: "紅　茶";
+				}
+			}
+			&--original {
+				&::after {
+					content: 'ハーブ類・';
+					left: 60%;
+				}
+				&::before {
+					pointer-events: none;
+					content: 'オリジナル';
+					right: 40%;
+					height: 100%;
+				text-align: center;
+					letter-spacing: #{g.$font-size-px * 0.2}px;
+					color: #fff;
+					font-size: 2.4rem;
+					font-weight: bold;
+					-ms-writing-mode: tb-rl;
+					writing-mode: vertical-rl;
+					-moz-text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
+					-webkit-text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
+					-ms-text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
+					text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+			}
+			&--japanese-tea {
+				&::after {
+					content: '日本茶';
+				}
+			}
+			&--other-tea {
+				&::after {
+					content: '茶外茶';
 				}
 			}
 		}
