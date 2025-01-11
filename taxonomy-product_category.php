@@ -23,7 +23,7 @@ $categories = get_terms(array(
 ));
 ?>
 
-<main class="contents contents--products">
+<main class="contents contents--products <?php echo ('contents--' . $current_term->slug); ?>">
     <div class="products">
         <div class="l-inner l-inner--sp">
             <h2 class="sec-ttl">
