@@ -3217,7 +3217,7 @@ sup {
 .heading-A span {
   font-family: "Advent Pro", sans-serif;
   font-size: 1.6rem;
-  font-weight: bold;
+  font-weight: 600;
   letter-spacing: 0.12em;
 }
 
@@ -3414,6 +3414,7 @@ sup {
   font-size: 1.6rem;
   border-radius: 60px;
   letter-spacing: 0.12em;
+  transition: 0.25s all;
 }
 .btn-D a::after {
   content: "";
@@ -3426,6 +3427,9 @@ sup {
   transform: translateY(-50%);
   background: url(../images/common/footer-arrow.svg) no-repeat center center;
   background-size: contain;
+}
+.btn-D a:hover {
+  color: #D5D933;
 }
 
 .hmb-btn {
@@ -4176,7 +4180,7 @@ sup {
   content: "";
   position: absolute;
   top: 50%;
-  right: 1rem;
+  right: 2rem;
   width: 0.8rem;
   height: 0.8rem;
   border-right: 0.2rem solid #333;
@@ -4291,7 +4295,7 @@ sup {
 
 	階層はルートクラスより、三階層までが基本
 	【例】
-	.top-sec .top-sec__ttl span {		
+	.top-sec .top-sec__ttl span {
 	}
 	※CSSに展開した場合
 
@@ -4825,7 +4829,7 @@ sup {
   text-align: center;
   color: #fff;
   font-size: 2.4rem;
-  font-weight: bold;
+  font-weight: 500;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
   -moz-text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
@@ -4859,7 +4863,7 @@ sup {
   letter-spacing: 3.2px;
   color: #fff;
   font-size: 2.4rem;
-  font-weight: bold;
+  font-weight: 500;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
   -moz-text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
@@ -5023,6 +5027,11 @@ sup {
   display: block;
   font-size: 1.6rem;
   font-weight: normal;
+}
+@media screen and (max-width: 767px) {
+  .contents.contents--contact .contact .form-label .is-pc-tab {
+    display: none;
+  }
 }
 .contents.contents--contact .contact .form-field {
   flex: 1;
@@ -5255,9 +5264,11 @@ sup {
   border: 1px solid #F2F4E3;
   border-radius: 1rem;
   padding: 4rem;
+  width: calc(33.3333333333% - 14px);
 }
 @media screen and (max-width: 767px) {
   .contents--about .about__list li {
+    width: 100%;
     border-radius: 0;
     margin: 1.6rem 0;
   }
@@ -5311,14 +5322,13 @@ sup {
   left: 0;
   background-color: rgb(0, 0, 0);
   opacity: 0.3;
-  transition: 0.25s linear;
+  z-index: 2;
 }
-.contents--about .about-story__bg:hover::before {
-  background-color: rgb(0, 0, 0);
-  opacity: 0;
+.contents--about .about-story__bg img {
+  transition: 0.25s all;
 }
 .contents--about .about-story__bg:hover img {
-  transition: 0.25s linear;
+  transition: 0.25s all;
   transform: scale(1.1);
 }
 .contents--about .about-story__bg:hover .btn-A a {
@@ -5340,6 +5350,7 @@ sup {
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
+  z-index: 3;
 }
 @media screen and (max-width: 767px) {
   .contents--about .about-story__txt-area {
@@ -5782,14 +5793,13 @@ sup {
   left: 0;
   background-color: rgb(0, 0, 0);
   opacity: 0.3;
-  transition: 0.25s linear;
+  z-index: 2;
 }
-.contents--vison .about-story__bg:hover::before {
-  background-color: rgb(0, 0, 0);
-  opacity: 0;
+.contents--vison .about-story__bg img {
+  transition: 0.25s all;
 }
 .contents--vison .about-story__bg:hover img {
-  transition: 0.25s linear;
+  transition: 0.25s all;
   transform: scale(1.1);
 }
 .contents--vison .about-story__bg:hover .btn-A a {
@@ -5810,6 +5820,7 @@ sup {
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
+  z-index: 3;
 }
 @media screen and (max-width: 767px) {
   .contents--vison .about-story__txt-area {
@@ -6055,14 +6066,13 @@ sup {
   left: 0;
   background-color: rgb(0, 0, 0);
   opacity: 0.3;
-  transition: 0.25s linear;
+  z-index: 2;
 }
-.contents--interview .about-story__bg:hover::before {
-  background-color: rgb(0, 0, 0);
-  opacity: 0;
+.contents--interview .about-story__bg img {
+  transition: 0.25s all;
 }
 .contents--interview .about-story__bg:hover img {
-  transition: 0.25s linear;
+  transition: 0.25s all;
   transform: scale(1.1);
 }
 .contents--interview .about-story__bg:hover .btn-A a {
@@ -6083,6 +6093,7 @@ sup {
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
+  z-index: 3;
 }
 @media screen and (max-width: 767px) {
   .contents--interview .about-story__txt-area {
@@ -6251,14 +6262,13 @@ sup {
   left: 0;
   background-color: rgb(0, 0, 0);
   opacity: 0.3;
-  transition: 0.25s linear;
+  z-index: 2;
 }
-.contents--strength .about-story__bg:hover::before {
-  background-color: rgb(0, 0, 0);
-  opacity: 0;
+.contents--strength .about-story__bg img {
+  transition: 0.25s all;
 }
 .contents--strength .about-story__bg:hover img {
-  transition: 0.25s linear;
+  transition: 0.25s all;
   transform: scale(1.1);
 }
 .contents--strength .about-story__bg:hover .btn-A a {
@@ -6279,6 +6289,7 @@ sup {
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
+  z-index: 3;
 }
 @media screen and (max-width: 767px) {
   .contents--strength .about-story__txt-area {

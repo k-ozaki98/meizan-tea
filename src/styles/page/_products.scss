@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@use '../lib/global' as g;
+@use '../lib/global'as g;
 
 /*----------------------------------------------------
 
@@ -11,7 +11,7 @@
 
 	階層はルートクラスより、三階層までが基本
 	【例】
-	.top-sec .top-sec__ttl span {		
+	.top-sec .top-sec__ttl span {
 	}
 	※CSSに展開した場合
 
@@ -19,9 +19,10 @@
 
 .contents.contents--products {
 	padding: 14.4rem 0 6.4rem;
+
 	.products {
 		position: relative;
-	
+
 		&::before {
 			position: absolute;
 			content: "";
@@ -88,6 +89,7 @@
 
 		&__img {
 			position: relative;
+
 			@include g.max-screen(g.$bp-sp) {
 				width: 80%;
 				margin: 0 auto;
@@ -98,6 +100,7 @@
 
 
 			}
+
 			&::after {
 				content: "中国茶";
 				letter-spacing: #{g.$font-size-px * 0.2}px;
@@ -116,7 +119,7 @@
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%, -50%);
-				
+
 			}
 
 			&--chinese-tea {
@@ -124,36 +127,42 @@
 					content: '中国茶';
 				}
 			}
+
 			&--taiwan-tea {
 				&::after {
 					content: '台湾茶';
 				}
 			}
+
 			&--black-tea {
 				&::after {
 					content: '紅　茶';
 				}
 			}
+
 			&--japanese-tea {
 				&::after {
 					content: '日本茶';
 				}
 			}
+
 			&--other-tea {
 				&::after {
 					content: '茶外茶';
 				}
 			}
+
 			&--original {
 				&::after {
 					content: 'ハーブ類・';
 					left: 60%;
 				}
+
 				&::before {
 					content: 'オリジナル';
 					right: 40%;
 					height: 100%;
-				text-align: center;
+					text-align: center;
 					letter-spacing: #{g.$font-size-px * 0.2}px;
 					color: #fff;
 					font-size: 2.8rem;
@@ -195,7 +204,7 @@
 			text-align: center;
 			margin-bottom: 2.4rem;
 			font-weight: normal;
-			
+
 		}
 
 		&__wrap {
@@ -211,6 +220,7 @@
 			padding-left: 3.6rem;
 			position: relative;
 			margin-bottom: 2.4rem;
+
 			&::after {
 				content: "";
 				width: 2rem;
@@ -248,7 +258,7 @@
 			background: #EAF1F2;
 			border-radius: 4px;
 		}
-		
+
 	}
 
 	.chinese-detail {
@@ -256,22 +266,26 @@
 		background: #fff;
 		border-radius: 32px;
 		border: 1px solid #F2F4E3;
+
 		@include g.max-screen(g.$bp-sp) {
 			padding: 4rem 2.4rem;
 		}
+
 		.border-b {
 			border-bottom: 1px solid #F2F4E3;
 			padding-bottom: 2.4rem;
 			margin-bottom: 4rem;
 		}
+
 		.product-guide__ttl {
 			margin-bottom: 1.6rem;
 		}
+
 		.product-guide__list {
 			grid-template-columns: 1fr 1fr;
 			gap: 2.4rem;
 		}
-		
+
 		&__heading {
 			font-size: 3.2rem;
 			line-height: 1.2;
@@ -326,6 +340,7 @@
 			font-size: 1.6rem;
 		}
 	}
+
 	.product-guide-item {
 		padding: 2.4rem;
 		font-size: 1.6rem;
@@ -365,6 +380,7 @@
 			@include g.max-screen(g.$bp-sp) {
 				width: 100%;
 			}
+
 			li {
 				&::before {
 					font-size: 1.6rem;
@@ -373,8 +389,9 @@
 
 			}
 		}
+
 		.btn-C {
-			margin: 0 auto; 
+			margin: 0 auto;
 		}
 
 		&__ttl {
@@ -419,12 +436,14 @@
 				padding: 4rem 2.4rem;
 			}
 		}
+
 		&__top {
 			display: flex;
 			align-items: center;
 			gap: 2.4rem;
 			margin-bottom: 1.6rem;
 		}
+
 		&__icon {
 			width: 8rem;
 			height: 8rem;
@@ -433,9 +452,11 @@
 				width: 100%;
 			}
 		}
+
 		&__name {
 			max-width: 73%;
 		}
+
 		&__name-ja {
 			font-size: 3.2rem;
 			font-weight: 500;
@@ -448,16 +469,19 @@
 			line-height: 1.2;
 			display: inline-block;
 		}
+
 		&__name-en {
 			font-size: 1.6rem;
 			line-height: 1.2;
 			color: #4D6569;
 		}
+
 		&__origin {
 			color: #4D6569;
 			font-size: 1.6rem;
 			margin-bottom: 1.6rem;
 		}
+
 		&__detail {
 			font-size: 1.6rem;
 		}
@@ -560,7 +584,7 @@
 		}
 	}
 
-	
+
 
 	.various-tea {
 		border-top: 1px solid #F2F4E3;
@@ -613,7 +637,7 @@
 				text-align: center;
 				color: #fff;
 				font-size: 2.4rem;
-				font-weight: bold;
+				font-weight: 500;
 				-ms-writing-mode: tb-rl;
 				writing-mode: vertical-rl;
 				-moz-text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
@@ -632,31 +656,35 @@
 					content: "中国茶";
 				}
 			}
+
 			&--taiwan-tea {
 				&::after {
 					content: "台湾茶";
 				}
 			}
+
 			&--black-tea {
 				&::after {
 					content: "紅　茶";
 				}
 			}
+
 			&--original {
 				&::after {
 					content: 'ハーブ類・';
 					left: 60%;
 				}
+
 				&::before {
 					pointer-events: none;
 					content: 'オリジナル';
 					right: 40%;
 					height: 100%;
-				text-align: center;
+					text-align: center;
 					letter-spacing: #{g.$font-size-px * 0.2}px;
 					color: #fff;
 					font-size: 2.4rem;
-					font-weight: bold;
+					font-weight: 500;
 					-ms-writing-mode: tb-rl;
 					writing-mode: vertical-rl;
 					-moz-text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
@@ -669,11 +697,13 @@
 					transform: translate(-50%, -50%);
 				}
 			}
+
 			&--japanese-tea {
 				&::after {
 					content: '日本茶';
 				}
 			}
+
 			&--other-tea {
 				&::after {
 					content: '茶外茶';
@@ -698,6 +728,7 @@
 		&:last-of-type {
 			margin-bottom: 0;
 		}
+
 		.btn-icon {
 			width: 3.2rem;
 			height: 3.2rem;
@@ -732,7 +763,7 @@
 			@include g.max-screen(g.$bp-sp) {
 				width: 100%;
 			}
-			
+
 			a {
 				padding: 1.6rem 2.4rem;
 				display: flex;

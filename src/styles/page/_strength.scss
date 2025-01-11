@@ -167,18 +167,17 @@
         left: 0;
         background-color: rgb(0, 0, 0);
         opacity: .3;
-        transition: .25s linear;
+        z-index: 2;
+      }
+
+      img {
+        transition: .25s all;
       }
 
       &:hover {
 
-        &::before {
-          background-color: rgb(0, 0, 0);
-          opacity: 0;
-        }
-
         img {
-          transition: .25s linear;
+          transition: .25s all;
           transform: scale(1.1);
         }
 
@@ -208,6 +207,7 @@
       transform: translate(-50%, -50%);
       top: 50%;
       left: 50%;
+      z-index: 3;
 
       @include g.max-screen(g.$bp-sp) {
         width: 100%;
