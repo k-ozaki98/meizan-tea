@@ -14,7 +14,12 @@ if (is_front_page() || is_home()) {
     $page = get_post(get_the_ID());
     $slug = $page->post_name;
     get_template_part('page-templates/pages/' . $slug);
+} else {
+    // ページが見つからない場合、トップページにリダイレクト
+    wp_redirect(home_url());
+    exit;
 }
+?>
 ?>
 
 
