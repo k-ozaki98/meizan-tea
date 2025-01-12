@@ -70,6 +70,7 @@ $categories = get_terms(array(
                             $icon = get_field('icon');
                             $furigana = get_field('furigana');
                             $origin = get_field('origin');
+                            $other = get_field('other');
                             $subtitle = get_field('subtitle');
                             ?>
                             <li class="product-list__item">
@@ -87,6 +88,9 @@ $categories = get_terms(array(
                                 </div>
                                 <?php if ($origin) : ?>
                                     <p class="product-list__origin">産地: <?php echo esc_html($origin); ?></p>
+                                <?php endif; ?>
+                                <?php if ($other) : ?>
+                                    <p class="product-list__origin"><?php echo esc_html($other); ?></p>
                                 <?php endif; ?>
                                 <p class="product-list__detail">
                                     <?php the_content(); ?>
