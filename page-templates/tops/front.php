@@ -138,7 +138,7 @@
             <div class="wave"></div>
             <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/tea-img04.png" alt="">
             <div class="tea__ttl-wrap">
-              <p class="tea__ttl">ハーブ類・<br>オリジナル</p>
+              <p class="tea__ttl">オリジナル<br>ブレンド</p>
             </div>
           </a>
         </li>

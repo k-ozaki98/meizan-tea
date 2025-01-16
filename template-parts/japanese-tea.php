@@ -1,4 +1,4 @@
-<section class="product-guide">
+<!-- <section class="product-guide">
     <h3 class="product-guide__heading">取り扱い商品一覧</h3>
     <div class="product-guide__wrap">
         <p class="product-guide__ttl">静岡県</p>
@@ -38,4 +38,4 @@
             <p class="product-guide-item__text">抹茶・煎茶</p>
         </div>
     </div>
-</section>
+</section> -->

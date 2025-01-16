@@ -1,4 +1,4 @@
-<section class="chinese-detail">
+<!-- <section class="chinese-detail">
   <h3 class="chinese-detail__heading">その他の緑茶</h3>
   <section class="chinese-detail__content">
     <h4 class="chinese-detail__ttl">太平猴魁</h4>
@@ -21,4 +21,4 @@
     細く繊細な形状で可憐な印象を受けるこのお茶は柔らかくまろやかで、かつすっきりとまとまったバランスの良さが魅力的な緑茶です。澄んだ香りがその魅力をさらに引き立て、自然な味わいを醸し出します。
     </p>
   </section>
-</section>
+</section> -->

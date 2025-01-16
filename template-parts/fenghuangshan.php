@@ -1,4 +1,4 @@
-<section class="chinese-detail">
+<!-- <section class="chinese-detail">
   <h3 class="chinese-detail__heading">その他の単欉</h3>
   <section class="chinese-detail__content">
     <h4 class="chinese-detail__ttl">白葉単欉</h4>
@@ -20,4 +20,4 @@
     この他、単欉には宋種、桂花香、杏仁香、夜来香、玉蘭香など、さまざまな種類のお茶があります。
     </p>
   </section>
-</section>
+</section> -->

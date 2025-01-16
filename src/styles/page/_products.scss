@@ -154,15 +154,15 @@
 
 			&--original {
 				&::after {
-					content: 'ハーブ類・';
-					left: 60%;
+					content: 'オリジナル';
+					left: 57%;
 				}
 
 				&::before {
-					content: 'オリジナル';
-					right: 40%;
-					height: 100%;
-					text-align: center;
+					content: 'ブレンド';
+					right: 50%;
+					height: auto;
+					// text-align: center;
 					letter-spacing: #{g.$font-size-px * 0.2}px;
 					color: #fff;
 					font-size: 2.8rem;
@@ -173,7 +173,7 @@
 					-ms-text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
 					text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
 					position: absolute;
-					top: 50%;
+					top: 45%;
 					left: 50%;
 					transform: translate(-50%, -50%);
 				}
@@ -671,14 +671,14 @@
 
 			&--original {
 				&::after {
-					content: 'ハーブ類・';
+					content: 'オリジナル';
 					left: 60%;
 				}
 
 				&::before {
 					pointer-events: none;
-					content: 'オリジナル';
-					right: 40%;
+					content: 'ブレンド';
+					right: 45%;
 					height: 100%;
 					text-align: center;
 					letter-spacing: #{g.$font-size-px * 0.2}px;
@@ -692,7 +692,7 @@
 					-ms-text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
 					text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
 					position: absolute;
-					top: 50%;
+					top: 42%;
 					left: 50%;
 					transform: translate(-50%, -50%);
 				}
@@ -738,6 +738,24 @@
 		.btn-text {
 			display: inline-block;
 			font-family: g.$font-family;
+		}
+	}
+
+	.product-flex-btn {
+		display: flex;
+		justify-content: center;
+		gap: 3.2rem;
+
+		@include g.max-screen(g.$bp-sp) {
+			flex-direction: column;
+		}
+
+		.btn-C {
+			margin: 0;
+		}
+
+		&--chinese {
+			margin-top: 6.4rem;
 		}
 	}
 
@@ -795,6 +813,10 @@
 		.btn-text {
 			display: inline-block;
 			font-family: g.$font-family;
+		}
+
+		&--original {
+			margin-bottom: 6.4rem;
 		}
 	}
 

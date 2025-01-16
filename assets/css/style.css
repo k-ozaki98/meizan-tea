@@ -4036,7 +4036,7 @@ sup {
   text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
   margin: 0;
   padding: 0;
-  text-align: center;
+  text-align: justify;
 }
 @media screen and (max-width: 767px) {
   .contents.contents--top .tea__ttl {
@@ -4413,14 +4413,13 @@ sup {
   content: "茶外茶";
 }
 .contents.contents--products .product-item__img--original::after {
-  content: "ハーブ類・";
-  left: 60%;
+  content: "オリジナル";
+  left: 57%;
 }
 .contents.contents--products .product-item__img--original::before {
-  content: "オリジナル";
-  right: 40%;
-  height: 100%;
-  text-align: center;
+  content: "ブレンド";
+  right: 50%;
+  height: auto;
   letter-spacing: 3.2px;
   color: #fff;
   font-size: 2.8rem;
@@ -4431,7 +4430,7 @@ sup {
   -ms-text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
   text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -4851,13 +4850,13 @@ sup {
   content: "紅　茶";
 }
 .contents.contents--products .various-tea__item--original::after {
-  content: "ハーブ類・";
+  content: "オリジナル";
   left: 60%;
 }
 .contents.contents--products .various-tea__item--original::before {
   pointer-events: none;
-  content: "オリジナル";
-  right: 40%;
+  content: "ブレンド";
+  right: 45%;
   height: 100%;
   text-align: center;
   letter-spacing: 3.2px;
@@ -4871,7 +4870,7 @@ sup {
   -ms-text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
   text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.75);
   position: absolute;
-  top: 50%;
+  top: 42%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -4905,6 +4904,22 @@ sup {
 .contents.contents--products .blue-tea-btn .btn-text {
   display: inline-block;
   font-family: "Noto Serif JP", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+.contents.contents--products .product-flex-btn {
+  display: flex;
+  justify-content: center;
+  gap: 3.2rem;
+}
+@media screen and (max-width: 767px) {
+  .contents.contents--products .product-flex-btn {
+    flex-direction: column;
+  }
+}
+.contents.contents--products .product-flex-btn .btn-C {
+  margin: 0;
+}
+.contents.contents--products .product-flex-btn--chinese {
+  margin-top: 6.4rem;
 }
 .contents.contents--products .district-buttons {
   display: flex;
@@ -4954,6 +4969,9 @@ sup {
 .contents.contents--products .district-buttons .btn-text {
   display: inline-block;
   font-family: "Noto Serif JP", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+.contents.contents--products .district-buttons--original {
+  margin-bottom: 6.4rem;
 }
 .contents.contents--products .chinese-btn {
   margin-top: 6.4rem;
