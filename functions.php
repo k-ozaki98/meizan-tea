@@ -101,3 +101,25 @@ function modify_product_query($query) {
     }
 }
 add_action('pre_get_posts', 'modify_product_query');
+
+// 台湾茶、オリジナルブレンドのリダイレクト処理
+function custom_category_redirects() {
+    if (!is_tax('product_category')) return;
+    
+    $current_term = get_queried_object();
+    
+    // リダイレクトルール
+    $redirect_rules = [
+        'taiwan-tea' => 'blue-tea-taiwan',     // 台湾茶 → 青茶
+        'original' => 'chinese-blend',         // オリジナルブレンド → 中国茶ブレンド
+    ];
+    
+    if (isset($redirect_rules[$current_term->slug])) {
+        $redirect_term = get_term_by('slug', $redirect_rules[$current_term->slug], 'product_category');
+        if ($redirect_term) {
+            wp_redirect(get_term_link($redirect_term), 301);
+            exit;
+        }
+    }
+}
+add_action('template_redirect', 'custom_category_redirects');

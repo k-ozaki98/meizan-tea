@@ -52,11 +52,18 @@ $categories = get_terms(array(
             $current_term = get_queried_object();
             global $current_term;
 
-            // トップコンテンツ
-            switch($current_term->slug) {
-                case 'original':
-                    get_template_part('template-parts/original-top');
-                    break;
+            $template_mapping = [
+                'taiwan-tea' => 'product-category-taiwan',
+                'blue-tea-taiwan' => 'product-category-taiwan',
+                'black-tea-taiwan' => 'product-category-taiwan',
+                'jasmine-tea-taiwan' => 'product-category-taiwan',
+                'chinese-blend' => 'original-top',
+                'black-blend' => 'original-top',
+                'other-blend' => 'original-top'
+            ];
+            
+            if (isset($template_mapping[$current_term->slug])) {
+                get_template_part('template-parts/' . $template_mapping[$current_term->slug]);
             }
 
             // メインコンテンツ
