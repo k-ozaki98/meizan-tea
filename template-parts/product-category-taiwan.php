@@ -10,7 +10,7 @@ $current_slug = $current_category->slug;
 
 ?>
 
-<div class="district-buttons district-buttons--original">
+<div class="district-buttons district-buttons--original l-inner">
     <div class="btn-D <?php echo ($current_slug === 'blue-tea-taiwan') ? 'is-active' : ''; ?>">
         <a href="<?php echo get_term_link($blue_tea); ?>" class="btn">
             <span class="btn-text">青茶</span>

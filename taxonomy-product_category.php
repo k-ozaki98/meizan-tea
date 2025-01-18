@@ -99,9 +99,39 @@ $categories = get_terms(array(
                                 <?php if ($other) : ?>
                                     <p class="product-list__origin"><?php echo esc_html($other); ?></p>
                                 <?php endif; ?>
-                                <p class="product-list__detail">
-                                    <?php the_content(); ?>
-                                </p>
+                                <div class="product-list__wrap">
+                                    <div class="product-list__detail">
+                                        <?php the_content(); ?>
+                                    </div>
+                                    <!-- ティーバッグ有無 -->
+                                     <?php
+                                        $teabag_type = get_field('teabag_type');
+                                        if ($teabag_type && $teabag_type !== 'none') :
+    
+                                            $type_text = '';
+                                            $type_icon = '';
+    
+                                            switch($teabag_type) {
+                                                case 'triangle':
+                                                    $type_text = '三角ティーバッグあり';
+                                                    $type_class = 'teabag-icon--triangle';
+                                                    break;
+                                                case 'normal':
+                                                    $type_text = 'ティーバッグあり';
+                                                    $type_class = 'teabag-icon--normal';
+                                                    break;
+                                            }
+                                     ?>
+                                        <div class="teabag-icon <?php echo $type_class; ?>">
+                                            <span class="icon"></span>
+                                            <span class="text"><?php echo $type_text; ?></span>
+                                        </div>
+                                    <?php endif; ?>
+                                    <div class="product-list__toggle is-sp">
+                                        <span class="chevron"></span>
+                                    </div>
+                                </div>
+
                             </li>
                         <?php endwhile; ?>
                     </ul>

@@ -21,6 +21,7 @@ import {
 import {
   ScrollTrigger
 } from 'gsap/ScrollTrigger'
+import { initProduct } from './pages/product';
 gsap.registerPlugin(ScrollTrigger)
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -33,6 +34,10 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
+  const isProduct = pageId === 'product';
+  if (isProduct) {
+    initProduct();
+  }
   const isContact = pageId === 'contact';
   if (isContact) {
     initContact();
