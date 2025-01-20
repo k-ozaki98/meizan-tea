@@ -1,5 +1,6 @@
 # 無視するビルド成果物
 assets/css/style.css.map
+assets/css/style.css
 assets/js/
 dist/
 build/
