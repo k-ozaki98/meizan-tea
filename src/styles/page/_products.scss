@@ -490,30 +490,34 @@
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 3;
         overflow: hidden;
-        transition: all 0.5s ease;
-				max-height: calc(1.8em * 3); 
+        max-height: calc((1.8em * 3) + 3.6rem);
+        transition: all 0.3s ease;
 
         p {
             margin: 0;
+        }
+
+        .teabag-icon {
+            margin-top: 8px; 
         }
     }
 	}
 	
 	&__wrap {
 		@include g.max-screen(g.$bp-sp) {
-			position: relative;
+        position: relative;
 
-			&.is-open {
-					.product-list__detail {
-							display: block;
-							-webkit-line-clamp: unset;
-							max-height: 2000px;
-					}
-					.chevron {
-							transform: rotate(-135deg);
-					}
-			}
-	}
+        &.is-open {
+            .product-list__detail {
+                display: block;
+                -webkit-line-clamp: unset;
+                max-height: 1000px;
+            }
+            .chevron {
+                transform: rotate(-135deg);
+            }
+        }
+    }
 	}
 	
 	&__toggle {
@@ -521,7 +525,7 @@
 					display: none;  
 					width: 100%;
 					padding: 8px 0;
-					margin-top: 2rem;
+					margin-top: 0.8rem;
 					background: none;
 					border: none;
 					cursor: pointer;

@@ -4703,11 +4703,14 @@ sup {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     overflow: hidden;
-    transition: all 0.5s ease;
-    max-height: 5.4em;
+    max-height: calc(5.4em + 3.6rem);
+    transition: all 0.3s ease;
   }
   .contents.contents--products .product-list__detail p {
     margin: 0;
+  }
+  .contents.contents--products .product-list__detail .teabag-icon {
+    margin-top: 8px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -4717,7 +4720,7 @@ sup {
   .contents.contents--products .product-list__wrap.is-open .product-list__detail {
     display: block;
     -webkit-line-clamp: unset;
-    max-height: 2000px;
+    max-height: 1000px;
   }
   .contents.contents--products .product-list__wrap.is-open .chevron {
     transform: rotate(-135deg);
@@ -4728,7 +4731,7 @@ sup {
     display: none;
     width: 100%;
     padding: 8px 0;
-    margin-top: 2rem;
+    margin-top: 0.8rem;
     background: none;
     border: none;
     cursor: pointer;
