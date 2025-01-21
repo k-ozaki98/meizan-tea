@@ -4303,6 +4303,11 @@ sup {
 .contents.contents--products {
   padding: 14.4rem 0 6.4rem;
 }
+@media screen and (max-width: 767px) {
+  .contents.contents--products {
+    padding: 10rem 0 6.4rem;
+  }
+}
 .contents.contents--products .products {
   position: relative;
 }
@@ -4526,6 +4531,11 @@ sup {
   grid-template-columns: 1fr 1fr;
   gap: 2.4rem;
 }
+@media screen and (max-width: 767px) {
+  .contents.contents--products .chinese-detail .product-guide__list {
+    grid-template-columns: 1fr;
+  }
+}
 .contents.contents--products .chinese-detail__heading {
   font-size: 3.2rem;
   line-height: 1.2;
@@ -4703,7 +4713,7 @@ sup {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     overflow: hidden;
-    max-height: calc(5.4em + 3.6rem);
+    max-height: calc(5.4em + 4.5rem);
     transition: all 0.3s ease;
   }
   .contents.contents--products .product-list__detail p {
@@ -4715,6 +4725,7 @@ sup {
 }
 @media screen and (max-width: 767px) {
   .contents.contents--products .product-list__wrap {
+    transition: max-height 0.3s ease;
     position: relative;
   }
   .contents.contents--products .product-list__wrap.is-open .product-list__detail {
@@ -5047,6 +5058,9 @@ sup {
 }
 .contents.contents--products .district-buttons--original {
   margin-bottom: 6.4rem;
+}
+.contents.contents--products .district-buttons--original .btn-D a {
+  justify-content: center;
 }
 .contents.contents--products .chinese-btn {
   margin-top: 6.4rem;

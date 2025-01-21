@@ -23,6 +23,6 @@
     <a href="../black-tea-chinese-tea/">キーマン紅茶など中国紅茶はこちら</a>
   </div>
   <div class="u-align-c btn-C">
-    <a href="../black-tea-chinese-tea/">台湾紅茶はこちら</a>
+    <a href="../black-tea-taiwan/">台湾紅茶はこちら</a>
   </div>
 </div>

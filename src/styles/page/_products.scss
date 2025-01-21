@@ -20,6 +20,10 @@
 .contents.contents--products {
 	padding: 14.4rem 0 6.4rem;
 
+	@include g.max-screen(g.$bp-sp) {
+		padding: 10rem 0 6.4rem;
+	}
+
 	.products {
 		position: relative;
 
@@ -284,6 +288,10 @@
 		.product-guide__list {
 			grid-template-columns: 1fr 1fr;
 			gap: 2.4rem;
+
+			@include g.max-screen(g.$bp-sp) {
+				grid-template-columns: 1fr;
+			}
 		}
 
 		&__heading {
@@ -484,64 +492,67 @@
 
 		&__detail {
 			font-size: 1.6rem;
-	
+
 			@include g.max-screen(g.$bp-sp) {
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 3;
-        overflow: hidden;
-        max-height: calc((1.8em * 3) + 3.6rem);
-        transition: all 0.3s ease;
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp: 3;
+				overflow: hidden;
+				max-height: calc((1.8em * 3) + 4.5rem);
+				transition: all 0.3s ease;
 
-        p {
-            margin: 0;
-        }
+				p {
+					margin: 0;
+				}
 
-        .teabag-icon {
-            margin-top: 8px; 
-        }
-    }
-	}
-	
-	&__wrap {
-		@include g.max-screen(g.$bp-sp) {
-        position: relative;
-
-        &.is-open {
-            .product-list__detail {
-                display: block;
-                -webkit-line-clamp: unset;
-                max-height: 1000px;
-            }
-            .chevron {
-                transform: rotate(-135deg);
-            }
-        }
-    }
-	}
-	
-	&__toggle {
-			@include g.max-screen(g.$bp-sp) {
-					display: none;  
-					width: 100%;
-					padding: 8px 0;
-					margin-top: 0.8rem;
-					background: none;
-					border: none;
-					cursor: pointer;
-					text-align: center;
-	
-					.chevron {
-							display: inline-block;
-							width: 1.5rem;
-							height: 1.5rem;
-							border-right: 2px solid #D5D933;
-							border-bottom: 2px solid #D5D933;
-							transform: rotate(45deg);
-							transition: transform 0.3s ease;
-					}
+				.teabag-icon {
+					margin-top: 8px;
+				}
 			}
-	}
+		}
+
+		&__wrap {
+
+			@include g.max-screen(g.$bp-sp) {
+				transition: max-height 0.3s ease;
+				position: relative;
+
+				&.is-open {
+					.product-list__detail {
+						display: block;
+						-webkit-line-clamp: unset;
+						max-height: 1000px;
+					}
+
+					.chevron {
+						transform: rotate(-135deg);
+					}
+				}
+			}
+		}
+
+		&__toggle {
+			@include g.max-screen(g.$bp-sp) {
+				display: none;
+				width: 100%;
+				padding: 8px 0;
+				margin-top: 0.8rem;
+				background: none;
+				border: none;
+				cursor: pointer;
+				text-align: center;
+
+				.chevron {
+					display: inline-block;
+					width: 1.5rem;
+					height: 1.5rem;
+					border-right: 2px solid #D5D933;
+					border-bottom: 2px solid #D5D933;
+					transform: rotate(45deg);
+					transition: transform 0.3s ease;
+				}
+			}
+		}
 	}
 
 	.teabag-icon {
@@ -570,6 +581,7 @@
 
 			}
 		}
+
 		&--normal {
 			.icon {
 				background: url(../images/products/teabag-icon02.svg) no-repeat center center;
@@ -909,6 +921,14 @@
 
 		&--original {
 			margin-bottom: 6.4rem;
+
+			.btn-D {
+
+				a {
+					justify-content: center;
+				}
+			}
+
 		}
 	}
 
