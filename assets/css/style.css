@@ -4712,8 +4712,9 @@ sup {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
+    line-height: 24px;
     overflow: hidden;
-    max-height: calc(5.4em + 4.5rem);
+    transition: max-height 0.3s ease, -webkit-line-clamp 0.3s ease;
     transition: all 0.3s ease;
   }
   .contents.contents--products .product-list__detail p {
@@ -4731,7 +4732,8 @@ sup {
   .contents.contents--products .product-list__wrap.is-open .product-list__detail {
     display: block;
     -webkit-line-clamp: unset;
-    max-height: 1000px;
+    max-height: none;
+    overflow: visible;
   }
   .contents.contents--products .product-list__wrap.is-open .chevron {
     transform: rotate(-135deg);
@@ -5196,6 +5198,7 @@ sup {
   background: #4F88A8;
 }
 .contents.contents--contact .contact .form-control {
+  font-family: "Noto Serif JP", sans-serif;
   width: 100%;
   padding: 1rem 2.3rem;
   border: 1px solid #D8E3E5;
@@ -5219,18 +5222,21 @@ sup {
   align-items: center;
 }
 .contents.contents--contact .contact .form-control-zip1 {
+  font-family: "Noto Serif JP", sans-serif;
   width: 80px;
   padding: 1rem 2.3rem;
   border: 1px solid #D8E3E5;
   border-radius: 4px;
 }
 .contents.contents--contact .contact .form-control-zip2 {
+  font-family: "Noto Serif JP", sans-serif;
   width: 100px;
   padding: 1rem 2.3rem;
   border: 1px solid #D8E3E5;
   border-radius: 4px;
 }
 .contents.contents--contact .contact .address-search-btn {
+  font-family: "Noto Serif JP", sans-serif;
   white-space: nowrap;
   font-size: 1.2rem;
   background: #4D6569;

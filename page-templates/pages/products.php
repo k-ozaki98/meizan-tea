@@ -5,7 +5,7 @@
     <div class="l-inner">
       <h2 class="heading-A"><span>TEA</span>茶</h2>
 
-      <p class="products__intro">中国茶から紅茶、日本茶、ハーブ類まで<br class="is-Sp">常時数百種類の茶葉を取扱っています。</p>
+      <p class="products__intro">中国茶から紅茶、日本茶、ハーブ類まで<br class="is-Sp">常時数百種類の茶葉を取り扱っています。</p>
 
       <?php
         // product_categoryタクソノミーからカテゴリーを取得

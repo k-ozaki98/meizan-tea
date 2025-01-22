@@ -2,22 +2,39 @@ export const initProduct = () => {
     document.querySelectorAll('.product-list__toggle').forEach(toggle => {
         const wrap = toggle.closest('.product-list__wrap');
         const detail = wrap.querySelector('.product-list__detail');
+        const teabagIcon = detail.querySelector('.teabag-icon'); // $teabag_type の存在確認
 
-        // `1.8em` と `4.5rem` をピクセル単位で計算
-        const computedStyle = window.getComputedStyle(detail);
-        const lineHeight = parseFloat(computedStyle.lineHeight); // `1.8em` の計算
-        const remToPx = parseFloat(getComputedStyle(document.documentElement).fontSize); // `1rem` のピクセル値取得
-        const maxHeight = (lineHeight * 3) + (4.5 * remToPx); // `calc((1.8em * 3) + 4.5rem)` を計算
+        const lineHeight = parseFloat(window.getComputedStyle(detail).lineHeight);
+        const baseMaxHeight = lineHeight * 3;
 
-        // ディテールの高さが指定の高さ以下の場合、トグルを非表示
-        if (detail.scrollHeight <= maxHeight) {
-            toggle.style.display = 'none';
-        } else {
-            toggle.style.display = 'block';
+        // teabag-icon の高さを計算
+        const teabagHeight = teabagIcon ?
+            teabagIcon.getBoundingClientRect().height + parseFloat(window.getComputedStyle(teabagIcon).marginTop || 0) :
+            0;
+
+        const detailHeight = detail.scrollHeight;
+
+        // 3行までの高さ＋teabag の高さを計算
+        const maxHeight = baseMaxHeight + teabagHeight;
+
+        // 特別な条件: 3行までのテキストと $teabag_type がある場合
+        if (teabagIcon && detailHeight <= maxHeight) {
+            toggle.style.display = 'none'; // トグル非表示
+            detail.style.maxHeight = 'none'; // 全内容表示
+            detail.style.overflow = 'visible';
+        }
+        // 通常のトグル制御
+        else if (detailHeight > maxHeight) {
+            toggle.style.display = 'block'; // トグル表示
 
             toggle.addEventListener('click', () => {
                 wrap.classList.toggle('is-open');
+                detail.classList.toggle('is-open'); // CSS クラスで制御
             });
+        }
+        // トグル不要の場合
+        else {
+            toggle.style.display = 'none'; // トグル非表示
         }
     });
 };

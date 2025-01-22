@@ -497,8 +497,10 @@
 				display: -webkit-box;
 				-webkit-box-orient: vertical;
 				-webkit-line-clamp: 3;
+				line-height: 24px;
 				overflow: hidden;
-				max-height: calc((1.8em * 3) + 4.5rem);
+				transition: max-height 0.3s ease, -webkit-line-clamp 0.3s ease;
+				// max-height: calc((1.8em * 3) + 2rem);
 				transition: all 0.3s ease;
 
 				p {
@@ -521,7 +523,8 @@
 					.product-list__detail {
 						display: block;
 						-webkit-line-clamp: unset;
-						max-height: 1000px;
+						max-height: none;
+						overflow: visible;
 					}
 
 					.chevron {
