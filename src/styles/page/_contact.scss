@@ -40,6 +40,8 @@
     }
 
     .contact {
+
+
         padding: 6rem 0 6.4rem;
 
         @include g.max-screen(g.$bp-sp) {
@@ -49,6 +51,26 @@
         .form-list {
             max-width: 1000px;
             margin: 0 auto;
+
+            input {
+                color: #4D6569 !important;
+
+                &::placeholder {
+                    color: #4D6569;
+                }
+            }
+
+            input:-webkit-autofill {
+                -webkit-text-fill-color: #4D6569 !important; // 好きな色をフォントカラーに指定できる
+            }
+
+            textarea {
+                color: #4D6569;
+
+                &::placeholder {
+                    color: #4D6569;
+                }
+            }
         }
 
         .form-item {

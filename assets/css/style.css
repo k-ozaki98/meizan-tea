@@ -4720,9 +4720,6 @@ sup {
   .contents.contents--products .product-list__detail p {
     margin: 0;
   }
-  .contents.contents--products .product-list__detail .teabag-icon {
-    margin-top: 8px;
-  }
 }
 @media screen and (max-width: 767px) {
   .contents.contents--products .product-list__wrap {
@@ -5134,6 +5131,21 @@ sup {
 .contents.contents--contact .contact .form-list {
   max-width: 1000px;
   margin: 0 auto;
+}
+.contents.contents--contact .contact .form-list input {
+  color: #4D6569 !important;
+}
+.contents.contents--contact .contact .form-list input::placeholder {
+  color: #4D6569;
+}
+.contents.contents--contact .contact .form-list input:-webkit-autofill {
+  -webkit-text-fill-color: #4D6569 !important;
+}
+.contents.contents--contact .contact .form-list textarea {
+  color: #4D6569;
+}
+.contents.contents--contact .contact .form-list textarea::placeholder {
+  color: #4D6569;
 }
 .contents.contents--contact .contact .form-item {
   display: flex;
