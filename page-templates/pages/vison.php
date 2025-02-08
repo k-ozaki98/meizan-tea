@@ -21,10 +21,13 @@
       <p class="vison__txt">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。</p>
 
       <div class="vison__name-area">
-        <p class="vison__name">代表取締役<br>砂押 悠子</p>
-        <div class="vison__img">
-          <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/vison-name.png" alt="" width="140" height="30">
+        <div class="vison__name-img">
+          <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/vison-icon.png" alt="" width="140" height="30">
         </div>
+        <p class="vison__name">代表取締役<br>砂押 悠子</p>
+      </div>
+      <div class="vison__img">
+        <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/vison-name.png" alt="" width="140" height="30">
       </div>
     </section>
   </div>

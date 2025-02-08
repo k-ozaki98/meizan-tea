@@ -68,15 +68,23 @@
     }
 
     &__name-area {
-      text-align: right;
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      gap: 1.6rem;
     }
 
     &__name {
       font-size: 1.6rem;
     }
 
+    &__name-img {
+      width: 8rem;
+    }
+
     &__img {
       padding-top: 1.6rem;
+      text-align: right;
     }
   }
 
