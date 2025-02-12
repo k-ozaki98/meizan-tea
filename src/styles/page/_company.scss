@@ -94,7 +94,8 @@
             width: 20%;
 
             @include g.max-screen(g.$bp-sp) {
-              width: 40%;
+              width: 50%;
+              flex-shrink: 0;
             }
           }
         }
@@ -177,6 +178,17 @@
           border-top: 1px dashed #4D6569;
           left: 0;
           z-index: 0;
+        }
+      }
+
+      a {
+        border-bottom: 1px solid #4D6569;
+        transition: .25s all;
+
+        @include g.min-screen(g.$bp-sp) {
+          &:hover {
+            opacity: .7;
+          }
         }
       }
 

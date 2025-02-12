@@ -4684,7 +4684,7 @@ sup {
   max-width: 73%;
 }
 .contents.contents--products .product-list__name-ja {
-  font-size: 3.2rem;
+  font-size: 3rem;
   font-weight: 500;
   line-height: 1.2;
   margin-bottom: 0.8rem;
@@ -5655,7 +5655,8 @@ sup {
 }
 @media screen and (max-width: 767px) {
   .contents--company .company__wrap dd .dd-flex span {
-    width: 40%;
+    width: 50%;
+    flex-shrink: 0;
   }
 }
 .contents--company .history {
@@ -5734,6 +5735,15 @@ sup {
   border-top: 1px dashed #4D6569;
   left: 0;
   z-index: 0;
+}
+.contents--company .history__list a {
+  border-bottom: 1px solid #4D6569;
+  transition: 0.25s all;
+}
+@media screen and (min-width: 767px) {
+  .contents--company .history__list a:hover {
+    opacity: 0.7;
+  }
 }
 .contents--company .history__list dt {
   width: 60%;
