@@ -25,7 +25,7 @@
     padding-top: 6.4rem;
 
     @include g.max-screen(g.$bp-sp) {
-      padding: 6.4rem 2.4rem 0 2.4rem;
+      padding: 4rem 2.4rem 0 2.4rem;
     }
 
     &__ttl {
@@ -49,16 +49,85 @@
     }
 
     &__txt-area {
-      width: 60%;
+      width: 65%;
 
       @include g.max-screen(g.$bp-sp) {
         width: 100%;
+      }
+
+      .oem__txt {
+        padding: 0;
+
+        &:first-of-type {
+          padding-bottom: 3.5rem;
+        }
+      }
+    }
+
+    &__txt-wrap {
+      margin-bottom: 4rem;
+
+      .oem__list {
+
+        &:first-of-type {
+          margin-top: 2.4rem;
+          margin-bottom: .8rem;
+        }
+      }
+    }
+
+    &__txt-ttl {
+      position: relative;
+      font-size: 2rem;
+      padding-left: 4rem;
+      font-weight: 500;
+
+      @include g.max-screen(g.$bp-sp) {
+        padding-left: 4rem;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        background: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2230%22%20height%3D%2230%22%20viewBox%3D%220%200%2030%2030%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M3.5%2010C3.5%206.41015%206.41015%203.5%2010%203.5H26.5V20C26.5%2023.5899%2023.5898%2026.5%2020%2026.5H3.5V10Z%22%20stroke%3D%22%23D5D933%22%20stroke-width%3D%227%22%2F%3E%3C%2Fsvg%3E')no-repeat center;
+        background-size: contain;
+        width: 2.8rem;
+        height: 2.8rem;
+        transform: translateY(-50%);
+        top: 50%;
+        left: 0;
+
+        @include g.max-screen(g.$bp-sp) {
+          width: 2.8rem;
+          height: 2.8rem;
+        }
       }
     }
 
     &__txt {
       font-size: 1.6rem;
-      padding-bottom: 2.4rem;
+      padding: 2.4rem 0 0;
+    }
+
+    &__txt-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 1rem;
+
+      li {
+        width: calc(100% / 3 - 8px);
+        background-color: #fff;
+        border: 1px solid #F2F4E3;
+        border-radius: .5rem;
+        font-size: 1.4rem;
+        text-align: center;
+        padding: 1.4rem 0;
+
+        @include g.max-screen(g.$bp-sp) {
+          width: 100%;
+        }
+      }
     }
 
     &__img {
@@ -66,6 +135,7 @@
 
       @include g.max-screen(g.$bp-sp) {
         width: 100%;
+        padding: 4rem 0 2rem;
       }
 
       img {
@@ -76,7 +146,7 @@
     &__list {
       background: #fff;
       border: 1px solid #F2F4E3;
-      border-radius: 3rem;
+      border-radius: 1rem;
       padding: 2.4rem 4rem;
 
       @include g.max-screen(g.$bp-sp) {
@@ -94,6 +164,13 @@
           color: #D5D933;
           left: 0;
         }
+
+        span {
+          font-size: 2rem;
+          font-weight: bold;
+          color: #A6A926;
+          line-height: 1.4;
+        }
       }
     }
 
@@ -102,7 +179,7 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 2.4rem;
-      margin: 4rem 0;
+      margin: 2rem 0 4rem;
 
       @include g.max-screen(g.$bp-sp) {
         justify-content: center
@@ -117,12 +194,21 @@
       }
     }
 
-    &__contact {
-      display: flex;
-      gap: 2.4rem;
+    &__contact-container {
       background: #4D6569;
       border-radius: 3rem;
-      padding: 4rem;
+      padding: 4rem 6.2rem;
+      margin-bottom: 6.4rem;
+
+      @include g.max-screen(g.$bp-sp) {
+        padding: 4rem;
+      }
+    }
+
+    &__contact {
+      display: flex;
+      align-items: center;
+      gap: 2.4rem;
 
       @include g.max-screen(g.$bp-sp) {
         display: block;
@@ -163,10 +249,95 @@
   }
 
   .btn-C {
-    margin: 6.4rem auto;
+    margin: 3rem auto 0;
+  }
 
-    @include g.max-screen(g.$bp-sp) {
-      width: 90%;
+  .step {
+    display: flex;
+    flex-direction: column;
+    gap: 3.4rem;
+    margin-top: 2.4rem;
+
+    &__cont {
+      position: relative;
+      background-color: #fff;
+      border: 1px solid #F2F4E3;
+      border-radius: 1rem;
+      padding: 2.5rem 3rem;
+      display: flex;
+      align-items: center;
+      gap: 3.2rem;
+
+      @include g.max-screen(g.$bp-sp) {
+        display: block;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        background: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2226%22%20height%3D%2214%22%20viewBox%3D%220%200%2026%2014%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M13%2014L0.00961949%200.500001L25.9904%200.499998L13%2014Z%22%20fill%3D%22%23D5D933%22%2F%3E%3C%2Fsvg%3E')no-repeat;
+        width: 3rem;
+        height: 1.8rem;
+        transform: translateX(-50%);
+        bottom: -2.8rem;
+        left: 50%;
+      }
+
+      &:last-of-type::after {
+        content: none;
+      }
+    }
+
+    &__ttl-area {
+      width: 30%;
+      display: flex;
+      align-items: center;
+      gap: 3.2rem;
+
+      @include g.max-screen(g.$bp-sp) {
+        display: block;
+        width: 100%;
+      }
+
+      svg {
+        width: 4rem;
+        flex-shrink: 0;
+
+        @include g.max-screen(g.$bp-sp) {
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    &__ttl {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      font-size: 2rem;
+      flex-shrink: 0;
+
+      &-icon {
+        width: 4.4rem;
+
+        &--02 {
+          width: 3.6rem;
+        }
+
+        &--03 {
+          width: 5.6rem;
+        }
+      }
+    }
+
+    &__txt {
+      width: 70%;
+      font-size: 1.6rem;
+
+      @include g.max-screen(g.$bp-sp) {
+        width: 100%;
+        margin-top: 1.5rem;
+      }
     }
   }
 }

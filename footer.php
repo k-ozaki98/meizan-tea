@@ -47,7 +47,7 @@
         <div class="footer-detail__cont">
           <dl>
             <dt>営業オフィス（2022.4月新設）</dt>
-            <dd>〒160-0022　東京都新宿区新宿1-29-16-201（東京メトロ丸の内線 新宿御苑駅 徒歩3分）</dd>
+            <dd>〒160-0022　東京都新宿区新宿1-29-16-201（東京メトロ丸の内線 新宿御苑前駅 徒歩3分）</dd>
           </dl>
           <a target="_blank" href="https://maps.app.goo.gl/zkMWAQmq5oQRhURh8" class="google-link">Google map</a>
           <div class="footer-detail__tel">
