@@ -156,7 +156,7 @@
             <span class="history__list-deco"></span>
             <dt><span>2011年</span></dt>
           </div>
-          <dd>社団法人日本中国料理協会発行「圓卓」誌に、コラム「中国茶の真髄」連載開始<br>「中国茶の真髄」<a target="_blank" href="http://www.gourmet-china.info/">http://www.gourmet-china.info/</a></dd>
+          <dd>社団法人日本中国料理協会発行「圓卓」誌に、コラム「中国茶の真髄」連載開始<br>「中国茶の真髄」<a target="_blank" href="https://www.jaccc.or.jp/book/entaku/">https://www.jaccc.or.jp/book/entaku/</a></dd>
         </div>
 
         <div class="history__list">

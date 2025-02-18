@@ -18,6 +18,12 @@
       <li class="product-guide__item">メープルローズ</li>
       <li class="product-guide__item">りんごキャラメル</li>
       <li class="product-guide__item">ローズストロベリー</li>
+      <li class="product-guide__item">アプリコット紅茶</li>
+      <li class="product-guide__item">赤りんご紅茶</li>
+      <li class="product-guide__item">スイートオレンジ紅茶</li>
+      <li class="product-guide__item">マスカット紅茶</li>
+      <li class="product-guide__item">キャラメル紅茶</li>
+      <li class="product-guide__item">パンプキン紅茶</li>
     </ul>
   </div>
 </section>

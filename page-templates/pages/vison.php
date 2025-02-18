@@ -16,18 +16,21 @@
 
     <section class="vison">
       <h2 class="vison__ttl">人と心と時間を満たす</h2>
-      <p class="vison__txt">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。</p>
-      <p class="vison__txt">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。</p>
-      <p class="vison__txt">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。</p>
+      <p class="vison__txt">昨今の社会情勢は変化が激しく、<br class="is-Pc_Tab">ライフスタイルや価値観も多様化しています。<br>そんな変化の中でも私たちが変わらず大切にしていることは、<br class="is-Pc_Tab">人であり、お茶を通して生まれる見えない価値です。</p>
+      <p class="vison__txt">心を込めて淹れた一杯のお茶は、<br class="is-Pc_Tab">時に癒やしとなり、時に賑わいに寄り添い、<br>「楽しい」「うれしい」だけでなく、<br class="is-Pc_Tab">生活のあらゆるシーンでそっと支える力となります。</p>
+      <p class="vison__txt">私たちは、飲食、飲料、製菓業界に留まらず<br class="is-Pc_Tab">他業界、他分野にも挑戦し、支えとなるプロダクトを作ります。<br class="is-Pc_Tab">そして、どんな時代にあっても<br class="is-Pc_Tab">お茶を通して豊かな毎日を提供する、<br class="is-Pc_Tab">人と心と時間を満たす企業を目指します。</p>
+      <p class="vison__txt">まずは、お茶を一杯、どうぞ。</p>
 
-      <div class="vison__name-area">
+      <div class="vison__name-wrap">
         <div class="vison__name-img">
           <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/vison-icon.png" alt="" width="140" height="30">
         </div>
-        <p class="vison__name">代表取締役<br>砂押 悠子</p>
-      </div>
-      <div class="vison__img">
-        <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/vison-name.png" alt="" width="140" height="30">
+        <div class="vison__name-area">
+          <p class="vison__name">代表取締役</p>
+          <div class="vison__img">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/vison-name.png" alt="" width="129" height="36">
+          </div>
+        </div>
       </div>
     </section>
   </div>
