@@ -8,7 +8,7 @@
       <div class="oem-mv__img">
         <picture>
           <source media="(max-width:767px)" type="image/png" srcset="<?php echo get_template_directory_uri() ?>/assets/images/oem/oem-mv_sp.png" />
-          <img src="<?php echo get_template_directory_uri() ?>/assets/images/oem/oem-mv.png" alt="">
+          <img src="<?php echo get_template_directory_uri() ?>/assets/images/oem/oem-mv.png" alt="OEM　オリジナルティー">
         </picture>
       </div>
     </div>
@@ -21,7 +21,7 @@
           <p class="oem__txt">取り扱う品目が多いので、オリジナルでブレンドしたり、香りを付けたり、異なるモノを合わせたり、ありとあらゆるご提案が可能で、他にはないオリジナルのお茶がつくれることが魅力です。</p>
         </div>
         <div class="oem__img">
-          <img src="<?php echo get_template_directory_uri() ?>/assets/images/oem/oem-img01.png" alt="">
+          <img src="<?php echo get_template_directory_uri() ?>/assets/images/oem/oem-img01.png" alt="OEM　サンプル商品画像">
         </div>
       </div>
 
@@ -72,7 +72,7 @@
               </svg>
               <div class="step__ttl">
                 <div class="step__ttl-icon">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/oem/oem-heading-icon01.png" alt="">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/oem/oem-heading-icon01.png" alt="ヒアリング　アイコン">
                 </div>
                 ヒアリング
               </div>
@@ -87,7 +87,7 @@
               </svg>
               <div class="step__ttl">
                 <div class="step__ttl-icon">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/oem/oem-heading-icon02.png" alt="">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/oem/oem-heading-icon02.png" alt="サンプリング　アイコン">
                 </div>
                 サンプリング
               </div>
@@ -102,7 +102,7 @@
               </svg>
               <div class="step__ttl">
                 <div class="step__ttl-icon step__ttl-icon--02">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/oem/oem-heading-icon03.png" alt="">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/oem/oem-heading-icon03.png" alt="デザイン　アイコン">
                 </div>
                 デザイン
               </div>
@@ -117,7 +117,7 @@
               </svg>
               <div class="step__ttl">
                 <div class="step__ttl-icon step__ttl-icon--03">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/oem/oem-heading-icon04.png" alt="">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/oem/oem-heading-icon04.png" alt="納品　アイコン">
                 </div>
                 納品
               </div>
@@ -134,12 +134,12 @@
 
       <p class="oem__txt-ttl">サンプルイメージ</p>
       <div class="oem__img-wrap">
-        <img src="<?php echo get_template_directory_uri() ?>/assets/images/oem/oem-img02.png" alt="">
-        <img src="<?php echo get_template_directory_uri() ?>/assets/images/oem/oem-img03.png" alt="">
-        <img src="<?php echo get_template_directory_uri() ?>/assets/images/oem/oem-img04.png" alt="">
-        <img src="<?php echo get_template_directory_uri() ?>/assets/images/oem/oem-img05.png" alt="">
-        <img src="<?php echo get_template_directory_uri() ?>/assets/images/oem/oem-img06.png" alt="">
-        <img src="<?php echo get_template_directory_uri() ?>/assets/images/oem/oem-img07.png" alt="">
+        <img src="<?php echo get_template_directory_uri() ?>/assets/images/oem/oem-img02.png" alt="OEM　サンプル商品画像">
+        <img src="<?php echo get_template_directory_uri() ?>/assets/images/oem/oem-img03.png" alt="OEM　サンプル商品画像">
+        <img src="<?php echo get_template_directory_uri() ?>/assets/images/oem/oem-img04.png" alt="OEM　サンプル商品画像">
+        <img src="<?php echo get_template_directory_uri() ?>/assets/images/oem/oem-img05.png" alt="OEM　サンプル商品画像">
+        <img src="<?php echo get_template_directory_uri() ?>/assets/images/oem/oem-img06.png" alt="OEM　サンプル商品画像">
+        <img src="<?php echo get_template_directory_uri() ?>/assets/images/oem/oem-img07.png" alt="OEM　サンプル商品画像">
       </div>
 
     </section>
@@ -148,7 +148,7 @@
     <div class="oem__contact-container">
       <div class="oem__contact">
         <div class="oem__contact-icon">
-          <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/footer-icon.svg" alt="">
+          <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/footer-icon.svg" alt="アイコン">
         </div>
         <div class="oem__contact-wrap">
           <p class="oem__contact-ttl">おいしい・高品質・安全・安心なお茶を提供します</p>

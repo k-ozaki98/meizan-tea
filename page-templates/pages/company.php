@@ -204,9 +204,9 @@
 
     <section class="img-area">
       <div class="img-area__wrap">
-        <img src="<?php echo get_template_directory_uri() ?>/assets/images/company/company01.jpg" alt="">
-        <img src="<?php echo get_template_directory_uri() ?>/assets/images/company/company02.jpg" alt="">
-        <img src="<?php echo get_template_directory_uri() ?>/assets/images/company/company03.jpg" alt="">
+        <img src="<?php echo get_template_directory_uri() ?>/assets/images/company/company01.jpg" alt="サンプル商品画像">
+        <img src="<?php echo get_template_directory_uri() ?>/assets/images/company/company02.jpg" alt="サンプル商品画像">
+        <img src="<?php echo get_template_directory_uri() ?>/assets/images/company/company03.jpg" alt="サンプル商品画像">
       </div>
     </section>
   </div>

@@ -12,7 +12,7 @@
       <div class="interview-mv__img">
         <picture>
           <source media="(max-width:767px)" type="image/png" srcset="<?php echo get_template_directory_uri() ?>/assets/images/about/interview-mv_sp.jpg" />
-          <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/interview-mv.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/interview-mv.jpg" alt="代表取締役　砂押 悠子　写真">
         </picture>
       </div>
     </div>
@@ -34,7 +34,7 @@
       </div>
 
       <div class="interview__img">
-        <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/interview-img01.jpg" alt="">
+        <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/interview-img01.jpg" alt="代表取締役　砂押 悠子　写真">
       </div>
 
       <div class="interview__cont">
@@ -48,7 +48,7 @@
       </div>
 
       <div class="interview__img">
-        <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/interview-img02.jpg" alt="">
+        <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/interview-img02.jpg" alt="代表取締役　砂押 悠子　写真">
       </div>
 
       <div class="interview__cont">
@@ -73,7 +73,7 @@
     <ul class="about-story__wrap">
       <li>
         <a class="about-story__bg" href="/meizan-tea/vison/">
-          <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-story01.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-story01.jpg" alt="ビジョン">
           <div class="about-story__txt-area">
             <p class="about-story__ttl">ビジョン</p>
             <div class="btn-A btn-A--white">
@@ -84,7 +84,7 @@
       </li>
       <li>
         <a class="about-story__bg" href="/meizan-tea/strength/">
-          <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-story02.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-story02.jpg" alt="私たちの強み">
           <div class="about-story__txt-area">
             <p class="about-story__ttl">私たちの強み</p>
             <div class="btn-A btn-A--white">

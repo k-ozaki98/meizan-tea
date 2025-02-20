@@ -6,7 +6,7 @@
 
     <div class="about-mv">
       <div class="about-mv__img">
-        <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/about-img.png" alt="" width="400" height="207">
+        <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/about-img.png" alt="私たちのこと　イメージ" width="400" height="207">
       </div>
       <p class="about-mv__txt">共に味わい<br>共に語らい<br>共に和み<br>共にくつろぐ</p>
     </div>
@@ -17,21 +17,21 @@
       <ul class="about__list">
         <li>
           <div class="about__list-top">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-list01.svg" alt="">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-list01.svg" alt="つながり　アイコン">
             <p class="about__list-ttl">つながり</p>
           </div>
           <p class="about__list-body">私たちは、創業以来、人との出会い、人と人のつながりを大切に、今日まで継続してきました。それは、輸入元である商社の方々、生産農家の方々、日本のパートナーの方々、ご購入いただく飲食店や企業の方々、また、最終的にお茶を口にしていただく生活者の方々まで、お茶を介した全ての人とのつながりを大切にしています。</p>
         </li>
         <li>
           <div class="about__list-top">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-list02.svg" alt="">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-list02.svg" alt="そうぞう　アイコン">
             <p class="about__list-ttl">そうぞう</p>
           </div>
           <p class="about__list-body">私たちの仕事は、茶葉を輸入して卸すだけではありません。お茶は誰が淹れても同じ味になるわけではなく、淹れる温度や入れ方で、繊細に変化する自然物です。時に一人で、時に仲間と、リラックスしたり、楽しんだり……。私たちは、お茶が供される様々なシーンを想像し、商品としての価値を創造しています。</p>
         </li>
         <li>
           <div class="about__list-top">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-list03.svg" alt="">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-list03.svg" alt="チャレンジ　アイコン">
             <p class="about__list-ttl">チャレンジ</p>
           </div>
           <p class="about__list-body">私たちは、お客様の様々なご要望にお応えするため、常に学び、追求し、新しい情報発信や提案を行っています。また、レシピ開発だけでなく、お茶のセミナーや生涯学習の開催、子ども食堂や病院への寄付など、新しいことにもチャレンジしています。全ては「お茶が好き」という"お茶愛"を原動力に、一つ一つの事に真摯に取り組んで、皆様にご満足いただくこと。そして、私たち自身がワクワクできることを目指しています。</p>
@@ -45,7 +45,7 @@
     <ul class="about-story__wrap">
       <li>
         <a class="about-story__bg" href="/meizan-tea/vison/">
-          <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-story01.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-story01.jpg" alt="ビジョン">
           <div class="about-story__txt-area">
             <p class="about-story__ttl">ビジョン</p>
             <div class="btn-A btn-A--white">
@@ -56,7 +56,7 @@
       </li>
       <li>
         <a class="about-story__bg" href="/meizan-tea/strength/">
-          <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-story02.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-story02.jpg" alt="私たちの強み">
           <div class="about-story__txt-area">
             <p class="about-story__ttl">私たちの強み</p>
             <div class="btn-A btn-A--white">
@@ -67,7 +67,7 @@
       </li>
       <li>
         <a class="about-story__bg" href="/meizan-tea/interview/">
-          <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-story03.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-story03.jpg" alt="社長インタビュー">
           <div class="about-story__txt-area">
             <p class="about-story__ttl">社長インタビュー</p>
             <div class="btn-A btn-A--white">

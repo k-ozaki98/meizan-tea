@@ -14,13 +14,13 @@
         <p class="strength__txt">中国茶・台湾茶をメインに、自社輸入し取り扱っております。中国国営の商社や台湾の農園と直接取引を行うことでその年の茶葉の様子や流行、現地の情報をリアルタイムで入手でき、お茶の管理をしている茶師の選定により、その時の状態の良い茶葉を輸入できています。品質管理においては、輸出国での厳重な農薬検査のほか、輸入時にも国内検査機関において残農薬検査を行い、徹底した品質管理の元、安心できる商品をご提供いたします。</p>
         <div class="strength__img-wrap">
           <div class="strength__img">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/strength-img01.png" alt="">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/strength-img01.png" alt="自社輸入　イメージ">
           </div>
           <div class="strength__img">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/strength-img02.png" alt="">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/strength-img02.png" alt="自社輸入　イメージ">
           </div>
           <div class="strength__img">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/strength-img03.png" alt="">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/strength-img03.png" alt="自社輸入　イメージ">
           </div>
         </div>
       </div>
@@ -36,11 +36,11 @@
         <p class="strength__txt">中国ではかつて、世界に中国茶を流通させる国策として茶葉の鑑定・管理を行う人材の育成を目的とした「評茶員」という国家公的資格がありました。評茶員検定試験の合格者は、中国政府公認の茶葉を鑑定するプロであり、明山茶業には、「評茶員」の有資格者3名が在籍しております。「評茶員」は、お茶の知識が豊富で、確かなテイスティング能力、その年の茶葉の出来や状態を見極める目を持っており、明山茶業で取り扱う茶葉は、「評茶員」の厳しい目・鼻・舌を通して、皆様にお茶をより楽しんでいただける事を日々考え追求しています。また、日本中国茶普及協会が認定する中国茶のインストラクターや日本紅茶協会認定のティーインストラクターの有資格者も在籍し、日々お茶と向き合い触れているので、様々なお茶に対してのご提案やお手使いが可能です。</p>
         <div class="strength__img-wrap">
           <div class="strength__img">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/strength-img04.png" alt="">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/strength-img04.png" alt="中国政府公認評茶員　張　文昕　写真">
             <p class="strength__img-txt">中国政府公認評茶員<br>張　文昕</p>
           </div>
           <div class="strength__img">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/strength-img05.png" alt="">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/strength-img05.png" alt="スペシャリスト　イメージ">
             <ul class="strength__img-txt">
               <li>＜茶関連資格保持者＞</li>
               <li>中国政府公認評茶員　張　文昕</li>
@@ -52,7 +52,7 @@
             </ul>
           </div>
           <div class="strength__img">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/strength-img06.png" alt="">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/strength-img06.png" alt="スペシャリスト　イメージ">
           </div>
         </div>
       </div>
@@ -69,18 +69,18 @@
         <div class="strength__oem-img">
           <picture>
             <source media="(max-width:767px)" type="image/png" srcset="<?php echo get_template_directory_uri() ?>/assets/images/about/strength-img07_sp.png" />
-            <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/strength-img07.png" alt="">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/strength-img07.png" alt="OEM　オリジナルティー">
           </picture>
         </div>
         <div class="strength__img-wrap">
           <div class="strength__img">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/strength-img08.png" alt="">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/strength-img08.png" alt="OEM　サンプル商品画像">
           </div>
           <div class="strength__img">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/strength-img09.png" alt="">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/strength-img09.png" alt="OEM　サンプル商品画像">
           </div>
           <div class="strength__img">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/strength-img10.png" alt="">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/strength-img10.png" alt="OEM　サンプル商品画像">
           </div>
         </div>
         <div class="btn-B">
@@ -94,7 +94,7 @@
     <ul class="about-story__wrap">
       <li>
         <a class="about-story__bg" href="/meizan-tea/vison/">
-          <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-story01.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-story01.jpg" alt="ビジョン">
           <div class="about-story__txt-area">
             <p class="about-story__ttl">ビジョン</p>
             <div class="btn-A btn-A--white">
@@ -105,7 +105,7 @@
       </li>
       <li>
         <a class="about-story__bg" href="/meizan-tea/interview/">
-          <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-story03.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-story03.jpg" alt="社長インタビュー">
           <div class="about-story__txt-area">
             <p class="about-story__ttl">社長インタビュー</p>
             <div class="btn-A btn-A--white">

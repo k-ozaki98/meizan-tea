@@ -24,7 +24,7 @@ $pageId = esc_attr(isset($pageId) ? $pageId : '');
     <header class="header" id="header">
       <div class="header__inner">
         <h1 class="header__logo">
-          <a href="/meizan-tea/"><img src="<?php echo get_template_directory_uri() ?>/assets/images/common/logo.svg" alt=""></a>
+          <a href="/meizan-tea/"><img src="<?php echo get_template_directory_uri() ?>/assets/images/common/logo.svg" alt="明山　MEIZAN TEA"></a>
         </h1>
         <nav>
           <ul class="header__nav is-Pc_Tab">
@@ -62,19 +62,19 @@ $pageId = esc_attr(isset($pageId) ? $pageId : '');
     </ul>
     <ul class="menu-sp__bnr">
       <li>
-        <a href="/meizan-tea/oem/"><img src="<?php echo get_template_directory_uri() ?>/assets/images/common/footer-bnr01.png" alt=""></a>
+        <a href="/meizan-tea/oem/"><img src="<?php echo get_template_directory_uri() ?>/assets/images/common/footer-bnr01.png" alt="OEM original tea"></a>
       </li>
       <li>
-        <a target="_blank" href="https://www.amazon.co.jp/s?rh=n%3A57239051%2Cp_4%3Ameizan+tea&ref=bl_dp_s_web_57239051"><img src="<?php echo get_template_directory_uri() ?>/assets/images/common/footer-bnr02.png" alt=""></a>
+        <a target="_blank" href="https://www.amazon.co.jp/s?rh=n%3A57239051%2Cp_4%3Ameizan+tea&ref=bl_dp_s_web_57239051"><img src="<?php echo get_template_directory_uri() ?>/assets/images/common/footer-bnr02.png" alt="Amazon MEIZAN TEA"></a>
       </li>
     </ul>
   </div>
   <div class="fix-btn is-Pc_Tab">
     <a href="/meizan-tea/oem/">
       <div class="wave"></div>
-      <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/footer-btn.svg" alt="">
+      <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/footer-btn.svg" alt="OEM original tea　背景">
       <div class="fix-btn__txt">
-        <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/footer-btn-txt.svg" alt="">
+        <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/footer-btn-txt.svg" alt="OEM original tea">
       </div>
     </a>
   </div>

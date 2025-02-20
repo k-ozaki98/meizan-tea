@@ -5,7 +5,7 @@
   <div class="footer-top">
     <div class="l-inner footer-top__wrap">
       <div class="footer-top__icon">
-        <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/footer-icon.svg" alt="">
+        <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/footer-icon.svg" alt="アイコン">
       </div>
       <div class="footer-top__container">
         <p class="footer-top__heading">おいしい・高品質・安全・安心なお茶を提供しています</p>
@@ -25,10 +25,10 @@
       </ul>
       <ul class="footer-menu__bnr">
         <li>
-          <a href="/meizan-tea/oem/"><img src="<?php echo get_template_directory_uri() ?>/assets/images/common/footer-bnr01.png" alt=""></a>
+          <a href="/meizan-tea/oem/"><img src="<?php echo get_template_directory_uri() ?>/assets/images/common/footer-bnr01.png" alt="OEM original tea"></a>
         </li>
         <li>
-          <a target="_blank" href="https://www.amazon.co.jp/s?rh=n%3A57239051%2Cp_4%3Ameizan+tea&ref=bl_dp_s_web_57239051"><img src="<?php echo get_template_directory_uri() ?>/assets/images/common/footer-bnr02.png" alt=""></a>
+          <a target="_blank" href="https://www.amazon.co.jp/s?rh=n%3A57239051%2Cp_4%3Ameizan+tea&ref=bl_dp_s_web_57239051"><img src="<?php echo get_template_directory_uri() ?>/assets/images/common/footer-bnr02.png" alt="Amazon MEIZAN TEA"></a>
         </li>
       </ul>
     </div>

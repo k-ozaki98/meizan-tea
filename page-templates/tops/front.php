@@ -7,19 +7,19 @@
         <div class="swiper-slide">
           <picture>
             <source media="(max-width:767px)" type="image/jpg" srcset="<?php echo get_template_directory_uri() ?>/assets/images/top/mv_sp.jpg" />
-            <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/mv.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/mv.jpg" alt="MV01">
           </picture>
         </div>
         <div class="swiper-slide">
           <picture>
             <source media="(max-width:767px)" type="image/jpg" srcset="<?php echo get_template_directory_uri() ?>/assets/images/top/mv02_sp.jpg" />
-            <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/mv02.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/mv02.jpg" alt="MV02">
           </picture>
         </div>
         <div class="swiper-slide">
           <picture>
             <source media="(max-width:767px)" type="image/jpg" srcset="<?php echo get_template_directory_uri() ?>/assets/images/top/mv03_sp.jpg" />
-            <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/mv03.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/mv03.jpg" alt="MV03">
           </picture>
         </div>
       </div>
@@ -36,9 +36,6 @@
       <div class="btn-A">
         <a href="/meizan-tea/about/"><span>VIEW MORE</span></a>
       </div>
-      <!-- <div class="about__img">
-        <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/about-img.png" alt="">
-      </div> -->
 
       <div class="strength">
         <ul class="strength__card">
@@ -55,7 +52,7 @@
               </div>
             </div>
             <div class="strength__img-area">
-              <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/strength-img01.png" alt="">
+              <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/strength-img01.png" alt="自社輸入　イメージ">
             </div>
             <div class="btn-A btn-A--white is-Sp">
               <a href="/meizan-tea/strength#strength01"><span>VIEW MORE</span></a>
@@ -72,7 +69,7 @@
               </div>
             </div>
             <div class="strength__img-area">
-              <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/strength-img02.png" alt="">
+              <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/strength-img02.png" alt="スペシャリスト　イメージ">
             </div>
             <div class="btn-A btn-A--white is-Sp">
               <a href="/meizan-tea/strength#strength02"><span>VIEW MORE</span></a>
@@ -90,7 +87,7 @@
               </div>
             </div>
             <div class="strength__img-area">
-              <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/strength-img03.png" alt="">
+              <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/strength-img03.png" alt="OEM　サンプル商品画像">
             </div>
             <div class="btn-A btn-A--white is-Sp">
               <a href="/meizan-tea/strength#strength03"><span>VIEW MORE</span></a>
@@ -109,7 +106,7 @@
         <li>
           <a href="/meizan-tea/product-category/chinese-tea/">
             <div class="wave"></div>
-            <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/tea-img01.png" alt="">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/tea-img01.png" alt="中国茶">
             <div class="tea__ttl-wrap">
               <p class="tea__ttl">中国茶</p>
             </div>
@@ -118,7 +115,7 @@
         <li>
           <a href="/meizan-tea/product-category/taiwan-tea/">
             <div class="wave"></div>
-            <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/tea-img02.png" alt="">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/tea-img02.png" alt="台湾茶">
             <div class="tea__ttl-wrap">
               <p class="tea__ttl">台湾茶</p>
             </div>
@@ -127,7 +124,7 @@
         <li>
           <a href="/meizan-tea/product-category/black-tea/">
             <div class="wave"></div>
-            <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/tea-img03.png" alt="">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/tea-img03.png" alt="紅茶">
             <div class="tea__ttl-wrap">
               <p class="tea__ttl">紅　茶</p>
             </div>
@@ -136,7 +133,7 @@
         <li>
           <a href="/meizan-tea/product-category/original/">
             <div class="wave"></div>
-            <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/tea-img04.png" alt="">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/tea-img04.png" alt="オリジナルブレンド">
             <div class="tea__ttl-wrap">
               <p class="tea__ttl">オリジナル<br>ブレンド</p>
             </div>
@@ -145,7 +142,7 @@
         <li>
           <a href="/meizan-tea/product-category/japanese-tea/">
             <div class="wave"></div>
-            <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/tea-img05.png" alt="">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/tea-img05.png" alt="日本茶">
             <div class="tea__ttl-wrap">
               <p class="tea__ttl">日本茶</p>
             </div>
@@ -154,7 +151,7 @@
         <li>
           <a href="/meizan-tea/product-category/other-tea/">
             <div class="wave"></div>
-            <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/tea-img06.png" alt="">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/tea-img06.png" alt="茶外茶">
             <div class="tea__ttl-wrap">
               <p class="tea__ttl">茶外茶</p>
             </div>
