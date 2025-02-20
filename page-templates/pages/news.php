@@ -20,7 +20,7 @@
       <div class="select-wrapper">
         <select id="filter-year" name="year" onchange="this.form.submit();">
           <?php
-                    $selected_year = isset($_GET['year']) ? (int)$_GET['year'] : 2024;
+                    $selected_year = isset($_GET['year']) ? (int)$_GET['year'] : 2025;
                     foreach ($years as $year) :
                     ?>
           <option value="<?php echo esc_attr($year); ?>" <?php selected($selected_year, (int)$year); ?>>
@@ -54,7 +54,7 @@
         } else {
           $args['date_query'] = array(
             array(
-              'year' => 2024,
+              'year' => 2025,
               'compare' => '=',
               'inclusive' => true
             )
