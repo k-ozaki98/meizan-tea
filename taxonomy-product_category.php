@@ -145,7 +145,10 @@ $categories = get_terms(array(
             if ($current_term->parent) {
                 $parent_term = get_term($current_term->parent, 'product_category');
                 if ($parent_term->parent) {
-                    // 子カテゴリーの場合は現在のタームを使用
+                    // 孫カテゴリーの場合は現在のタームを使用
+                    $term_to_check = $current_term;
+                } else {
+                    // 子カテゴリーの場合は親タームを使用
                     $term_to_check = $parent_term;
                 }
             }
@@ -179,14 +182,8 @@ $categories = get_terms(array(
                     case 'other-tea':
                         get_template_part('template-parts/other-tea');
                         break;
-                    case 'chinese-blend':
+                    case 'original':
                         get_template_part('template-parts/original-bottom');
-                        break;
-                    case 'other-blend':
-                        get_template_part('template-parts/original-bottom');
-                        break;
-                    case 'black-blend':
-                        get_template_part('template-parts/original-black-blend');
                         break;
                     case 'fenghuangshan-district':
                         get_template_part('template-parts/fenghuangshan');

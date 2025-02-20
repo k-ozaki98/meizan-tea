@@ -5874,16 +5874,18 @@ sup {
   width: 70%;
   margin: 0 auto;
   padding-top: 6.4rem;
+  text-align: center;
 }
 @media screen and (max-width: 767px) {
   .contents--vison .vison {
     width: 100%;
     padding: 6.4rem 2.4rem 0 2.4rem;
+    text-align: left;
   }
 }
 .contents--vison .vison__ttl {
   font-size: 3.2rem;
-  padding-bottom: 2.4rem;
+  padding-bottom: 4rem;
   font-weight: 400;
 }
 @media screen and (max-width: 767px) {
@@ -5893,29 +5895,38 @@ sup {
 }
 .contents--vison .vison__txt {
   font-size: 1.6rem;
-  padding-bottom: 2.4rem;
+  padding-bottom: 3.5rem;
 }
-.contents--vison .vison__name-area {
+.contents--vison .vison__txt:last-of-type {
+  padding-bottom: 0;
+}
+.contents--vison .vison__name-wrap {
   display: flex;
-  justify-content: right;
+  justify-content: center;
   align-items: center;
   gap: 1.6rem;
+  margin-top: 4rem;
+}
+@media screen and (max-width: 767px) {
+  .contents--vison .vison__name-wrap {
+    justify-content: right;
+  }
 }
 .contents--vison .vison__name {
   font-size: 1.6rem;
+  text-align: left;
 }
 .contents--vison .vison__name-img {
   width: 8rem;
 }
 .contents--vison .vison__img {
-  padding-top: 1.6rem;
+  padding-top: 0.8rem;
   text-align: right;
 }
 .contents--vison .about-story {
   padding-top: 6.4rem;
 }
 .contents--vison .about-story__wrap {
-  margin-top: 4rem;
   display: flex;
 }
 @media screen and (max-width: 767px) {
@@ -6493,7 +6504,7 @@ sup {
   width: 100%;
 }
 .contents--oem .oem {
-  padding-top: 6.4rem;
+  padding-top: 4rem;
 }
 @media screen and (max-width: 767px) {
   .contents--oem .oem {
@@ -6502,7 +6513,7 @@ sup {
 }
 .contents--oem .oem__ttl {
   font-size: 3.2rem;
-  padding-bottom: 2.4rem;
+  padding-bottom: 4rem;
   font-weight: 500;
 }
 @media screen and (max-width: 767px) {
@@ -6513,7 +6524,7 @@ sup {
 .contents--oem .oem__wrap {
   display: flex;
   gap: 4rem;
-  padding-bottom: 2.4rem;
+  padding-bottom: 4rem;
 }
 @media screen and (max-width: 767px) {
   .contents--oem .oem__wrap {

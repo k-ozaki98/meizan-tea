@@ -62,12 +62,12 @@
       </div>
     </section>
 
-    <div class="profile">
+    <!-- <div class="profile">
       <div class="profile__txt-area">
         <p class="profile__name">明山茶業株式会社<br>代表取締役　砂押 悠子</p>
         <p class="profile__txt">プロフィールが入ります。プロフィールが入ります。プロフィールが入ります。プロフィールが入ります。プロフィールが入ります。プロフィールが入ります。プロフィールが入ります。プロフィールが入ります。プロフィールが入ります。プロフィールが入ります。プロフィールが入ります。プロフィールが入ります。プロフィールが入ります。</p>
       </div>
-    </div>
+    </div> -->
   </div>
   <div class="about-story">
     <ul class="about-story__wrap">

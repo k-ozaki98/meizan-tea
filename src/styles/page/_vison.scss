@@ -46,15 +46,17 @@
     width: 70%;
     margin: 0 auto;
     padding-top: 6.4rem;
+    text-align: center;
 
     @include g.max-screen(g.$bp-sp) {
       width: 100%;
       padding: 6.4rem 2.4rem 0 2.4rem;
+      text-align: left;
     }
 
     &__ttl {
       font-size: 3.2rem;
-      padding-bottom: 2.4rem;
+      padding-bottom: 4rem;
       font-weight: 400;
 
       @include g.max-screen(g.$bp-sp) {
@@ -64,18 +66,28 @@
 
     &__txt {
       font-size: 1.6rem;
-      padding-bottom: 2.4rem;
+      padding-bottom: 3.5rem;
+
+      &:last-of-type {
+        padding-bottom: 0;
+      }
     }
 
-    &__name-area {
+    &__name-wrap {
       display: flex;
-      justify-content: right;
+      justify-content: center;
       align-items: center;
       gap: 1.6rem;
+      margin-top: 4rem;
+
+      @include g.max-screen(g.$bp-sp) {
+        justify-content: right;
+      }
     }
 
     &__name {
       font-size: 1.6rem;
+      text-align: left;
     }
 
     &__name-img {
@@ -83,7 +95,7 @@
     }
 
     &__img {
-      padding-top: 1.6rem;
+      padding-top: .8rem;
       text-align: right;
     }
   }
@@ -93,7 +105,6 @@
     padding-top: 6.4rem;
 
     &__wrap {
-      margin-top: 4rem;
       display: flex;
 
       @include g.max-screen(g.$bp-sp) {

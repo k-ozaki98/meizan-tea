@@ -22,7 +22,7 @@
   }
 
   .oem {
-    padding-top: 6.4rem;
+    padding-top: 4rem;
 
     @include g.max-screen(g.$bp-sp) {
       padding: 4rem 2.4rem 0 2.4rem;
@@ -30,7 +30,7 @@
 
     &__ttl {
       font-size: 3.2rem;
-      padding-bottom: 2.4rem;
+      padding-bottom: 4rem;
       font-weight: 500;
 
       @include g.max-screen(g.$bp-sp) {
@@ -41,7 +41,7 @@
     &__wrap {
       display: flex;
       gap: 4rem;
-      padding-bottom: 2.4rem;
+      padding-bottom: 4rem;
 
       @include g.max-screen(g.$bp-sp) {
         display: block;
