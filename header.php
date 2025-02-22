@@ -8,6 +8,8 @@ $pageId = esc_attr(isset($pageId) ? $pageId : '');
 <head>
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/assets/images/common/ogp.png">
+  <link rel="icon" href="<?php echo get_template_directory_uri() ?>/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">

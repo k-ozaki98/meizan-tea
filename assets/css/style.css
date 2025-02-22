@@ -4865,6 +4865,9 @@ sup {
   font-size: 1.6rem;
   margin-bottom: 1.6rem;
 }
+.contents.contents--products .child-category-card__icon {
+  width: 8rem;
+}
 .contents.contents--products .various-tea {
   border-top: 1px solid #F2F4E3;
   padding-top: 4rem;

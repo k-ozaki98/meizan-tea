@@ -17,13 +17,12 @@
         <dt>資本金</dt>
         <dd>3,000万円</dd>
         <dt>事業内容</dt>
-        <dd>各種茶類輸入卸・業務用茶類加工<br>
-          取扱品：中国茶・台湾茶・紅茶・ハーブティー・日本茶・健康茶</dd>
+        <dd>各種茶類輸入卸・業務用茶類加工</dd>
         <dt>取扱品</dt>
-        <dd>中国茶・紅茶・ハーブティー・日本茶・健康茶・茶器等</dd>
+        <dd>中国茶・台湾茶・紅茶・ハーブティー・日本茶・健康茶</dd>
         <dt>役員</dt>
         <dd><span class="dd-flex"><span>取締役会長</span>砂押　雅夫</span>
-          <span class="dd-flex"><span>代表取締役</span>砂押　悠子（伊藤　悠子）</span>
+          <span class="dd-flex"><span>代表取締役</span>砂押　悠子</span>
           <span class="dd-flex"><span>取締役中国室長</span>張　文昕</span>
           <span class="dd-flex"><span>取締役営業部長</span>石渡　真人</span>
           <span class="dd-flex"><span>監査役</span>砂押　真樹子</span>
@@ -48,13 +47,13 @@
           中国茶葉学会（中国・浙江省）<br>
           台湾區製茶工業同業公會（台湾）<br>
         </dd>
-        <dt>茶関連資格保持者 </dt>
-        <dd><span class="dd-flex">中国政府公認評茶員　　張　文昕</span>
-          <span class="dd-flex">中国政府公認評茶員　　砂押　真樹子</span>
-          <span class="dd-flex">中国政府公認評茶員　　金丸　隆</span>
-          <span class="dd-flex">日本中国茶普及協会インストラクター　　<br class="is-Sp">砂押　悠子</span>
-          <span class="dd-flex">日本中国茶普及協会インストラクター　　<br class="is-Sp">清水　浩義</span>
-          <span class="dd-flex">日本紅茶協会ティーインストラクター　　<br class="is-Sp">清水　浩義</span>
+        <dt>茶関連有資格</dt>
+        <dd><span class="dd-flex">中国政府公認高級茶員</span>
+          <span class="dd-flex">日本中国茶普及協会インストラクター</span>
+          <span class="dd-flex">高級中国茶アドバイザー</span>
+          <span class="dd-flex">中級茶藝師</span>
+          <span class="dd-flex">日本紅茶協会ティーインストラクター</span>
+          <span class="dd-flex">日本茶インストラクター協会日本茶アドバイザー</span>
         </dd>
       </dl>
     </section>
@@ -68,7 +67,7 @@
             <span class="history__list-deco"></span>
             <dt><span>1981年</span></dt>
           </div>
-          <dd><span class="dd-flex"><span>6月　</span>砂押 雅夫が東京都新宿区富久町にて設立</span></dd>
+          <dd>砂押 雅夫が東京都新宿区富久町にて設立</dd>
         </div>
 
         <div class="history__list">
@@ -92,7 +91,7 @@
             <span class="history__list-deco"></span>
             <dt><span>1989年</span></dt>
           </div>
-          <dd><span class="dd-flex"><span>4月　</span>台湾區製茶工業同業公會より台湾茶の輸出貢献賞を受賞</span></dd>
+          <dd>台湾區製茶工業同業公會より台湾茶の輸出貢献賞を受賞</dd>
         </div>
 
         <div class="history__list">
@@ -100,7 +99,7 @@
             <span class="history__list-deco"></span>
             <dt><span>1990年</span></dt>
           </div>
-          <dd><span class="dd-flex"><span>9月　</span>インド・セイロン紅茶を本格的に取扱い開始</span></dd>
+          <dd>インド・セイロン紅茶の取扱い開始</dd>
         </div>
 
         <div class="history__list">
@@ -148,7 +147,7 @@
             <span class="history__list-deco"></span>
             <dt><span>2005年</span></dt>
           </div>
-          <dd><span class="dd-flex"><span>5月　</span>東京農業大学（東京都世田谷区）オープンカレッジにて「中国茶講座」開講</span></dd>
+          <dd>東京農業大学（東京都世田谷区）オープンカレッジにて「中国茶講座」開講</dd>
         </div>
 
         <div class="history__list">
