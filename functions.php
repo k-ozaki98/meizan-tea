@@ -123,3 +123,24 @@ function custom_category_redirects() {
     }
 }
 add_action('template_redirect', 'custom_category_redirects');
+
+
+// 最新の投稿年を取得する関数
+function get_latest_post_year() {
+    $args = array(
+        'post_type' => 'post', 
+        'posts_per_page' => 1,
+        'orderby' => 'date',
+        'order' => 'DESC',
+    );
+    
+    $latest_post = get_posts($args);
+    
+    if (!empty($latest_post)) {
+        // 最新投稿の年を返す
+        return get_the_date('Y', $latest_post[0]->ID);
+    } else {
+        // 投稿がなければ現在の年を返す
+        return date('Y');
+    }
+}
