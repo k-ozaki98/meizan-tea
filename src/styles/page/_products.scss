@@ -183,6 +183,14 @@
 				}
 			}
 		}
+
+		&__img-link {
+			transition: .25s;
+
+			&:hover {
+				opacity: .7;
+			}
+		}
 	}
 
 	.product-btn {

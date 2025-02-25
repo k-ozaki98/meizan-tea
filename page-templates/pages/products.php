@@ -27,9 +27,11 @@
             $category_link = get_term_link($category);
         ?>
         <li class="product-item">
-          <div class="product-item__img product-item__img--<?= $category->slug ?>">
-            <img src="<?php echo esc_html($category_image); ?>" alt="<?php echo esc_attr($category->name); ?>">
-          </div>
+          <a class="product-item__img-link" href="<?php echo esc_url($category_link); ?>">
+            <div class="product-item__img product-item__img--<?= $category->slug ?>">
+              <img src="<?php echo esc_html($category_image); ?>" alt="<?php echo esc_attr($category->name); ?>">
+            </div>
+          </a>
           <p class="product-item__text"><?php echo nl2br(esc_html($category_text)); ?></p>
           <div class="btn-A"><a href="<?php echo esc_url($category_link); ?>"><span>VIEW MORE</span></a></div>
         </li>

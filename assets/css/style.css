@@ -4439,6 +4439,12 @@ sup {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.contents.contents--products .product-item__img-link {
+  transition: 0.25s;
+}
+.contents.contents--products .product-item__img-link:hover {
+  opacity: 0.7;
+}
 .contents.contents--products .product-btn {
   margin-top: 6.4rem;
 }
