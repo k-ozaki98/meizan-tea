@@ -82,7 +82,7 @@ $categories = get_terms(array(
                                   ?>
         <li class="product-list__item">
           <div class="product-list__top">
-            <div class="product-list__icon">
+            <div class="product-list__icon js-modal">
               <?php
                   $icon = get_field('icon');
                   if (is_array($icon)) {

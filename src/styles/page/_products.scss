@@ -463,6 +463,12 @@
 		&__icon {
 			width: 8rem;
 			height: 8rem;
+			cursor: pointer;
+			transition: .25s;
+
+			&:hover {
+				opacity: .7;
+			}
 
 			img {
 				width: 100%;
