@@ -72,33 +72,42 @@ $categories = get_terms(array(
             } else {
                 if (have_posts()) : ?>
       <ul class="product-list">
-        <?php while (have_posts()) : the_post(); ?>
         <?php
-                                  $icon = get_field('icon');
-                                  $furigana = get_field('furigana');
-                                  $origin = get_field('origin');
-                                  $other = get_field('other');
-                                  $subtitle = get_field('subtitle');
-                                  ?>
+  $counter = 0; // ループの前でカウンターを初期化
+  while (have_posts()) : the_post();
+    $counter++; // ループ内でカウンターを増加
+    $icon = get_field('icon');
+    $furigana = get_field('furigana');
+    $origin = get_field('origin');
+    $other = get_field('other');
+    $subtitle = get_field('subtitle');
+    $modal_id = "modal-" . $counter; // 一意なIDを生成
+  ?>
         <li class="product-list__item">
           <div class="product-list__top">
-            <div class="product-list__icon js-modal">
-              <?php
-                  $icon = get_field('icon');
-                  if (is_array($icon)) {
-                      ?>
+            <?php
+        $icon = get_field('icon');
+        $modal = get_field('modal-icon');
+        if ($icon) :
+        ?>
+            <div class="product-list__icon js-modal" data-modal="<?php echo $modal_id; ?>">
+              <?php if (is_array($icon)): ?>
               <img src="<?php echo esc_url($icon['url']); ?>" alt="<?php echo esc_attr($icon['alt']); ?>">
-              <?php } else { // URLのみ取得の場合の処理
-                      $image_id = attachment_url_to_postid($icon);
-                      $alt_text = get_post_meta($image_id, '_wp_attachment_image_alt', true);
-                      ?>
+              <?php else: ?>
+              <?php
+              $image_id = attachment_url_to_postid($icon);
+              $alt_text = $image_id ? get_post_meta($image_id, '_wp_attachment_image_alt', true) : '';
+              ?>
               <img src="<?php echo esc_url($icon); ?>" alt="<?php echo esc_attr($alt_text); ?>">
-              <?php } ?>
+              <?php endif; ?>
             </div>
+            <?php endif; ?>
             <div class="product-list__name">
               <h1 class="product-list__name-ja">
                 <?php the_title(); ?>
-                <?php if($subtitle) : ?><span class="product-list__sub"><?php echo esc_html($subtitle); ?></span><?php endif; ?>
+                <?php if ($subtitle) : ?>
+                <span class="product-list__sub"><?php echo esc_html($subtitle); ?></span>
+                <?php endif; ?>
               </h1>
               <p class="product-list__name-en"><?php echo esc_html($furigana); ?></p>
             </div>
@@ -112,38 +121,52 @@ $categories = get_terms(array(
           <div class="product-list__wrap">
             <div class="product-list__detail">
               <?php the_content(); ?>
-
               <?php
-                                          // ティーバッグタイプの取得を追加
-                                          $teabag_type = get_field('teabag_type');
-                                          if ($teabag_type && $teabag_type !== 'none') :
-                                              $type_text = '';
-                                              $type_class = '';
-
-                                              switch($teabag_type) {
-                                                  case 'triangle':
-                                                      $type_text = 'ティーバッグあり';
-                                                      $type_class = 'teabag-icon--triangle';
-                                                      break;
-                                                  case 'normal':
-                                                      $type_text = '個包装';
-                                                      $type_class = 'teabag-icon--normal';
-                                                      break;
-                                              }
-                                          ?>
+          // ティーバッグタイプの取得を追加
+          $teabag_type = get_field('teabag_type');
+          if ($teabag_type && $teabag_type !== 'none') :
+            $type_text = '';
+            $type_class = '';
+            switch ($teabag_type) {
+              case 'triangle':
+                $type_text = 'ティーバッグあり';
+                $type_class = 'teabag-icon--triangle';
+                break;
+              case 'normal':
+                $type_text = '個包装';
+                $type_class = 'teabag-icon--normal';
+                break;
+            }
+          ?>
               <div class="teabag-icon <?php echo $type_class; ?>">
                 <span class="icon"></span>
                 <span class="text"><?php echo $type_text; ?></span>
               </div>
               <?php endif; ?>
             </div>
-
             <div class="product-list__toggle is-sp">
               <span class="chevron"></span>
             </div>
           </div>
-
         </li>
+
+        <?php if ($modal) : ?>
+        <div id="<?php echo $modal_id; ?>" class="modal">
+          <div class="modal-content">
+            <?php if (is_array($modal)): ?>
+            <img src="<?php echo esc_url($modal['url']); ?>" alt="<?php echo esc_attr($modal['alt']); ?>">
+            <?php else: ?>
+            <?php
+            $image_id = attachment_url_to_postid($modal);
+            $alt_text = get_post_meta($image_id, '_wp_attachment_image_alt', true);
+            ?>
+            <img src="<?php echo esc_url($modal); ?>" alt="<?php echo esc_attr($alt_text); ?>">
+            <?php endif; ?>
+            <div class="modal-close"><span>×</span>CLOSE</div>
+          </div>
+        </div>
+        <?php endif; ?>
+
         <?php endwhile; ?>
       </ul>
       <?php else : ?>
