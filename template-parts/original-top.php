@@ -28,7 +28,7 @@ $current_slug = $current_category->slug;
   </div>
 </div>
 
-<section class="product-contact product-contact--other">
+<!-- <section class="product-contact product-contact--other">
   <h3 class="product-contact__ttl">
     お客さまのニーズに合わせてオリジナルブレンドをご用意します。
   </h3>
@@ -36,4 +36,4 @@ $current_slug = $current_category->slug;
   <div class="btn-C">
     <a href="/meizan-tea/contact/">お問い合わせはこちら</a>
   </div>
-</section>
+</section> -->

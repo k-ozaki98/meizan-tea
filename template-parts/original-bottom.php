@@ -28,7 +28,7 @@
   </div>
 </section>
 
-<section class="product-contact">
+<!-- <section class="product-contact">
   <h3 class="product-contact__ttl">
     お客さまのニーズに合わせてオリジナルブレンドをご用意します。
   </h3>
@@ -36,4 +36,4 @@
   <div class="btn-C">
     <a href="/meizan-tea/contact/">お問い合わせはこちら</a>
   </div>
-</section>
+</section> -->
