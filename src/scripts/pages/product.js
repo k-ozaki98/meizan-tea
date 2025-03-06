@@ -37,4 +37,34 @@ export const initProduct = () => {
             toggle.style.display = 'none'; // トグル非表示
         }
     });
+
+    const modalBtns = document.querySelectorAll(".js-modal");
+    modalBtns.forEach(function (btn) {
+        btn.onclick = function () {
+            const modalId = btn.getAttribute("data-modal"); // 対応するモーダルのIDを取得
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.style.display = "block";
+                document.body.style.overflow = "hidden";
+            }
+        };
+    });
+
+    const closeBtns = document.querySelectorAll(".modal-close");
+    closeBtns.forEach(function (btn) {
+        btn.onclick = function () {
+            const modal = btn.closest(".modal"); // 親のモーダルを取得
+            if (modal) {
+                modal.style.display = "none";
+                document.body.style.overflow = "auto";
+            }
+        };
+    });
+
+    window.onclick = function (event) {
+        if (event.target.classList.contains("modal")) {
+            event.target.style.display = "none";
+            document.body.style.overflow = "auto";
+        }
+    };
 };

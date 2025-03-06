@@ -48,7 +48,7 @@
           台湾區製茶工業同業公會（台湾）<br>
         </dd>
         <dt>茶関連有資格</dt>
-        <dd><span class="dd-flex">中国政府公認高級茶員</span>
+        <dd><span class="dd-flex">中国政府公認高級評茶員</span>
           <span class="dd-flex">日本中国茶普及協会インストラクター</span>
           <span class="dd-flex">高級中国茶アドバイザー</span>
           <span class="dd-flex">中級茶藝師</span>

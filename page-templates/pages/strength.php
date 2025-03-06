@@ -41,15 +41,6 @@
           </div>
           <div class="strength__img">
             <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/strength-img05.png" alt="スペシャリスト　イメージ">
-            <ul class="strength__img-txt">
-              <li>＜茶関連資格保持者＞</li>
-              <li>中国政府公認評茶員　張　文昕</li>
-              <li>中国政府公認評茶員　砂押 真樹子</li>
-              <li>中国政府公認評茶員　金丸　隆</li>
-              <li>日本中国茶普及協会インストラクター　砂押 悠子</li>
-              <li>日本中国茶普及協会インストラクター　清水 浩義</li>
-              <li>日本紅茶協会ティーインストラクター　清水 浩義</li>
-            </ul>
           </div>
           <div class="strength__img">
             <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/strength-img06.png" alt="スペシャリスト　イメージ">
