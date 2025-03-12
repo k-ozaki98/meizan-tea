@@ -80,7 +80,7 @@
               <p class="strength__num">STRENGTH 03</p>
               <h3 class="strength__ttl">OEM</h3>
               <p class="strength__txt">
-                ＜OEM＞様々なご要望に応えるオリジナルティーをご提案します。
+                様々なご要望に応えるオリジナルティーをご提案します。
               </p>
               <div class="btn-A btn-A--white is-Pc_Tab">
                 <a href="/meizan-tea/strength#strength03"><span>VIEW MORE</span></a>
