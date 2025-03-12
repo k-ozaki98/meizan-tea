@@ -11,18 +11,8 @@ import {
   initCloneHeader
 } from './modules/header-clone'
 import {
-  renderReactApp
-} from './react';
-import TopApp from "./react/TopApp";
-
-import {
-  gsap
-} from 'gsap'
-import {
-  ScrollTrigger
-} from 'gsap/ScrollTrigger'
-import { initProduct } from './pages/product';
-gsap.registerPlugin(ScrollTrigger)
+  initProduct
+} from './pages/product'
 
 document.addEventListener('DOMContentLoaded', () => {
   const pageId = document.querySelector('body').getAttribute('data-pageid')
