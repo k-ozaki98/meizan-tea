@@ -63,10 +63,10 @@
             <li class="product-guide__item">その他のパッケージ加工</li>
           </ul>
         </div>
-        <div class="product-guide__wrap">
+        <!-- <div class="product-guide__wrap">
           <p class="product-guide__ttl">茶器類</p>
           <div class="product-guide__item">各国のバラエティー豊かな茶器類を取り揃えております。</div>
-        </div>
+        </div> -->
       </section>
 
       <section class="product-contact">
