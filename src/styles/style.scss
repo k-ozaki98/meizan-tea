@@ -23,6 +23,7 @@
 	Layout
 --------------------------*/
 
+@use './utility/grid.scss';
 @use './utility/layout.scss';
 
 /*--------------------------
@@ -33,9 +34,15 @@
 @use './module/mv.scss';
 @use './module/menu.scss';
 @use './module/form.scss';
+@use './module/table.scss';
+@use './module/link.scss';
+@use './module/post.scss';
 @use './module/heading.scss';
+@use './module/txt.scss';
+@use './module/label.scss';
 @use './module/btn.scss';
 @use './module/wp.scss';
+@use './module/other.scss';
 
 /*--------------------------
 	page
@@ -51,6 +58,11 @@
 @use './page/interview.scss';
 @use './page/strength.scss';
 @use './page/oem.scss';
+
+/*--------------------------
+	animation
+--------------------------*/
+@use './utility/animation.scss';
 
 /*--------------------------
 	state

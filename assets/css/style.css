@@ -2368,6 +2368,322 @@ sup {
 /*----------------------------------------------------
 
 	レイアウト設定のファイルです。
+	グリッドレイアウトのスタイルをまとめています。
+	基本的には編集することはありません。
+
+	命名規則として、クラス名の頭に 
+	l-* (Layoutのl)という接頭辞をつけることを推奨します。
+
+----------------------------------------------------*/
+/*--------------------------
+	グリッドシステム
+--------------------------*/
+.l-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.l-grid_item {
+  box-sizing: border-box;
+  width: 16.667%;
+}
+.l-grid_item-1 {
+  width: 8.33%;
+}
+.l-grid_item-2 {
+  width: 16.667%;
+}
+.l-grid_item-3 {
+  width: 25%;
+}
+.l-grid_item-4 {
+  width: 33.333%;
+}
+.l-grid_item-5 {
+  width: 41.666%;
+}
+.l-grid_item-6 {
+  width: 50%;
+}
+.l-grid_item-7 {
+  width: 58.333%;
+}
+.l-grid_item-8 {
+  width: 66.666%;
+}
+.l-grid_item-9 {
+  width: 75%;
+}
+.l-grid_item-10 {
+  width: 83.33%;
+}
+.l-grid_item-11 {
+  width: 91.666%;
+}
+.l-grid_item-12 {
+  width: 100%;
+}
+@media screen and (max-width: 1000px) {
+  .l-grid_item-1-tab {
+    width: 8.33%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .l-grid_item-2-tab {
+    width: 16.667%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .l-grid_item-3-tab {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .l-grid_item-4-tab {
+    width: 33.333%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .l-grid_item-5-tab {
+    width: 41.666%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .l-grid_item-6-tab {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .l-grid_item-7-tab {
+    width: 58.333%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .l-grid_item-8-tab {
+    width: 66.666%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .l-grid_item-9-tab {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .l-grid_item-10-tab {
+    width: 83.33%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .l-grid_item-11-tab {
+    width: 91.666%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .l-grid_item-12-tab {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .l-grid_item-1-sp {
+    width: 8.33%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .l-grid_item-2-sp {
+    width: 16.667%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .l-grid_item-3-sp {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .l-grid_item-4-sp {
+    width: 33.333%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .l-grid_item-5-sp {
+    width: 41.666%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .l-grid_item-6-sp {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .l-grid_item-7-sp {
+    width: 58.333%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .l-grid_item-8-sp {
+    width: 66.666%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .l-grid_item-9-sp {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .l-grid_item-10-sp {
+    width: 83.33%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .l-grid_item-11-sp {
+    width: 91.666%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .l-grid_item-12-sp {
+    width: 100%;
+  }
+}
+.l-grid--ai-center {
+  align-items: center;
+}
+.l-grid.l-gutter-s {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  margin-bottom: -1rem;
+}
+.l-grid.l-gutter-s > .l-grid_item {
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.l-grid.l-gutter-m {
+  margin-left: -1rem;
+  margin-right: -1rem;
+  margin-bottom: -2rem;
+}
+.l-grid.l-gutter-m > .l-grid_item {
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.l-grid.l-gutter-l {
+  margin-left: -2rem;
+  margin-right: -2rem;
+  margin-bottom: -4rem;
+}
+.l-grid.l-gutter-l > .l-grid_item {
+  margin-bottom: 4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.l-grid.l-gutter-xl {
+  margin-left: -3rem;
+  margin-right: -3rem;
+  margin-bottom: -6rem;
+}
+.l-grid.l-gutter-xl > .l-grid_item {
+  margin-bottom: 6rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.l-grid.l-gutter-2l {
+  margin-left: -4rem;
+  margin-right: -4rem;
+  margin-bottom: -8rem;
+}
+.l-grid.l-gutter-2l > .l-grid_item {
+  margin-bottom: 8rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+@media screen and (max-width: 1000px) {
+  .l-grid.l-gutter-s-tab {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    margin-bottom: -1rem;
+  }
+  .l-grid.l-gutter-s-tab > .l-grid_item {
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .l-grid.l-gutter-m-tab {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    margin-bottom: -2rem;
+  }
+  .l-grid.l-gutter-m-tab > .l-grid_item {
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .l-grid.l-gutter-l-tab {
+    margin-left: -2rem;
+    margin-right: -2rem;
+    margin-bottom: -4rem;
+  }
+  .l-grid.l-gutter-l-tab > .l-grid_item {
+    margin-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .l-grid.l-gutter-s-sp {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    margin-bottom: -1rem;
+  }
+  .l-grid.l-gutter-s-sp > .l-grid_item {
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .l-grid.l-gutter-m-sp {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    margin-bottom: -2rem;
+  }
+  .l-grid.l-gutter-m-sp > .l-grid_item {
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .l-grid.l-gutter-l-sp {
+    margin-left: -2rem;
+    margin-right: -2rem;
+    margin-bottom: -4rem;
+  }
+  .l-grid.l-gutter-l-sp > .l-grid_item {
+    margin-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+.l-grid.l-grid-mb0 > .l-grid_item {
+  margin-bottom: 0 !important;
+}
+@media screen and (max-width: 1000px) {
+  .l-grid.l-grid-mb0-tab > .l-grid_item {
+    margin-bottom: 0 !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .l-grid.l-grid-mb0-sp > .l-grid_item {
+    margin-bottom: 0 !important;
+  }
+}
+
+/*----------------------------------------------------
+
+	レイアウト設定のファイルです。
 	レイアウトに関する汎用性の高いスタイルをまとめています。
 	基本的には編集することはありません。
 
@@ -6561,6 +6877,602 @@ sup {
   .contents--oem .step__txt {
     width: 100%;
     margin-top: 1.5rem;
+  }
+}
+
+/*--------------------------
+	animation
+--------------------------*/
+/*----------------------------------------------------
+  リサイズ時のtransition停止
+----------------------------------------------------*/
+body.transition-stop * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+/*----------------------------------------------------
+  見出し アニメーション
+----------------------------------------------------*/
+.a-heading-A {
+  opacity: 0;
+  transition: 0.65s;
+}
+.a-heading-A.active {
+  opacity: 1;
+}
+
+/*----------------------------------------------------
+  anim-txts
+*/
+/*----------------------------------------------------
+  使用方法：
+
+<h1 class="as a-anim-txts">
+  <span class="anim-txt anim-txt-0">テ</span>
+  <span class="anim-txt anim-txt-1">キ</span>
+  <span class="anim-txt anim-txt-2">ス</span>
+  <span class="anim-txt anim-txt-3">ト</span>
+</h1>
+----------------------------------------------------*/
+.a-anim-txts > span {
+  display: inline-block;
+  opacity: 0;
+  -webkit-transform: translate(60px, 0) skewX(-30deg) scale(1, 1);
+  -moz-transform: translate(60px, 0) skewX(-30deg) scale(1, 1);
+  transform: translate(60px, 0) skewX(-30deg) scale(1, 1);
+}
+.a-anim-txts > span:nth-child(1) {
+  transition: 0.65s 0.0625s;
+}
+.a-anim-txts > span:nth-child(2) {
+  transition: 0.65s 0.125s;
+}
+.a-anim-txts > span:nth-child(3) {
+  transition: 0.65s 0.1875s;
+}
+.a-anim-txts > span:nth-child(4) {
+  transition: 0.65s 0.25s;
+}
+.a-anim-txts > span:nth-child(5) {
+  transition: 0.65s 0.3125s;
+}
+.a-anim-txts > span:nth-child(6) {
+  transition: 0.65s 0.375s;
+}
+.a-anim-txts > span:nth-child(7) {
+  transition: 0.65s 0.4375s;
+}
+.a-anim-txts > span:nth-child(8) {
+  transition: 0.65s 0.5s;
+}
+.a-anim-txts > span:nth-child(9) {
+  transition: 0.65s 0.5625s;
+}
+.a-anim-txts > span:nth-child(10) {
+  transition: 0.65s 0.625s;
+}
+.a-anim-txts > span:nth-child(11) {
+  transition: 0.65s 0.6875s;
+}
+.a-anim-txts > span:nth-child(12) {
+  transition: 0.65s 0.75s;
+}
+.a-anim-txts > span:nth-child(13) {
+  transition: 0.65s 0.8125s;
+}
+.a-anim-txts > span:nth-child(14) {
+  transition: 0.65s 0.875s;
+}
+.a-anim-txts > span:nth-child(15) {
+  transition: 0.65s 0.9375s;
+}
+.a-anim-txts > span:nth-child(16) {
+  transition: 0.65s 1s;
+}
+.a-anim-txts > span:nth-child(17) {
+  transition: 0.65s 1.0625s;
+}
+.a-anim-txts > span:nth-child(18) {
+  transition: 0.65s 1.125s;
+}
+.a-anim-txts > span:nth-child(19) {
+  transition: 0.65s 1.1875s;
+}
+.a-anim-txts > span:nth-child(20) {
+  transition: 0.65s 1.25s;
+}
+.a-anim-txts > span:nth-child(21) {
+  transition: 0.65s 1.3125s;
+}
+.a-anim-txts > span:nth-child(22) {
+  transition: 0.65s 1.375s;
+}
+.a-anim-txts > span:nth-child(23) {
+  transition: 0.65s 1.4375s;
+}
+.a-anim-txts > span:nth-child(24) {
+  transition: 0.65s 1.5s;
+}
+.a-anim-txts > span:nth-child(25) {
+  transition: 0.65s 1.5625s;
+}
+.a-anim-txts > span:nth-child(26) {
+  transition: 0.65s 1.625s;
+}
+.a-anim-txts > span:nth-child(27) {
+  transition: 0.65s 1.6875s;
+}
+.a-anim-txts > span:nth-child(28) {
+  transition: 0.65s 1.75s;
+}
+.a-anim-txts > span:nth-child(29) {
+  transition: 0.65s 1.8125s;
+}
+.a-anim-txts > span:nth-child(30) {
+  transition: 0.65s 1.875s;
+}
+.a-anim-txts > span:nth-child(31) {
+  transition: 0.65s 1.9375s;
+}
+.a-anim-txts > span:nth-child(32) {
+  transition: 0.65s 2s;
+}
+.a-anim-txts > span:nth-child(33) {
+  transition: 0.65s 2.0625s;
+}
+.a-anim-txts > span:nth-child(34) {
+  transition: 0.65s 2.125s;
+}
+.a-anim-txts > span:nth-child(35) {
+  transition: 0.65s 2.1875s;
+}
+.a-anim-txts > span:nth-child(36) {
+  transition: 0.65s 2.25s;
+}
+.a-anim-txts > span:nth-child(37) {
+  transition: 0.65s 2.3125s;
+}
+.a-anim-txts > span:nth-child(38) {
+  transition: 0.65s 2.375s;
+}
+.a-anim-txts > span:nth-child(39) {
+  transition: 0.65s 2.4375s;
+}
+.a-anim-txts > span:nth-child(40) {
+  transition: 0.65s 2.5s;
+}
+.a-anim-txts > span:nth-child(41) {
+  transition: 0.65s 2.5625s;
+}
+.a-anim-txts > span:nth-child(42) {
+  transition: 0.65s 2.625s;
+}
+.a-anim-txts > span:nth-child(43) {
+  transition: 0.65s 2.6875s;
+}
+.a-anim-txts > span:nth-child(44) {
+  transition: 0.65s 2.75s;
+}
+.a-anim-txts > span:nth-child(45) {
+  transition: 0.65s 2.8125s;
+}
+.a-anim-txts > span:nth-child(46) {
+  transition: 0.65s 2.875s;
+}
+.a-anim-txts > span:nth-child(47) {
+  transition: 0.65s 2.9375s;
+}
+.a-anim-txts > span:nth-child(48) {
+  transition: 0.65s 3s;
+}
+.a-anim-txts > span:nth-child(49) {
+  transition: 0.65s 3.0625s;
+}
+.a-anim-txts > span:nth-child(50) {
+  transition: 0.65s 3.125s;
+}
+.a-anim-txts > span:nth-child(51) {
+  transition: 0.65s 3.1875s;
+}
+.a-anim-txts > span:nth-child(52) {
+  transition: 0.65s 3.25s;
+}
+.a-anim-txts > span:nth-child(53) {
+  transition: 0.65s 3.3125s;
+}
+.a-anim-txts > span:nth-child(54) {
+  transition: 0.65s 3.375s;
+}
+.a-anim-txts > span:nth-child(55) {
+  transition: 0.65s 3.4375s;
+}
+.a-anim-txts > span:nth-child(56) {
+  transition: 0.65s 3.5s;
+}
+.a-anim-txts > span:nth-child(57) {
+  transition: 0.65s 3.5625s;
+}
+.a-anim-txts > span:nth-child(58) {
+  transition: 0.65s 3.625s;
+}
+.a-anim-txts > span:nth-child(59) {
+  transition: 0.65s 3.6875s;
+}
+.a-anim-txts > span:nth-child(60) {
+  transition: 0.65s 3.75s;
+}
+.a-anim-txts > span:nth-child(61) {
+  transition: 0.65s 3.8125s;
+}
+.a-anim-txts > span:nth-child(62) {
+  transition: 0.65s 3.875s;
+}
+.a-anim-txts > span:nth-child(63) {
+  transition: 0.65s 3.9375s;
+}
+.a-anim-txts > span:nth-child(64) {
+  transition: 0.65s 4s;
+}
+.a-anim-txts > span:nth-child(65) {
+  transition: 0.65s 4.0625s;
+}
+.a-anim-txts > span:nth-child(66) {
+  transition: 0.65s 4.125s;
+}
+.a-anim-txts > span:nth-child(67) {
+  transition: 0.65s 4.1875s;
+}
+.a-anim-txts > span:nth-child(68) {
+  transition: 0.65s 4.25s;
+}
+.a-anim-txts > span:nth-child(69) {
+  transition: 0.65s 4.3125s;
+}
+.a-anim-txts > span:nth-child(70) {
+  transition: 0.65s 4.375s;
+}
+.a-anim-txts > span:nth-child(71) {
+  transition: 0.65s 4.4375s;
+}
+.a-anim-txts > span:nth-child(72) {
+  transition: 0.65s 4.5s;
+}
+.a-anim-txts > span:nth-child(73) {
+  transition: 0.65s 4.5625s;
+}
+.a-anim-txts > span:nth-child(74) {
+  transition: 0.65s 4.625s;
+}
+.a-anim-txts > span:nth-child(75) {
+  transition: 0.65s 4.6875s;
+}
+.a-anim-txts > span:nth-child(76) {
+  transition: 0.65s 4.75s;
+}
+.a-anim-txts > span:nth-child(77) {
+  transition: 0.65s 4.8125s;
+}
+.a-anim-txts > span:nth-child(78) {
+  transition: 0.65s 4.875s;
+}
+.a-anim-txts > span:nth-child(79) {
+  transition: 0.65s 4.9375s;
+}
+.a-anim-txts > span:nth-child(80) {
+  transition: 0.65s 5s;
+}
+.a-anim-txts > span:nth-child(81) {
+  transition: 0.65s 5.0625s;
+}
+.a-anim-txts > span:nth-child(82) {
+  transition: 0.65s 5.125s;
+}
+.a-anim-txts > span:nth-child(83) {
+  transition: 0.65s 5.1875s;
+}
+.a-anim-txts > span:nth-child(84) {
+  transition: 0.65s 5.25s;
+}
+.a-anim-txts > span:nth-child(85) {
+  transition: 0.65s 5.3125s;
+}
+.a-anim-txts > span:nth-child(86) {
+  transition: 0.65s 5.375s;
+}
+.a-anim-txts > span:nth-child(87) {
+  transition: 0.65s 5.4375s;
+}
+.a-anim-txts > span:nth-child(88) {
+  transition: 0.65s 5.5s;
+}
+.a-anim-txts > span:nth-child(89) {
+  transition: 0.65s 5.5625s;
+}
+.a-anim-txts > span:nth-child(90) {
+  transition: 0.65s 5.625s;
+}
+.a-anim-txts > span:nth-child(91) {
+  transition: 0.65s 5.6875s;
+}
+.a-anim-txts > span:nth-child(92) {
+  transition: 0.65s 5.75s;
+}
+.a-anim-txts > span:nth-child(93) {
+  transition: 0.65s 5.8125s;
+}
+.a-anim-txts > span:nth-child(94) {
+  transition: 0.65s 5.875s;
+}
+.a-anim-txts > span:nth-child(95) {
+  transition: 0.65s 5.9375s;
+}
+.a-anim-txts > span:nth-child(96) {
+  transition: 0.65s 6s;
+}
+.a-anim-txts > span:nth-child(97) {
+  transition: 0.65s 6.0625s;
+}
+.a-anim-txts > span:nth-child(98) {
+  transition: 0.65s 6.125s;
+}
+.a-anim-txts > span:nth-child(99) {
+  transition: 0.65s 6.1875s;
+}
+.a-anim-txts > span:nth-child(100) {
+  transition: 0.65s 6.25s;
+}
+.a-anim-txts.active span {
+  opacity: 1;
+  -webkit-transform: translate(0, 0) skewX(0deg) scale(1, 1);
+  -moz-transform: translate(0, 0) skewX(0deg) scale(1, 1);
+  transform: translate(0, 0) skewX(0deg) scale(1, 1);
+}
+
+/*----------------------------------------------------
+  slide-box-A
+*/
+/*----------------------------------------------------
+  使用方法：
+
+  <div class="as a-slide-box-A">
+    <img src="./img/sample.jpg" alt="" />
+  </div>
+----------------------------------------------------*/
+.a-slide-box-A {
+  overflow: hidden;
+  opacity: 1;
+  position: relative;
+  -webkit-transform: scale(1, 0);
+  -moz-transform: scale(1, 0);
+  transform: scale(1, 0);
+  -webkit-transform-origin: top center;
+  -moz-transform-origin: top center;
+  transform-origin: top center;
+  transition: 0.65s;
+}
+.a-slide-box-A:after {
+  background: #bbb; /* Old browsers */
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  transition: 0.65s 0.65s;
+}
+.a-slide-box-A img {
+  transition: 0.65s 0.65s;
+  -webkit-transform: scale(1.5, 1.5);
+  -moz-transform: scale(1.5, 1.5);
+  transform: scale(1.5, 1.5);
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  transform-origin: center center;
+}
+.a-slide-box-A.a-slide-box-A--t {
+  -webkit-transform: scale(1, 0);
+  -moz-transform: scale(1, 0);
+  transform: scale(1, 0);
+  -webkit-transform-origin: top center;
+  -moz-transform-origin: top center;
+  transform-origin: top center;
+}
+.a-slide-box-A.a-slide-box-A--b {
+  -webkit-transform: scale(1, 0);
+  -moz-transform: scale(1, 0);
+  transform: scale(1, 0);
+  -webkit-transform-origin: bottom center;
+  -moz-transform-origin: bottom center;
+  transform-origin: bottom center;
+}
+.a-slide-box-A.a-slide-box-A--l {
+  -webkit-transform: scale(0, 1);
+  -moz-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  transform-origin: left center;
+}
+.a-slide-box-A.a-slide-box-A--r {
+  -webkit-transform: scale(0, 1);
+  -moz-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transform-origin: right center;
+  -moz-transform-origin: right center;
+  transform-origin: right center;
+}
+.a-slide-box-A.active {
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+.a-slide-box-A.active:after {
+  opacity: 0;
+}
+.a-slide-box-A.active img {
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+/*----------------------------------------------------
+  slide-box-B
+*/
+/*----------------------------------------------------
+  使用方法：
+
+  <div class="as a-slide-box-B">
+    <div class="slide-box-B__bg">
+      <img src="" alt="">
+    </div>
+  </div>
+----------------------------------------------------*/
+.a-slide-box-B {
+  display: block;
+}
+.a-slide-box-B img {
+  vertical-align: middle;
+}
+.a-slide-box-B .slide-box-B__bg {
+  background: #fff;
+  display: inline-block;
+  position: relative;
+  -webkit-transform-origin: right center;
+  -moz-transform-origin: right center;
+  transform-origin: right center;
+  overflow: hidden;
+}
+.a-slide-box-B .slide-box-B__bg img {
+  opacity: 0;
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+  -webkit-transform-origin: right center;
+  -moz-transform-origin: right center;
+  transform-origin: right center;
+  transition: all 0.65s;
+}
+.a-slide-box-B .slide-box-B__bg:after {
+  background: #fff;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+  margin-left: 100%;
+  -webkit-transform: translate(-100%, 0);
+  -moz-transform: translate(-100%, 0);
+  transform: translate(-100%, 0);
+  transition: all 0.65s;
+}
+.a-slide-box-B.a-slide-box-B--t .slide-box-B__bg {
+  -webkit-transform-origin: bottom center;
+  -moz-transform-origin: bottom center;
+  transform-origin: bottom center;
+}
+.a-slide-box-B.a-slide-box-B--t .slide-box-B__bg img {
+  -webkit-transform-origin: bottom center;
+  -moz-transform-origin: bottom center;
+  transform-origin: bottom center;
+}
+.a-slide-box-B.a-slide-box-B--t .slide-box-B__bg:after {
+  margin: 100% 0 0 0;
+  -webkit-transform: translate(0, -100%);
+  -moz-transform: translate(0, -100%);
+  transform: translate(0, -100%);
+}
+.a-slide-box-B.a-slide-box-B--b .slide-box-B__bg {
+  -webkit-transform-origin: top center;
+  -moz-transform-origin: top center;
+  transform-origin: top center;
+}
+.a-slide-box-B.a-slide-box-B--b .slide-box-B__bg img {
+  -webkit-transform-origin: top center;
+  -moz-transform-origin: top center;
+  transform-origin: top center;
+}
+.a-slide-box-B.a-slide-box-B--b .slide-box-B__bg:after {
+  margin: -100% 0 0 0;
+  -webkit-transform: translate(0, 100%);
+  -moz-transform: translate(0, 100%);
+  transform: translate(0, 100%);
+}
+.a-slide-box-B.a-slide-box-B--l .slide-box-B__bg {
+  -webkit-transform-origin: right center;
+  -moz-transform-origin: right center;
+  transform-origin: right center;
+}
+.a-slide-box-B.a-slide-box-B--l .slide-box-B__bg img {
+  -webkit-transform-origin: right center;
+  -moz-transform-origin: right center;
+  transform-origin: right center;
+}
+.a-slide-box-B.a-slide-box-B--l .slide-box-B__bg:after {
+  margin: 0 0 0 100%;
+  -webkit-transform: translate(-100%, 0);
+  -moz-transform: translate(-100%, 0);
+  transform: translate(-100%, 0);
+}
+.a-slide-box-B.a-slide-box-B--r .slide-box-B__bg {
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  transform-origin: left center;
+}
+.a-slide-box-B.a-slide-box-B--r .slide-box-B__bg img {
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  transform-origin: left center;
+}
+.a-slide-box-B.a-slide-box-B--r .slide-box-B__bg:after {
+  margin: 0 0 0 -100%;
+  -webkit-transform: translate(100%, 0);
+  -moz-transform: translate(100%, 0);
+  transform: translate(100%, 0);
+}
+.a-slide-box-B.active .slide-box-B__bg img {
+  opacity: 1;
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+.a-slide-box-B.active .slide-box-B__bg:after {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+/*----------------------------------------------------
+  スライダー
+----------------------------------------------------*/
+.slide-gallery {
+  overflow: hidden;
+}
+.slide-gallery .slide-gallery__inner {
+  height: 220px;
+  width: 3840px;
+  -webkit-animation: slide 60s linear infinite;
+  -moz-animation: slide 60s linear infinite;
+  animation: slide 60s linear infinite;
+  position: relative;
+}
+@keyframes slide {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-1920px, 0, 0);
+    -moz-transform: translate3d(-1920px, 0, 0);
+    transform: translate3d(-1920px, 0, 0);
   }
 }
 

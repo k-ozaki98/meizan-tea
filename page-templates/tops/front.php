@@ -48,14 +48,14 @@
                 数百種の茶葉を取り扱っております。
               </p>
               <div class="btn-A btn-A--white is-Pc_Tab">
-                <a href="/meizan-tea/strength#strength01"><span>VIEW MORE</span></a>
+                <a href="/strength/#strength01"><span>VIEW MORE</span></a>
               </div>
             </div>
             <div class="strength__img-area">
               <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/strength-img01.png" alt="自社輸入　イメージ">
             </div>
             <div class="btn-A btn-A--white is-Sp">
-              <a href="/meizan-tea/strength#strength01"><span>VIEW MORE</span></a>
+              <a href="/strength/#strength01"><span>VIEW MORE</span></a>
             </div>
           </li>
           <li>
@@ -65,14 +65,14 @@
               <p class="strength__txt">明山茶業にはお茶のスペシャリスト、中国政府公認の高級評茶員が在籍しております。
               </p>
               <div class="btn-A btn-A--white is-Pc_Tab">
-                <a href="/meizan-tea/strength#strength02"><span>VIEW MORE</span></a>
+                <a href="/strength/#strength02"><span>VIEW MORE</span></a>
               </div>
             </div>
             <div class="strength__img-area">
               <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/strength-img02.png" alt="スペシャリスト　イメージ">
             </div>
             <div class="btn-A btn-A--white is-Sp">
-              <a href="/meizan-tea/strength#strength02"><span>VIEW MORE</span></a>
+              <a href="/strength/#strength02"><span>VIEW MORE</span></a>
             </div>
           </li>
           <li>
@@ -83,14 +83,14 @@
                 様々なご要望に応えるオリジナルティーをご提案します。
               </p>
               <div class="btn-A btn-A--white is-Pc_Tab">
-                <a href="/meizan-tea/strength#strength03"><span>VIEW MORE</span></a>
+                <a href="/strength/#strength03"><span>VIEW MORE</span></a>
               </div>
             </div>
             <div class="strength__img-area">
               <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/strength-img03.png" alt="OEM　サンプル商品画像">
             </div>
             <div class="btn-A btn-A--white is-Sp">
-              <a href="/meizan-tea/strength#strength03"><span>VIEW MORE</span></a>
+              <a href="/strength/#strength03"><span>VIEW MORE</span></a>
             </div>
           </li>
         </ul>
@@ -104,7 +104,7 @@
       <p class="tea__txt">中国茶から紅茶、日本茶、ハーブ類まで常時数百種類の茶葉を取扱っています。</p>
       <ul class="tea__list">
         <li>
-          <a href="/meizan-tea/product-category/chinese-tea/">
+          <a href="/product-category/chinese-tea/">
             <div class="wave"></div>
             <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/tea-img01.png" alt="中国茶">
             <div class="tea__ttl-wrap">
@@ -113,7 +113,7 @@
           </a>
         </li>
         <li>
-          <a href="/meizan-tea/product-category/taiwan-tea/">
+          <a href="/product-category/taiwan-tea/">
             <div class="wave"></div>
             <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/tea-img02.png" alt="台湾茶">
             <div class="tea__ttl-wrap">
@@ -122,7 +122,7 @@
           </a>
         </li>
         <li>
-          <a href="/meizan-tea/product-category/black-tea/">
+          <a href="/product-category/black-tea/">
             <div class="wave"></div>
             <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/tea-img03.png" alt="紅茶">
             <div class="tea__ttl-wrap">
@@ -131,7 +131,7 @@
           </a>
         </li>
         <li>
-          <a href="/meizan-tea/product-category/original/">
+          <a href="/product-category/original/">
             <div class="wave"></div>
             <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/tea-img04.png" alt="オリジナルブレンド">
             <div class="tea__ttl-wrap">
@@ -140,7 +140,7 @@
           </a>
         </li>
         <li>
-          <a href="/meizan-tea/product-category/japanese-tea/">
+          <a href="/product-category/japanese-tea/">
             <div class="wave"></div>
             <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/tea-img05.png" alt="日本茶">
             <div class="tea__ttl-wrap">
@@ -149,7 +149,7 @@
           </a>
         </li>
         <li>
-          <a href="/meizan-tea/product-category/other-tea/">
+          <a href="/product-category/other-tea/">
             <div class="wave"></div>
             <img src="<?php echo get_template_directory_uri() ?>/assets/images/top/tea-img06.png" alt="茶外茶">
             <div class="tea__ttl-wrap">

@@ -8,6 +8,7 @@ define('THEME_URI', get_template_directory_uri());
 // ファイルのインクルード
 require_once THEME_DIR . '/inc/custom-post-types.php';
 require_once THEME_DIR . '/inc/enqueue-scripts.php';
+require_once THEME_DIR . '/inc/theme-support.php';
 require_once THEME_DIR . '/inc/admin-customization.php';
 
 function custom_page_rules() {
@@ -104,15 +105,15 @@ add_action('pre_get_posts', 'modify_product_query');
 // 台湾茶、オリジナルブレンドのリダイレクト処理
 function custom_category_redirects() {
     if (!is_tax('product_category')) return;
-
+    
     $current_term = get_queried_object();
-
+    
     // リダイレクトルール
     $redirect_rules = [
         'taiwan-tea' => 'blue-tea-taiwan',     // 台湾茶 → 青茶
         'original' => 'chinese-blend',         // オリジナルブレンド → 中国茶ブレンド
     ];
-
+    
     if (isset($redirect_rules[$current_term->slug])) {
         $redirect_term = get_term_by('slug', $redirect_rules[$current_term->slug], 'product_category');
         if ($redirect_term) {
@@ -127,14 +128,14 @@ add_action('template_redirect', 'custom_category_redirects');
 // 最新の投稿年を取得する関数
 function get_latest_post_year() {
     $args = array(
-        'post_type' => 'post',
+        'post_type' => 'post', 
         'posts_per_page' => 1,
         'orderby' => 'date',
         'order' => 'DESC',
     );
-
+    
     $latest_post = get_posts($args);
-
+    
     if (!empty($latest_post)) {
         // 最新投稿の年を返す
         return get_the_date('Y', $latest_post[0]->ID);
